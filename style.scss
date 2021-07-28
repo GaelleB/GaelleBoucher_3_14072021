@@ -6,7 +6,6 @@ $font-family-secondary: 'Roboto', sans-serif;
 
 
 body {
-    box-sizing: border-box;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -64,7 +63,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 20px;
         h2 {
             font-size: 25px;
             justify-content: center;
@@ -132,7 +130,6 @@ header {
     justify-content: space-between;
     border-radius: 15px;
     background-color: #F2F2F2;
-    padding: 20px;
         h2 {
             font-size: 25px;
             padding-right: 20px;
@@ -149,7 +146,9 @@ header {
                 display: flex;
                 background: #99E2D0;
                 color: #2c9c81;
-                float: right;
+                position: absolute;
+                margin-left: 350px;
+
             }
                 img {
                     object-fit: cover;

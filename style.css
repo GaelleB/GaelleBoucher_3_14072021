@@ -1,7 +1,5 @@
 @charset "UTF-8";
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 100%;
   padding:  0;
   margin: 0;
@@ -81,7 +79,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px;
 }
 
 #fonction h2 {
@@ -179,7 +176,6 @@ header {
           justify-content: space-between;
   border-radius: 15px;
   background-color: #F2F2F2;
-  padding: 20px;
 }
 
 #restaurants h2 {
@@ -203,7 +199,8 @@ header {
   display: flex;
   background: #99E2D0;
   color: #2c9c81;
-  float: right;
+  position: absolute;
+  margin-left: 350px;
 }
 
 #restaurants img {
