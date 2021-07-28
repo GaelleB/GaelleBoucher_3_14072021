@@ -1,0 +1,213 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$font-family-primary: 'Shrikhand', cursive;
+$font-family-secondary: 'Roboto', sans-serif;
+
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}    
+
+header {
+    width: 100%;
+    $font-family-primary: 'Shrikhand', cursive;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#loc {
+    width: 100%;
+    $font-family-secondary: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #D7DBDF;
+        .lieu {
+            display: flex;
+            align-items: center;
+        }
+            .icone-map {
+                padding-right: 18px;
+            }
+}
+
+#descrip {
+    width: 100%;
+    $font-family-secondary: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f2f2f2;
+        h2 {
+            font-size: 30px;
+        }
+            .button {
+                border: transparent 2px solid;    
+                border-radius: 25px;
+                padding: 16px;
+                color: white;
+                font-size: 1em;
+                font-weight: 500;
+                margin: 20px;
+                background-color: $color-secondary;
+                box-shadow: 1px 1px 5px #9e9e9e;
+            }
+}
+
+#fonction {
+    $font-family-secondary: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+        h2 {
+            font-size: 25px;
+            justify-content: center;
+            text-align: center;
+            padding-top: 30px;
+            padding-right: 50px;
+        }
+        .fonctionnement {
+            width: 100%;
+            display: flex;
+            :hover {
+                background-color: #F8E7F8;
+            }
+        }
+            .number-fonction1, .number-fonction2, .number-fonction3 {
+                height: 100px;
+                width: 100%;
+                background-color: #f2f2f2;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 20px 20px 5px;
+                border: 1px solid #F2F2F2;
+                border-radius: 25px;
+            }
+                        .number {
+                            font-size: 25px;
+                            color: white;
+                            width: 30px;
+                            height: 35px;
+                            background-color: $color-primary;
+                            $font-family-secondary: 'Roboto', sans-serif;
+                            border-radius: 40px;
+                            margin-left: 0;
+                            padding-left: 13px;
+                            padding-top: 5px;
+                            position: relative;
+                            :hover {
+                                color: $color-primary;
+                            }
+                        }
+                            .icone-mobile, .icone-menu, .icone-resto {
+                                font-size: 20px;
+                                padding-left: 25px;
+                                padding-top: 5px;
+                                    :hover {
+                                        color: $color-primary;
+                                    }
+                            }
+                                p {
+                                    font-size: 25px;
+                                    padding-left: 55px;
+                                }
+}
+
+#restaurants {
+    $font-family-secondary: 'Roboto', sans-serif;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    padding: 20px;
+        h2 {
+            font-size: 25px;
+            padding-right: 20px;
+        }    
+            .carte-resto1, .carte-resto2, .carte-resto3, .carte-resto4 {
+                width: 100%;
+                height: auto;
+                border: grey 5px solid;
+                border-radius: 10px;
+                box-shadow: white 2px;
+                margin-right: 20px;
+            }
+            .new {
+                display: flex;
+                background: #99E2D0;
+                color: #2c9c81;
+                float: right;
+            }
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: auto;
+                }
+                    .icone-coeur {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                    }
+}
+
+footer {
+    $font-family-secondary: 'Roboto', sans-serif;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: #535253;
+        ul li {
+            align-items: center;
+            list-style: none;
+            margin-right: 20px;
+        }    
+}
+
+/*Version mobile*/
+
+@media screen and (max-width:767px) {
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+
+#fonction {
+    width: 100%;
+    display: block;
+    .fonctionnement {
+        display: flex;
+        flex-direction: column;
+            .icone-mobile, .icone-menu, .icone-resto {
+                padding-right: 50px;
+            }
+                p {
+                    padding-left: 0;
+                    text-align: center;
+                    font-size: 18px;
+                }
+    }
+
+}
+
+#restaurants {
+    width: auto;
+    display: block;
+}
+
+}

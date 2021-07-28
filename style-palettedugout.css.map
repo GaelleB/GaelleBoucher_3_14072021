@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,GAAI;CACzB",
+    "sources": [
+        "style-palettedugout.scss"
+    ],
+    "names": [],
+    "file": "style-palettedugout.css"
+}
