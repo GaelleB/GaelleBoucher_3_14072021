@@ -6,7 +6,7 @@ $font-family-secondary: 'Roboto', sans-serif;
 
 
 body {
-    width: 100%;
+    flex: 1;
     padding: 0;
     margin: 0;
 }    
@@ -98,7 +98,7 @@ header {
                             $font-family-secondary: 'Roboto', sans-serif;
                             border-radius: 40px;
                             margin-left: 0;
-                            padding-left: 13px;
+                            padding-left: 15px;
                             padding-top: 5px;
                             position: relative;
                             :hover {
@@ -160,6 +160,9 @@ header {
                         flex-direction: row;
                         justify-content: flex-end;
                     }
+                        .carte-resto2 img {
+                            padding-bottom: 0px;
+                        }
 }
 
 footer {
@@ -174,6 +177,15 @@ footer {
             list-style: none;
             margin-right: 20px;
         }    
+}
+
+/*Version tablette*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /*Version mobile*/
