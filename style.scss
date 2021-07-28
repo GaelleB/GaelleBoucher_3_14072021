@@ -95,7 +95,6 @@ header {
                             width: 30px;
                             height: 35px;
                             background-color: $color-primary;
-                            $font-family-secondary: 'Roboto', sans-serif;
                             border-radius: 40px;
                             margin-left: 0;
                             padding-left: 15px;
@@ -122,7 +121,7 @@ header {
 #restaurants {
     $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
-    height: auto;
+    height: 500px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -135,7 +134,7 @@ header {
             padding-right: 20px;
         }    
             .carte-resto1, .carte-resto2, .carte-resto3, .carte-resto4 {
-                width: 100%;
+                width: 25%;
                 height: auto;
                 border: grey 5px solid;
                 border-radius: 10px;
@@ -147,7 +146,7 @@ header {
                 background: #99E2D0;
                 color: #2c9c81;
                 position: absolute;
-                margin-left: 350px;
+                margin-left: 330px;
 
             }
                 img {
@@ -155,20 +154,32 @@ header {
                     width: 100%;
                     height: auto;
                 }
-                    .icone-coeur {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-end;
+                    .titre-lieu-resto {
+                        color: black;
+                            a:link {
+                                text-decoration: none;
+                            }
+                                h3 {
+                                    font-size: 20px;
+                                }
+                                    p {
+                                        font-size: 18px;
+                                    }
                     }
-                        .carte-resto2 img {
-                            padding-bottom: 0px;
+                        .icone-coeur {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
                         }
+                            .carte-resto2 img {
+                                padding-bottom: 0px;
+                            }
 }
 
 footer {
     $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
-    height: auto;
+    height: 150px;
     justify-content: center;
     text-align: center;
     background-color: #535253;

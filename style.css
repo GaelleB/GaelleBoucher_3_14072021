@@ -160,7 +160,7 @@ header {
 
 #restaurants {
   width: 100%;
-  height: auto;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,7 +186,7 @@ header {
 }
 
 #restaurants .carte-resto1, #restaurants .carte-resto2, #restaurants .carte-resto3, #restaurants .carte-resto4 {
-  width: 100%;
+  width: 25%;
   height: auto;
   border: grey 5px solid;
   border-radius: 10px;
@@ -202,7 +202,7 @@ header {
   background: #99E2D0;
   color: #2c9c81;
   position: absolute;
-  margin-left: 350px;
+  margin-left: 330px;
 }
 
 #restaurants img {
@@ -210,6 +210,22 @@ header {
      object-fit: cover;
   width: 100%;
   height: auto;
+}
+
+#restaurants .titre-lieu-resto {
+  color: black;
+}
+
+#restaurants .titre-lieu-resto a:link {
+  text-decoration: none;
+}
+
+#restaurants .titre-lieu-resto h3 {
+  font-size: 20px;
+}
+
+#restaurants .titre-lieu-resto p {
+  font-size: 18px;
 }
 
 #restaurants .icone-coeur {
@@ -231,7 +247,7 @@ header {
 
 footer {
   width: 100%;
-  height: auto;
+  height: 150px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
