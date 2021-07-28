@@ -128,18 +128,18 @@ header {
     align-items: center;
     justify-content: space-between;
     border-radius: 15px;
-    background-color: #F2F2F2;
+    background-color: white;
         h2 {
             font-size: 25px;
             padding-right: 20px;
         }    
             .carte-resto1, .carte-resto2, .carte-resto3, .carte-resto4 {
-                width: 25%;
+                width: 100%;
                 height: auto;
-                border: grey 5px solid;
-                border-radius: 10px;
-                box-shadow: white 2px;
-                margin-right: 20px;
+                background-color: white;
+                border: 5px white solid;
+                border-radius: 30px;
+                box-shadow: 2px 2px 2px #F2F2F2;
             }
             .new {
                 display: flex;
@@ -153,27 +153,33 @@ header {
                     object-fit: cover;
                     width: 100%;
                     height: auto;
+                    margin: 0;
+                    border-radius: 20px 20px 0 0;
                 }
                     .titre-lieu-resto {
                         color: black;
                             a:link {
                                 text-decoration: none;
                             }
-                                h3 {
-                                    font-size: 20px;
+                                a:visited {
+                                    color: black;
                                 }
-                                    p {
-                                        font-size: 18px;
+                                    h3 {
+                                        font-size: 20px;
+                                        padding-left: 20px;
                                     }
+                                        p {
+                                            color: black;
+                                            font-size: 18px;
+                                            padding: 20px;
+                                            padding-top: 0;
+                                        }
                     }
                         .icone-coeur {
                             display: flex;
                             flex-direction: row;
                             justify-content: flex-end;
                         }
-                            .carte-resto2 img {
-                                padding-bottom: 0px;
-                            }
 }
 
 footer {
