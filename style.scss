@@ -45,7 +45,7 @@ header {
             font-size: 30px;
         }
             .button {
-                border: transparent 2px solid;    
+                border: transparent 1px solid;  
                 border-radius: 25px;
                 padding: 16px;
                 color: white;
@@ -60,14 +60,17 @@ header {
 #fonction {
     $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
+    padding-bottom: 45px;
         h2 {
             font-size: 25px;
             justify-content: center;
             text-align: center;
             padding-top: 30px;
             padding-right: 50px;
+            margin-left: 20px;
         }
         .fonctionnement {
             width: 100%;
@@ -78,76 +81,80 @@ header {
         }
             .number-fonction1, .number-fonction2, .number-fonction3 {
                 height: 100px;
-                width: 100%;
+                width: 80%;
                 background-color: #f2f2f2;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 margin: 20px 20px 20px 5px;
-                border: 1px solid #F2F2F2;
                 border-radius: 25px;
             }
-                        .number {
-                            font-size: 25px;
-                            color: white;
-                            width: 30px;
-                            height: 35px;
-                            background-color: $color-primary;
-                            border-radius: 40px;
-                            margin-left: 0;
-                            padding-left: 15px;
-                            padding-top: 5px;
-                            position: relative;
+                .number {
+                    position: absolute;
+                    color: #f2f2f2;
+                    background-color: #9356DC;
+                    border-radius: 50%;
+                    padding: 5px 10px;
+                    margin-right: 530px;
+                    :hover {
+                        color: $color-primary;
+                    }
+                }
+                    .icone-mobile, .icone-menu, .icone-resto {
+                        display: flex;
+                        align-items: center;
+                        font-size: 20px;
+                        padding-left: 25px;
+                        padding-top: 5px;
                             :hover {
                                 color: $color-primary;
                             }
+                    }
+                        p {
+                            font-size: 20px;
+                            padding-left: 55px;
                         }
-                            .icone-mobile, .icone-menu, .icone-resto {
-                                font-size: 20px;
-                                padding-left: 25px;
-                                padding-top: 5px;
-                                    :hover {
-                                        color: $color-primary;
-                                    }
-                            }
-                                p {
-                                    font-size: 25px;
-                                    padding-left: 55px;
-                                }
 }
 
 #restaurants {
     $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     border-radius: 15px;
-    background-color: white;
+    background-color: #f2f2f2;
+    padding-bottom: 25px;
         h2 {
+            align-self: flex-start;
+            margin-left: 20px;
             font-size: 25px;
-            padding-right: 20px;
         }    
             .carte-resto1, .carte-resto2, .carte-resto3, .carte-resto4 {
                 width: 100%;
                 height: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
                 background-color: white;
                 border: 5px white solid;
                 border-radius: 30px;
                 box-shadow: 2px 2px 2px #F2F2F2;
                 overflow: hidden;
                 position: relative;
+                margin-top: 60px;
+                margin-bottom: 40px;
             }
             .new {
                 display: flex;
                 background: #99E2D0;
                 color: #2c9c81;
                 position: absolute;
-                margin-left: 330px;
+                margin-left: 360px;
 
             }
                 img {
@@ -159,22 +166,16 @@ header {
                 }
                     .titre-lieu-resto {
                         color: black;
-                            a:link {
-                                text-decoration: none;
+                            h3 {
+                                font-size: 20px;
+                                padding-left: 20px;
                             }
-                                a:visited {
+                                p {
                                     color: black;
+                                    font-size: 18px;
+                                    padding: 20px;
+                                    padding-top: 0;
                                 }
-                                    h3 {
-                                        font-size: 20px;
-                                        padding-left: 20px;
-                                    }
-                                        p {
-                                            color: black;
-                                            font-size: 18px;
-                                            padding: 20px;
-                                            padding-top: 0;
-                                        }
                     }
                         .icone-coeur {
                             font-size: 20px;
@@ -185,15 +186,17 @@ header {
 footer {
     $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
-    height: 150px;
-    justify-content: center;
-    text-align: center;
+    height: 140px;
     background-color: #535253;
-        ul li {
-            align-items: center;
-            list-style: none;
-            margin-right: 20px;
-        }    
+    padding-bottom: 25px;
+        h2 {
+            font-size: 30px;
+            padding-top: 10px;
+            padding-left: 40px;
+        }
+            a:visited {
+                color: black;
+            }
 }
 
 /*Version tablette*/
