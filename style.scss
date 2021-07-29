@@ -72,49 +72,53 @@ header {
             padding-right: 50px;
             margin-left: 20px;
         }
-        .fonctionnement {
-            width: 100%;
-            display: flex;
-            :hover {
-                background-color: #F8E7F8;
-            }
-        }
-            .number-fonction1, .number-fonction2, .number-fonction3 {
-                height: 100px;
-                width: 80%;
-                background-color: #f2f2f2;
+            .fonctionnement {
+                width: 100%;
                 display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                margin: 20px 20px 20px 5px;
-                border-radius: 25px;
             }
-                .number {
-                    position: absolute;
-                    color: #f2f2f2;
-                    background-color: #9356DC;
-                    border-radius: 50%;
-                    padding: 5px 10px;
-                    margin-right: 530px;
-                    :hover {
-                        color: $color-primary;
-                    }
+                .number-fonction1, .number-fonction2, .number-fonction3 {
+                    height: 100px;
+                    width: 80%;
+                    background-color: #f2f2f2;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 20px 20px 20px 5px;
+                    border-radius: 25px;
                 }
-                    .icone-mobile, .icone-menu, .icone-resto {
-                        display: flex;
-                        align-items: center;
-                        font-size: 20px;
-                        padding-left: 25px;
-                        padding-top: 5px;
-                            :hover {
-                                color: $color-primary;
-                            }
+                    .number {
+                        position: absolute;
+                        color: #f2f2f2;
+                        background-color: #9356DC;
+                        border-radius: 50%;
+                        padding: 5px 10px;
+                        margin-right: 530px;
                     }
-                        p {
+                        .icone-mobile, .icone-menu, .icone-resto {
+                            display: flex;
+                            align-items: center;
                             font-size: 20px;
-                            padding-left: 55px;
-                        }
+                            padding-left: 0;
+                            padding-top: 5px;
+                                h4 {
+                                    color: black;
+                                    font-weight: bold;
+                                    font-size: 20px;
+                                    padding-left: 55px;
+                                }
+                                    :hover {
+                                        color: $color-primary #9356DC;
+                                    }
+                            }
+                            .fa-mobile-alt, .fa-list-ul, .fa-store {
+                                padding-right: 30px;
+                            }
+                                .fa-store, {
+                                    color: $color-primary #9356DC;
+                                    padding-right: 10px;
+                                }
+                                
 }
 
 #restaurants {
@@ -144,17 +148,18 @@ header {
                 border: 5px white solid;
                 border-radius: 30px;
                 box-shadow: 2px 2px 2px #F2F2F2;
-                overflow: hidden;
                 position: relative;
-                margin-top: 60px;
-                margin-bottom: 40px;
+                margin: 60px 20px 40px 0;
             }
             .new {
                 display: flex;
                 background: #99E2D0;
                 color: #2c9c81;
+                border-radius: 3px;
                 position: absolute;
-                margin-left: 360px;
+                padding: 10px;
+                margin-left: 310px;
+                font-weight: bold;
 
             }
                 img {
