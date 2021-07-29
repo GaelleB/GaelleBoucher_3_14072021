@@ -152,16 +152,12 @@ header {
   padding-left: 55px;
 }
 
-#fonction .icone-mobile :hover, #fonction .icone-menu :hover, #fonction .icone-resto :hover {
-  color: #9356DC #9356DC;
-}
-
 #fonction .fa-mobile-alt, #fonction .fa-list-ul, #fonction .fa-store {
   padding-right: 30px;
 }
 
 #fonction .fa-store {
-  color: #9356DC #9356DC;
+  color: #9356DC;
   padding-right: 10px;
 }
 
@@ -276,7 +272,6 @@ footer {
           justify-content: space-evenly;
   height: 100%;
   background-color: #595959;
-  padding: 30px;
 }
 
 footer h2 {
