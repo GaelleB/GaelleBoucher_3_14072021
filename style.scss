@@ -18,7 +18,7 @@ header {
     justify-content: center;
 }
 
-#loc {
+.loc {
     width: 100%;
     $font-family-secondary: 'Roboto', sans-serif;
     display: flex;
@@ -34,7 +34,7 @@ header {
             }
 }
 
-#descrip {
+.descrip {
     width: 100%;
     $font-family-secondary: 'Roboto', sans-serif;
     display: flex;
@@ -57,7 +57,7 @@ header {
             }
 }
 
-#fonction {
+.fonction {
     $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
     height: auto;
@@ -118,7 +118,7 @@ header {
                                 
 }
 
-#restaurants {
+.restaurants {
     $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
     height: auto;

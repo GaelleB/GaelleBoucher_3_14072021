@@ -19,7 +19,7 @@ header {
           justify-content: center;
 }
 
-#loc {
+.loc {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +31,7 @@ header {
   background-color: #D7DBDF;
 }
 
-#loc .lieu {
+.loc .lieu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,11 +40,11 @@ header {
           align-items: center;
 }
 
-#loc .icone-map {
+.loc .icone-map {
   padding-right: 18px;
 }
 
-#descrip {
+.descrip {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,11 +56,11 @@ header {
   background-color: #f2f2f2;
 }
 
-#descrip h2 {
+.descrip h2 {
   font-size: 30px;
 }
 
-#descrip .button {
+.descrip .button {
   border: transparent 1px solid;
   border-radius: 25px;
   padding: 16px;
@@ -73,7 +73,7 @@ header {
           box-shadow: 1px 1px 5px #9e9e9e;
 }
 
-#fonction {
+.fonction {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -85,7 +85,7 @@ header {
   padding-bottom: 45px;
 }
 
-#fonction h2 {
+.fonction h2 {
   font-size: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -96,14 +96,14 @@ header {
   margin-left: 20px;
 }
 
-#fonction .fonctionnement {
+.fonction .fonctionnement {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#fonction .number-fonction1, #fonction .number-fonction2, #fonction .number-fonction3 {
+.fonction .number-fonction1, .fonction .number-fonction2, .fonction .number-fonction3 {
   height: 100px;
   width: 80%;
   background-color: #f2f2f2;
@@ -124,7 +124,7 @@ header {
   border-radius: 25px;
 }
 
-#fonction .number {
+.fonction .number {
   position: absolute;
   color: #f2f2f2;
   background-color: #9356DC;
@@ -133,7 +133,7 @@ header {
   margin-right: 530px;
 }
 
-#fonction .icone-mobile, #fonction .icone-menu, #fonction .icone-resto {
+.fonction .icone-mobile, .fonction .icone-menu, .fonction .icone-resto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,23 +145,23 @@ header {
   padding-top: 5px;
 }
 
-#fonction .icone-mobile h4, #fonction .icone-menu h4, #fonction .icone-resto h4 {
+.fonction .icone-mobile h4, .fonction .icone-menu h4, .fonction .icone-resto h4 {
   color: black;
   font-weight: bold;
   font-size: 20px;
   padding-left: 55px;
 }
 
-#fonction .fa-mobile-alt, #fonction .fa-list-ul, #fonction .fa-store {
+.fonction .fa-mobile-alt, .fonction .fa-list-ul, .fonction .fa-store {
   padding-right: 30px;
 }
 
-#fonction .fa-store {
+.fonction .fa-store {
   color: #9356DC;
   padding-right: 10px;
 }
 
-#restaurants {
+.restaurants {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -182,14 +182,14 @@ header {
   padding-bottom: 25px;
 }
 
-#restaurants h2 {
+.restaurants h2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-left: 20px;
   font-size: 25px;
 }
 
-#restaurants .carte-resto1, #restaurants .carte-resto2, #restaurants .carte-resto3, #restaurants .carte-resto4 {
+.restaurants .carte-resto1, .restaurants .carte-resto2, .restaurants .carte-resto3, .restaurants .carte-resto4 {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -212,7 +212,7 @@ header {
   margin: 60px 20px 40px 0;
 }
 
-#restaurants .new {
+.restaurants .new {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +225,7 @@ header {
   font-weight: bold;
 }
 
-#restaurants img {
+.restaurants img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -234,28 +234,28 @@ header {
   border-radius: 20px 20px 0 0;
 }
 
-#restaurants .titre-lieu-resto {
+.restaurants .titre-lieu-resto {
   color: black;
 }
 
-#restaurants .titre-lieu-resto h3 {
+.restaurants .titre-lieu-resto h3 {
   font-size: 20px;
   padding-left: 20px;
 }
 
-#restaurants .titre-lieu-resto p {
+.restaurants .titre-lieu-resto p {
   color: black;
   font-size: 18px;
   padding: 20px;
   padding-top: 0;
 }
 
-#restaurants .icone-coeur {
+.restaurants .icone-coeur {
   font-size: 20px;
   margin-left: 380px;
 }
 
-#restaurants .icone-coeur :hover {
+.restaurants .icone-coeur :hover {
   color: #FF79DA;
 }
 
