@@ -161,7 +161,7 @@ header {
   padding-right: 10px;
 }
 
-.restaurants {
+#restaurants {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -182,14 +182,14 @@ header {
   padding-bottom: 25px;
 }
 
-.restaurants h2 {
+#restaurants h2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-left: 20px;
   font-size: 25px;
 }
 
-.restaurants .carte-resto1, .restaurants .carte-resto2, .restaurants .carte-resto3, .restaurants .carte-resto4 {
+#restaurants .carte-resto1, #restaurants .carte-resto2, #restaurants .carte-resto3, #restaurants .carte-resto4 {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -212,7 +212,7 @@ header {
   margin: 60px 20px 40px 0;
 }
 
-.restaurants .new {
+#restaurants .new {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +225,7 @@ header {
   font-weight: bold;
 }
 
-.restaurants img {
+#restaurants img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -234,28 +234,28 @@ header {
   border-radius: 20px 20px 0 0;
 }
 
-.restaurants .titre-lieu-resto {
+#restaurants .titre-lieu-resto {
   color: black;
 }
 
-.restaurants .titre-lieu-resto h3 {
+#restaurants .titre-lieu-resto h3 {
   font-size: 20px;
   padding-left: 20px;
 }
 
-.restaurants .titre-lieu-resto p {
+#restaurants .titre-lieu-resto p {
   color: black;
   font-size: 18px;
   padding: 20px;
   padding-top: 0;
 }
 
-.restaurants .icone-coeur {
+#restaurants .icone-coeur {
   font-size: 20px;
   margin-left: 380px;
 }
 
-.restaurants .icone-coeur :hover {
+#restaurants .icone-coeur :hover {
   color: #FF79DA;
 }
 
