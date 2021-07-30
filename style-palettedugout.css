@@ -22,48 +22,6 @@ section .img-titre-coeur {
   width: 100%;
 }
 
-section .img-titre-coeur div img {
-  width: 200px;
-}
-
-section .img-titre-coeur .titre-coeur {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-section .img-titre-coeur .titre-coeur h1 {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-section .menu {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.button {
-  border: transparent 1px solid;
-  border-radius: 25px;
-  padding: 16px;
-  color: white;
-  font-size: 1em;
-  font-weight: 500;
-  margin: 20px;
-  padding-bottom: 20px;
-  background-color: #FF79DA #FF79DA;
-}
-
 footer {
   display: -webkit-box;
   display: -ms-flexbox;

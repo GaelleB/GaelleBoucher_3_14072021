@@ -19,37 +19,6 @@ header {
 
 section .img-titre-coeur {
     width: 100%;
-        div img {
-            width: 200px;
-        }
-            .titre-coeur {
-                display: flex;
-                h1 {
-                    width: 100%;
-                    height: auto;
-                    $font-family-primary: 'Shrikhand', cursive;
-                    display: flex;
-                }
-        }
-}
-
-section .menu {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.button {
-    border: transparent 1px solid;  
-    border-radius: 25px;
-    padding: 16px;
-    color: white;
-    font-size: 1em;
-    font-weight: 500;
-    margin: 20px;
-    padding-bottom: 20px;
-    background-color: $color-secondary #FF79DA;
 }
 
 footer {
