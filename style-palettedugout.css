@@ -22,6 +22,11 @@ section .img-titre-coeur {
   width: 100%;
 }
 
+section .img-titre-coeur img {
+  width: 200px;
+  height: 100px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
