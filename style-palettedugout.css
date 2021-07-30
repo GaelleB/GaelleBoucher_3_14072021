@@ -9,6 +9,9 @@ body {
 
 header {
   width: 100%;
+}
+
+section .img-titre-coeur {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,16 +19,16 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-section .img-titre-coeur {
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section .img-titre-coeur img {
-  width: 200px;
-  height: 100px;
+  width: 550px;
 }
+
+
 
 footer {
   display: -webkit-box;

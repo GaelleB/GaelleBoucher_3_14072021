@@ -13,16 +13,15 @@ body {
 header {
     width: 100%;
     $font-family-primary: 'Shrikhand', cursive;
-    display: flex;
-    flex-direction: row;
 }
 
 section .img-titre-coeur {
-    width: 100%;
-        img {
-            width: 200px;
-            height: 100px;
-        }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+        width: 550px;
+    }
 }
 
 footer {
