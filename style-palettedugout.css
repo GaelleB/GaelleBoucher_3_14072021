@@ -11,24 +11,23 @@ header {
   width: 100%;
 }
 
+header .fa-arrow-left {
+  color: grey;
+}
+
 section .img-titre-coeur {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
 }
 
 section .img-titre-coeur img {
-  width: 550px;
+  width: 200px;
 }
 
-
+section .img-titre-coeur .titre-coeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 footer {
   display: -webkit-box;

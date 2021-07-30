@@ -13,15 +13,19 @@ body {
 header {
     width: 100%;
     $font-family-primary: 'Shrikhand', cursive;
+        .fa-arrow-left {
+            color: grey;
+        }
 }
 
 section .img-titre-coeur {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: 100%;
     img {
-        width: 550px;
+        width: 200px;
     }
+        .titre-coeur {
+            display: flex;
+        }
 }
 
 footer {
