@@ -6,4 +6,120 @@ body {
   padding:  0;
   margin: 0;
 }
+
+header {
+  width: 100%;
+  -o-object-fit:  cover;
+     object-fit:  cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-titre-coeur {
+  width: 100%;
+}
+
+.img-titre-coeur .img-menu {
+  width: 100%;
+  height: 200px;
+}
+
+.titre-coeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titre-coeur .coeurs {
+  font-size: 20px;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button {
+  border: transparent 1px solid;
+  border-radius: 25px;
+  padding: 16px;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 20px;
+  background-color: #FF79DA;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  background-color: #595959;
+}
+
+footer h2 {
+  top: 0;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: white;
+}
+
+footer li {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+footer li a {
+  color: white;
+}
+
+footer li a:link {
+  text-decoration: none;
+}
+
+footer .fa-utensils {
+  padding-right: 20px;
+}
+
+footer .fa-hands-helping {
+  padding-right: 10px;
+}
 /*# sourceMappingURL=style-palettedugout.css.map */
