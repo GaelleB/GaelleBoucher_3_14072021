@@ -21,10 +21,11 @@ header {
 section .img-titre-coeur {
     width: 100%;
     img {
-        width: 200px;
+        width: 100px;
     }
         .titre-coeur {
             display: flex;
+            flex-direction: row;
         }
 }
 

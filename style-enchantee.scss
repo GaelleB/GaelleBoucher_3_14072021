@@ -3,3 +3,71 @@ body {
     padding: 0;
     margin: 0;
 }  
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$font-family-primary: 'Shrikhand', cursive;
+$font-family-secondary: 'Roboto', sans-serif;
+
+body {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}    
+
+header {
+    width: 100%;
+    $font-family-primary: 'Shrikhand', cursive;
+        .fa-arrow-left {
+            color: grey;
+        }
+            .logo-header {
+                display: flex;
+            }
+}
+
+main img {
+    object-fit: cover;
+            width: 100%;
+            height: 800px;
+        }
+
+
+footer {
+    $font-family-secondary: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    background-color: #595959;
+        h2 {
+            top: 0;
+            font-size: 30px;
+            padding-top: 10px;
+            padding-left: 40px;
+            color: white;
+            text-decoration: none;
+        }
+            a:visited {
+                color: white;
+            }
+            li {
+                color: white;
+                list-style: none;
+                text-decoration: none;
+                margin-bottom: 10px;
+                    a {
+                        color: white;
+                    }
+                        a:link {
+                            text-decoration: none;
+                        }
+            }
+            .fa-utensils {
+                padding-right: 20px;
+            }
+            .fa-hands-helping {
+                padding-right: 10px;
+            }
+}
