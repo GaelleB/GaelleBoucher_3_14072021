@@ -32,8 +32,8 @@ header .logo-header {
 main img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 800px;
+  width: 500px;
+  height: 500px;
 }
 
 footer {
