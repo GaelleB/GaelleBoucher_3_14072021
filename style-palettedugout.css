@@ -7,6 +7,14 @@ body {
   margin: 0;
 }
 
+body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding:  0;
+  margin: 0;
+}
+
 header {
   width: 100%;
 }
@@ -15,22 +23,17 @@ header .fa-arrow-left {
   color: grey;
 }
 
-section .img-titre-coeur {
-  width: 100%;
-}
-
-section .img-titre-coeur img {
-  width: 100px;
-}
-
-section .img-titre-coeur .titre-coeur {
+header .logo-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+}
+
+main img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 500px;
+  height: 500px;
 }
 
 footer {

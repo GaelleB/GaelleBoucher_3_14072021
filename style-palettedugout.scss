@@ -1,3 +1,9 @@
+body {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}  
+
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
@@ -16,18 +22,17 @@ header {
         .fa-arrow-left {
             color: grey;
         }
+            .logo-header {
+                display: flex;
+            }
 }
 
-section .img-titre-coeur {
-    width: 100%;
-    img {
-        width: 100px;
-    }
-        .titre-coeur {
-            display: flex;
-            flex-direction: row;
-        }
+main img {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
 }
+
 
 footer {
     $font-family-secondary: 'Roboto', sans-serif;
