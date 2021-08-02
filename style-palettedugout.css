@@ -68,7 +68,7 @@ main img {
   padding: 10px 0 0 20px;
 }
 
-section .menu {
+.menu {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -78,9 +78,70 @@ section .menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #f2f2f2;
+}
+
+.menu .entrees {
+  width: 25%;
+  height: auto;
+}
+
+.menu .entrees h2 {
+  text-align: center;
+}
+
+.menu .entrees .assiete-entree {
+  background-color: white;
+  border: white 2px solid;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.menu .entrees .assiete-entree h3, .menu .entrees .assiete-entree p {
+  padding-left: 20px;
+}
+
+.menu .plats {
+  width: 25%;
+  height: auto;
+}
+
+.menu .plats h2 {
+  text-align: center;
+}
+
+.menu .plats .assiete-plat {
+  background-color: white;
+  border: white 2px solid;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.menu .plats .assiete-plat h3, .menu .plats .assiete-plat p {
+  padding-left: 20px;
+}
+
+.menu .desserts {
+  width: 25%;
+  height: auto;
+}
+
+.menu .desserts h2 {
+  text-align: center;
+}
+
+.menu .desserts .assiete-dessert {
+  background-color: white;
+  border: white 2px solid;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.menu .desserts .assiete-dessert h3, .menu .desserts .assiete-dessert p {
+  padding-left: 20px;
 }
 
 footer {
