@@ -222,3 +222,61 @@ footer {
                     padding-right: 10px;
             }
 }
+
+/*Version tablette*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*Version mobile*/
+
+@media screen and (max-width:767px) {
+
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+    .titre-coeur h1 {
+        font-size: 25px;
+        .fa-heart {
+            font-size: 20px;
+        }
+    }
+    .menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+            .entrees {
+                width: 100%;
+                    h2 {
+                        display: block;
+                        font-size: 20px;
+                    }
+                .assiete-entree {
+                    width: 100%;
+                        h3 {
+                            font-size: 20px;
+                        }
+                            .p-prix {
+                                width: 100%;
+                                p {
+                                    font-size: 18px;
+                                }
+                                    span {
+                                        font-size: 18px;
+                                    }
+                            }
+                }
+            }
+    }
+}

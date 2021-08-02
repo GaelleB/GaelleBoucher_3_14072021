@@ -326,4 +326,63 @@ footer .fa-utensils {
 footer .fa-hands-helping {
   padding-right: 10px;
 }
+
+/*Version tablette*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*Version mobile*/
+@media screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+  header {
+    width: 100%;
+    height: auto;
+  }
+  .titre-coeur h1 {
+    font-size: 25px;
+  }
+  .titre-coeur h1 .fa-heart {
+    font-size: 20px;
+  }
+  .menu {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu .entrees {
+    width: 100%;
+  }
+  .menu .entrees h2 {
+    display: block;
+    font-size: 20px;
+  }
+  .menu .entrees .assiete-entree {
+    width: 100%;
+  }
+  .menu .entrees .assiete-entree h3 {
+    font-size: 20px;
+  }
+  .menu .entrees .assiete-entree .p-prix {
+    width: 100%;
+  }
+  .menu .entrees .assiete-entree .p-prix p {
+    font-size: 18px;
+  }
+  .menu .entrees .assiete-entree .p-prix span {
+    font-size: 18px;
+  }
+}
 /*# sourceMappingURL=style-palettedugout.css.map */
