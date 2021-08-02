@@ -7,8 +7,8 @@ body {
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$font-family-primary: 'Shrikhand', cursive;
-$font-family-secondary: 'Roboto', sans-serif;
+$font-family-primary: 'Shrikhand', cursive; /*Logo et Titres*/
+$font-family-secondary: 'Roboto', sans-serif; /*Texte*/
 
 body {
     flex: 1;
@@ -18,7 +18,6 @@ body {
 
 header {
     width: 100%;
-    $font-family-primary: 'Shrikhand', cursive;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,6 +28,7 @@ header {
             color: grey;
         }
             .logo-header {
+                $font-family-primary: 'Shrikhand', cursive;
                 padding-right: 850px;
             }
 }
@@ -45,6 +45,7 @@ main img {
     justify-content: center;
     align-items: center;
         h1 {
+            $font-family-primary: 'Shrikhand', cursive;
             font-size: 45px;
         }
             .fa-heart {
@@ -64,6 +65,7 @@ main img {
             width: 25%;
             height: auto;
                 h2 {
+                    $font-family-primary: 'Shrikhand', cursive;
                     font-size: 25px;
                     text-align: center;
                 }
@@ -78,6 +80,7 @@ main img {
                         flex-direction: column;
                         justify-content: space-evenly;
                         h3 {
+                            $font-family-primary: 'Shrikhand', cursive;
                             font-size: 23px;
                             padding-left: 20px;
                         }
@@ -101,6 +104,7 @@ main img {
                 width: 25%;
                 height: auto;
                     h2 {
+                        $font-family-primary: 'Shrikhand', cursive;
                         font-size: 25px;
                         text-align: center;
                     }
@@ -115,6 +119,7 @@ main img {
                             flex-direction: column;
                             justify-content: space-evenly;
                             h3 {
+                                $font-family-primary: 'Shrikhand', cursive;
                                 font-size: 23px;
                                 padding-left: 20px;
                             }
@@ -138,6 +143,7 @@ main img {
                     width: 25%;
                     height: auto;
                         h2 {
+                            $font-family-primary: 'Shrikhand', cursive;
                             font-size: 25px;
                             text-align: center;
                         }
@@ -152,6 +158,7 @@ main img {
                                 flex-direction: column;
                                 justify-content: space-evenly;
                                 h3 {
+                                    $font-family-primary: 'Shrikhand', cursive;
                                     font-size: 23px;
                                     padding-left: 20px;
                                 }
@@ -193,6 +200,7 @@ footer {
     height: 100%;
     background-color: #595959;
         h2 {
+            $font-family-primary: 'Shrikhand', cursive;
             top: 0;
             font-size: 30px;
             padding-top: 10px;
@@ -226,9 +234,11 @@ footer {
 /*Version tablette*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    
     body {
-        width: 100%;
-        height: auto;
+        flex: 1;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -237,33 +247,55 @@ footer {
 @media screen and (max-width:767px) {
 
     body {
-        width: 100%;
-        height: auto;
+        flex: 1;
+        padding: 0;
+        margin: 0;
     }
 
     header {
         width: 100%;
         height: auto;
     }
-    .titre-coeur h1 {
-        font-size: 25px;
-        .fa-heart {
-            font-size: 20px;
-        }
+    
+    main img {
+        object-fit: cover;
     }
+
+    .titre-coeur {
+        width: 100%;
+        background-color: #f2f2f2;
+        border-radius: 30px 30px 0 0;
+            h1 {
+                font-size: 25px;
+                .coeur {
+                    font-size: 25px;
+                }
+            }
+    }
+
+    .coeur {
+        font-size: 5px;
+    }
+
     .menu {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
+        background-color: #f2f2f2;
+        margin-bottom: 30px;
             .entrees {
                 width: 100%;
+                margin-bottom: 25px;
                     h2 {
-                        display: block;
+                        display: flex;
+                        padding-left: 15px;
                         font-size: 20px;
                     }
                 .assiete-entree {
                     width: 100%;
+                    height: 90px;
+                    margin: 20px 0;
                         h3 {
                             font-size: 20px;
                         }
@@ -278,5 +310,67 @@ footer {
                             }
                 }
             }
+                .plats {
+                    width: 100%;
+                    margin-bottom: 25px;
+                        h2 {
+                            display: flex;
+                            padding-left: 15px;
+                            font-size: 20px;
+                        }
+                    .assiete-plat {
+                        width: 100%;
+                        height: 90px;
+                        margin: 20px 0;
+                            h3 {
+                                font-size: 20px;
+                            }
+                                .p-prix {
+                                    width: 100%;
+                                    p {
+                                        font-size: 18px;
+                                    }
+                                        span {
+                                            font-size: 18px;
+                                        }
+                                }
+                    }
+                }
+                    .desserts {
+                        width: 100%;
+                        margin-bottom: 25px;
+                            h2 {
+                                display: flex;
+                                padding-left: 15px;
+                                font-size: 20px;
+                            }
+                        .assiete-dessert {
+                            width: 100%;
+                            height: 90px;
+                            margin: 20px 0;
+                                h3 {
+                                    font-size: 20px;
+                                }
+                                    .p-prix {
+                                        width: 100%;
+                                        p {
+                                            font-size: 18px;
+                                        }
+                                            span {
+                                                font-size: 18px;
+                                            }
+                                    }
+                        }
+                    }
+    }
+    button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    footer {
+        width: 100%;
+        height: auto;
     }
 }
