@@ -19,20 +19,24 @@ body {
 header {
     width: 100%;
     $font-family-primary: 'Shrikhand', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
         .fa-arrow-left {
             color: grey;
-            align-items: center;
         }
             .logo-header {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                padding-right: 850px;
             }
 }
 
 main img {
+    object-fit: cover;
     width: 100%;
-    height: 700px;
+    height: 400px;
 }
 
 .titre-coeur {
@@ -41,10 +45,10 @@ main img {
     justify-content: center;
     align-items: center;
         h1 {
-            font-size: 40px;
+            font-size: 45px;
         }
             .fa-heart {
-                font-size: 20px;
+                font-size: 30px;
                 padding: 10px 0 0 20px;
             }
 }
@@ -60,50 +64,125 @@ main img {
             width: 25%;
             height: auto;
                 h2 {
+                    font-size: 25px;
                     text-align: center;
                 }
                     .assiete-entree {
+                        width: 100%;
+                        height: auto;
                         background-color: white;
                         border: white 2px solid;
                         border-radius: 20px;
                         margin-bottom: 20px;
-                        h3, p {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        h3 {
+                            font-size: 23px;
                             padding-left: 20px;
                         }
+                            .p-prix {
+                                font-size: 21px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                    p {
+                                        padding-left: 20px;
+                                    }
+                                span {
+                                    font-weight: bold;
+                                    padding-top: 16px;
+                                    padding-right: 20px;
+                                }    
+                            }
                     }
         }
             .plats {
                 width: 25%;
                 height: auto;
                     h2 {
+                        font-size: 25px;
                         text-align: center;
                     }
                         .assiete-plat {
+                            width: 100%;
+                            height: auto;
                             background-color: white;
                             border: white 2px solid;
                             border-radius: 20px;
                             margin-bottom: 20px;
-                            h3, p {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            h3 {
+                                font-size: 23px;
                                 padding-left: 20px;
                             }
+                                .p-prix {
+                                    font-size: 21px;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                        p {
+                                            padding-left: 20px;
+                                        }
+                                    span {
+                                        font-weight: bold;
+                                        padding-top: 16px;
+                                        padding-right: 20px;
+                                    }    
+                                }
                         }
             }
                 .desserts {
                     width: 25%;
                     height: auto;
                         h2 {
+                            font-size: 25px;
                             text-align: center;
                         }
                             .assiete-dessert {
+                                width: 100%;
+                                height: auto;
                                 background-color: white;
                                 border: white 2px solid;
                                 border-radius: 20px;
                                 margin-bottom: 20px;
-                                h3, p {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+                                h3 {
+                                    font-size: 23px;
                                     padding-left: 20px;
                                 }
+                                    .p-prix {
+                                        font-size: 21px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-between;
+                                            p {
+                                                padding-left: 20px;
+                                            }
+                                        span {
+                                            font-weight: bold;
+                                            padding-top: 16px;
+                                            padding-right: 20px;
+                                        }    
+                                    }
                             }
                 }
+}
+
+button {
+    border: transparent 1px solid;  
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 50px 900px;
+    background-color: $color-secondary;
+    box-shadow: 1px 1px 5px #9e9e9e;
 }
 
 footer {
