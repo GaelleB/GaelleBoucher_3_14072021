@@ -1,12 +1,6 @@
-body {
-    flex: 1;
-    padding: 0;
-    margin: 0;
-}  
-
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+$violet: #9356DC;
+$rose: #FF79DA;
+$menthe: #99E2D0;
 $font-family-primary: 'Shrikhand', cursive; /*Logo et Titres*/
 $font-family-secondary: 'Roboto', sans-serif; /*Texte*/
 
@@ -51,9 +45,6 @@ main img {
             .fa-heart {
                 font-size: 30px;
                 padding: 10px 0 0 20px;
-                :hover {
-                    transition: $color-primary 2s $color-secondary 4s ease-in .5s;
-                }
             }
 }
 
@@ -191,7 +182,7 @@ button {
     color: white;
     font-size: 15px;
     font-weight: bold;
-    background-color: $color-secondary;
+    background-color: $rose#FF79DA;;
     box-shadow: 2px 2px 5px #9e9e9e;
 }
 
@@ -347,7 +338,7 @@ footer {
         color: white;
         font-size: 15px;
         font-weight: bold;
-        background-color: $color-secondary;
+        background-color: $rose #FF79DA;;
         box-shadow: 2px 2px 5px #9e9e9e;
     }
     
@@ -488,7 +479,7 @@ footer {
         color: white;
         font-size: 15px;
         font-weight: bold;
-        background-color: $color-secondary;
+        background-color: $rose #FF79DA;;
         box-shadow: 2px 2px 5px #9e9e9e;
     }
     

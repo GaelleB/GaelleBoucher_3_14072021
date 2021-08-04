@@ -124,6 +124,10 @@ header {
   border-radius: 25px;
 }
 
+.fonction .number-fonction1 :hover, .fonction .number-fonction2 :hover, .fonction .number-fonction3 :hover {
+  background-color: #9356DC;
+}
+
 .fonction .number {
   position: absolute;
   color: #f2f2f2;
