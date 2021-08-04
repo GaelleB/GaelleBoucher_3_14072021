@@ -241,30 +241,94 @@ footer {
 
     .fonctionnement {
         width: 100%;
-        .fonction {
-            display: flex;
-            flex-direction: row;
-                .inside-fonction {
-                    width: 100%;
-                    height: 80px;
-                    margin: 10px 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+        h2 {
+            padding: 16px 20px 0 0;
+        }
+            .fonction {
+                display: flex;
+                flex-direction: row;
+                    .inside-fonction {
+                        width: 40%;
+                        height: 80px;
+                        margin: 10px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 20px;
+                            .number {
+                                margin-top: 16px;
+                                margin-right: 210px;
+                            }
+                            .icone-titre {
+                                padding-right: 5px;
+                                    i {
+                                        font-size: 18px;
+                                    }
+                                        h4 {
+                                            padding-top: 3px;
+                                            font-size: 12px;
+                                        }
+                            }
+                    }
+            }
+
+    }
+
+    #restaurants {
+        $font-family-secondary: 'Roboto', sans-serif;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 15px;
+        background-color: #f2f2f2;
+        padding: 20px 0;
+            h2 {
+                font-size: 25px;
+            }    
+                .carte-resto {
+                    height: 300px;
+                    width: 35%;
+                    border: 5px white solid;
+                    border-radius: 30px;
+                    box-shadow: 2px 2px 2px #F2F2F2;
+                    margin-left: 40px;
                     margin-right: 20px;
-                        .number {
-                            margin-top: 20px;
-                            margin-right: 200px;
-                        }
-                        .icone-titre {
-                            padding-right: 18px;
-                                h4 {
-                                    font-size: 12px;
-                                }
+                    margin-top: 40px;
+                        .new {
+                            background: #99E2D0;
+                            color: #2c9c81;
+                            border-radius: 3px;
+                            position: absolute;
+                            padding: 8px;
+                            margin-left: 270px;
+                            font-weight: bold;
                         }
                 }
-        }
+                    .titre-lieu-resto {
+                        width: 100%;
+                        background-color: white;
+                        padding: 20px;
+                            h3 {
+                                font-size: 18px;
+                            }
+                                .p-coeur {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                        p {
+                                            font-size: 15px;
+                                        }
+                                            .fa-heart {
+                                                font-size: 15px;
+                                                padding-left: 180px;
+                                            }
+                                }
+                    }
 
+                        
     }
 }
 
