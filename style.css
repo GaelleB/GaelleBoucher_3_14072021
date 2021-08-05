@@ -1,17 +1,6 @@
 @charset "UTF-8";
 /*Logo et Titres*/
 /*Texte*/
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-color: white;
-  height: 100%;
-}
-
 #spinner-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +8,7 @@ body {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: grey;
+  background-color: #99E2D0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -94,10 +83,10 @@ body {
 
 .thingtohide {
   /* Firefox */
-  -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+  -webkit-animation: cssAnimation 0s ease-in 2s forwards;
   /* Safari and Chrome */
   /* Opera */
-  animation: cssAnimation 0s ease-in 5s forwards;
+  animation: cssAnimation 0s ease-in 2s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -211,22 +200,14 @@ header {
 .fonctionnement h2 {
   font-size: 25px;
   text-align: center;
-  padding-top: 30px 50px 0 0;
+  padding: 30px 50px 0 0;
   margin-left: 20px;
 }
 
 .fonctionnement .fonction {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .fonctionnement .fonction :hover {
@@ -578,48 +559,152 @@ footer .fa-hands-helping {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (max-width: 767px) {
   body {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding:  0;
-    margin: 0;
+    width: 100%;
+    height: auto;
   }
   .fonctionnement {
     width: 100%;
-    display: block;
-  }
-  .fonctionnement .fonction .inside-fonction {
-    width: 100%;
-    height: 80px;
-    margin: 10px 0;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .fonctionnement .fonction .inside-fonction .number {
-    margin-top: 20px;
-    margin-right: 350px;
+  .fonctionnement h2 {
+    font-size: 25px;
+    text-align: center;
   }
-  .fonctionnement .fonction .inside-fonction .icone-titre {
-    padding-right: 20px;
+  .fonctionnement .fonction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .fonctionnement .fonction .inside-fonction .icone-titre h4 {
-    font-size: 15px;
+  .fonctionnement .fonction :hover {
+    background-color: #eddcf7;
+  }
+  .fonctionnement .inside-fonction {
+    height: 100px;
+    width: 150px;
+    background-color: #f2f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 40px 20px 5px;
+    border-radius: 25px;
   }
   #restaurants {
-    height: auto;
     width: 100%;
-    display: block;
-    margin: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px 0;
+  }
+  #restaurants h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 20px;
+    font-size: 25px;
   }
   #restaurants .carte-resto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 400px;
     width: 100%;
+    border: 5px white solid;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 2px #F2F2F2;
+            box-shadow: 2px 2px 2px #F2F2F2;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 5px 20px 0;
+  }
+  #restaurants .carte-resto .new {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #99E2D0;
+    color: #2c9c81;
+    border-radius: 3px;
+    position: absolute;
+    padding: 10px;
+    margin-left: 280px;
+    font-weight: bold;
+  }
+  #restaurants .carte-resto img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+  }
+  #restaurants .titre-lieu-resto {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding: 20px;
+  }
+  #restaurants .titre-lieu-resto h3 {
+    font-size: 22px;
+  }
+  #restaurants .titre-lieu-resto .p-coeur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #restaurants .titre-lieu-resto .p-coeur p {
+    font-size: 18px;
+  }
+  #restaurants .titre-lieu-resto .p-coeur .fa-heart {
+    padding-left: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
