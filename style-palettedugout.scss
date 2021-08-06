@@ -174,15 +174,15 @@ main img {
                 }
 }
 
-button {
+.button-command {
     border: transparent 1px solid;  
     border-radius: 25px;
     padding: 15px 30px;
-    margin: 20px 900px;
+    margin: 20px 100px;
     color: white;
     font-size: 15px;
     font-weight: bold;
-    background-color: $rose#FF79DA;
+    background-color: $rose;
     box-shadow: 2px 2px 5px #9e9e9e;
 }
 
@@ -330,16 +330,16 @@ footer {
                         }
                     }
     }
-    button {
-        border: transparent 1px solid;  
-        border-radius: 25px;
-        padding: 15px 30px;
-        margin: 20px 400px;
-        color: white;
-        font-size: 15px;
-        font-weight: bold;
-        background-color: $rose #FF79DA;;
-        box-shadow: 2px 2px 5px #9e9e9e;
+    .button-command {
+            border: transparent 1px solid;  
+            border-radius: 25px;
+            padding: 15px 30px;
+            margin: 20px 100px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: $rose;
+            box-shadow: 2px 2px 5px #9e9e9e;
     }
     
     footer {
@@ -358,7 +358,7 @@ footer {
     }
 
     header {
-        width: 100%;
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -376,7 +376,6 @@ footer {
     }
 
     .titre-coeur {
-        width: 100%;
         background-color: #f2f2f2;
         border-radius: 30px 30px 0 0;
             h1 {
@@ -389,28 +388,26 @@ footer {
     }
 
     .menu {
-        width: 100%;
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: column;
         background-color: #f2f2f2;
         margin-bottom: 30px;
             .entrees {
-                width: 100%;
+                width: 95%;
                 margin-bottom: 25px;
                     h2 {
                         display: flex;
                         padding-left: 15px;
                         font-size: 20px;
+                        text-decoration: underline $menthe 4px;
                     }
                 .assiete-entree {
-                    width: 100%;
-                    height: 90px;
                         h3 {
                             font-size: 18px;
                         }
                             .p-prix {
-                                width: 100%;
                                 p {
                                     font-size: 16px;
                                 }
@@ -421,21 +418,19 @@ footer {
                 }
             }
                 .plats {
-                    width: 100%;
+                    width: 95%;
                     margin-bottom: 25px;
                         h2 {
                             display: flex;
                             padding-left: 15px;
                             font-size: 20px;
+                            text-decoration: underline $menthe 4px;
                         }
                     .assiete-plat {
-                        width: 100%;
-                        height: 90px;
                             h3 {
                                 font-size: 18px;
                             }
                                 .p-prix {
-                                    width: 100%;
                                     p {
                                         font-size: 16px;
                                     }
@@ -446,21 +441,19 @@ footer {
                     }
                 }
                     .desserts {
-                        width: 100%;
+                        width: 95%;
                         margin-bottom: 25px;
                             h2 {
                                 display: flex;
                                 padding-left: 15px;
                                 font-size: 20px;
+                                text-decoration: underline $menthe 4px;
                             }
                         .assiete-dessert {
-                            width: 100%;
-                            height: 90px;
                                 h3 {
                                     font-size: 18px;
                                 }
                                     .p-prix {
-                                        width: 100%;
                                         p {
                                             font-size: 16px;
                                         }
@@ -471,7 +464,7 @@ footer {
                         }
                     }
     }
-    button {
+    .button-command {
         border: transparent 1px solid;  
         border-radius: 25px;
         padding: 15px 30px;
@@ -481,10 +474,10 @@ footer {
         font-weight: bold;
         background-color: $rose;
         box-shadow: 2px 2px 5px #9e9e9e;
-    }
+}
     
     footer {
-        width: 100%;
+        width: auto;
         height: auto;
     }
 }
