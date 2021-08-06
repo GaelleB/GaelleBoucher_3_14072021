@@ -10,7 +10,8 @@ body {
 }
 
 header {
-  width: 100%;
+  width: auto;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,17 +25,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
 }
 
 header .fa-arrow-left {
-  color: grey;
+  left: 0;
 }
 
 header .logo-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-right: 850px;
 }
 
 main img {
@@ -333,14 +331,27 @@ footer .fa-hands-helping {
     margin: 0;
   }
   header {
-    width: 100%;
+    width: auto;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .fa-arrow-left {
-    padding-left: 25px;
+    left: 0;
   }
   header .logo-header {
-    padding-left: 380px;
+    padding-right: 390px;
   }
   .menu {
     width: 100%;
@@ -451,7 +462,7 @@ footer .fa-hands-helping {
     border: transparent 1px solid;
     border-radius: 25px;
     padding: 15px 30px;
-    margin: 20px 100px;
+    margin: 20px 430px;
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -486,12 +497,15 @@ footer .fa-hands-helping {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .fa-arrow-left {
-    padding-left: 25px;
+    left: 0;
   }
   header .logo-header {
-    padding-left: 50px;
+    padding-right: 70px;
   }
   main img {
     -o-object-fit: cover;

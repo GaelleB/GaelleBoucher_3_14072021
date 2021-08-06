@@ -11,19 +11,17 @@ body {
 }    
 
 header {
-    width: 100%;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-
         .fa-arrow-left {
-            color: grey;
+            left: 0;
         }
             .logo-header {
-                $font-family-primary: 'Shrikhand', cursive;
-                display: flex;
+                padding-right: 850px;
             }
 }
 
@@ -236,14 +234,18 @@ footer {
     }
 
     header {
-        width: 100%;
+        width: auto;
         height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
             .fa-arrow-left {
-                padding-left: 25px;
+                left: 0;
             }
-            .logo-header {
-                padding-left: 380px;
-            }
+                .logo-header {
+                    padding-right: 390px;
+                }
     }
 
     .menu {
@@ -334,7 +336,7 @@ footer {
             border: transparent 1px solid;  
             border-radius: 25px;
             padding: 15px 30px;
-            margin: 20px 100px;
+            margin: 20px 430px;
             color: white;
             font-size: 15px;
             font-weight: bold;
@@ -363,12 +365,13 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
             .fa-arrow-left {
-                padding-left: 25px;
+                left: 0;
             }
-            .logo-header {
-                padding-left: 50px;
-            }
+                .logo-header {
+                    padding-right: 70px;
+                }
     }
     
     main img {
