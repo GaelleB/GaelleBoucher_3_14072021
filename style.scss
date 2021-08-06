@@ -162,7 +162,7 @@ header {
             }
                 .inside-fonction {
                     height: 100px;
-                    width: 420px;
+                    width: 430px;
                     background-color: #f2f2f2;
                     display: flex;
                     flex-direction: row;
@@ -182,20 +182,19 @@ header {
                         .icone-titre {
                             display: flex;
                             align-items: center;
-                            font-size: 20px;
                                 h4 {
                                     color: black;
                                     font-weight: bold;
-                                    font-size: 20px;
-                                    padding-left: 35px;
+                                    font-size: 16px;
+                                    padding-right: 15px;
                                 }
-                            }
+                        }
                             .fa-mobile-alt, .fa-list-ul, .fa-store {
-                                padding-left: 60px;
+                                padding-left: 30px;
+                                padding-right: 30px;
                             }
                                 .fa-store {
                                     color: $violet;
-                                    padding-right: 10px;
                                 }
                                 
 }
@@ -322,13 +321,13 @@ footer {
     .fonctionnement {
         width: 100%;
         h2 {
-            padding: 16px 20px 0 0;
+            padding: 16px 30px 0 0;
         }
             .fonction {
                 display: flex;
                 flex-direction: row;
                     .inside-fonction {
-                        width: 40%;
+                        width: auto;
                         height: 80px;
                         margin: 10px 0;
                         display: flex;
@@ -341,7 +340,7 @@ footer {
                             }
                             .icone-titre {
                                 padding-right: 5px;
-                                    i {
+                                .fa-mobile-alt, .fa-list-ul, .fa-store {
                                         font-size: 18px;
                                     }
                                         h4 {
@@ -353,6 +352,7 @@ footer {
             }
 
     }
+
 
     #restaurants {
         $font-family-secondary: 'Roboto', sans-serif;
