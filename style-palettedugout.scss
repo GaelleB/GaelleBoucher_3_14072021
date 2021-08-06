@@ -36,6 +36,7 @@ main img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-decoration: underline $violet;
         h1 {
             $font-family-primary: 'Shrikhand', cursive;
             font-size: 45px;
@@ -60,6 +61,7 @@ main img {
                     $font-family-primary: 'Shrikhand', cursive;
                     font-size: 25px;
                     text-align: center;
+                    text-decoration: underline $rose;
                 }
                     .assiete-entree {
                         width: 100%;
@@ -99,6 +101,7 @@ main img {
                         $font-family-primary: 'Shrikhand', cursive;
                         font-size: 25px;
                         text-align: center;
+                        text-decoration: underline $rose;
                     }
                         .assiete-plat {
                             width: 100%;
@@ -138,6 +141,7 @@ main img {
                             $font-family-primary: 'Shrikhand', cursive;
                             font-size: 25px;
                             text-align: center;
+                            text-decoration: underline $rose;
                         }
                             .assiete-dessert {
                                 width: 100%;
@@ -381,6 +385,7 @@ footer {
     .titre-coeur {
         background-color: #f2f2f2;
         border-radius: 30px 30px 0 0;
+        text-decoration: none;
             h1 {
                 font-family: $font-family-primary;
                 font-size: 35px;
