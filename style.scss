@@ -265,6 +265,13 @@ header {
                                         }
                                             .fa-heart {
                                                 padding-left: 200px;
+                                                font-weight: bold;
+                                                :hover {
+                                                    color: $violet;
+                                                    border-radius: 50%;
+                                                    padding:.2em;
+                                                    transition: color 0.1s ease-out;
+                                                }
                                             }
                                 }
                     }
