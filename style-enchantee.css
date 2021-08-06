@@ -31,10 +31,6 @@ header .fa-arrow-left {
   color: grey;
 }
 
-header .logo-header {
-  padding-right: 850px;
-}
-
 main img {
   -o-object-fit: cover;
      object-fit: cover;

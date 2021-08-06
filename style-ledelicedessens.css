@@ -32,7 +32,9 @@ header .fa-arrow-left {
 }
 
 header .logo-header {
-  padding-right: 850px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main img {
