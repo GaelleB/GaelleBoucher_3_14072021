@@ -60,7 +60,6 @@ main img {
                     $font-family-primary: 'Shrikhand', cursive;
                     font-size: 25px;
                     text-align: center;
-                    text-decoration: underline $menthe;
                 }
                     .assiete-entree {
                         width: 100%;
@@ -100,7 +99,6 @@ main img {
                         $font-family-primary: 'Shrikhand', cursive;
                         font-size: 25px;
                         text-align: center;
-                        text-decoration: underline $menthe;
                     }
                         .assiete-plat {
                             width: 100%;
@@ -140,7 +138,6 @@ main img {
                             $font-family-primary: 'Shrikhand', cursive;
                             font-size: 25px;
                             text-align: center;
-                            text-decoration: underline $menthe;
                         }
                             .assiete-dessert {
                                 width: 100%;
@@ -402,8 +399,7 @@ footer {
         background-color: #f2f2f2;
         margin-bottom: 30px;
             .entrees {
-                width: 95%;
-                margin-bottom: 25px;
+                width: 97%;
                     h2 {
                         display: flex;
                         padding-left: 15px;
@@ -411,6 +407,7 @@ footer {
                         text-decoration: underline $menthe 4px;
                     }
                 .assiete-entree {
+                    margin-left: 3px;
                         h3 {
                             font-size: 18px;
                         }
@@ -425,8 +422,7 @@ footer {
                 }
             }
                 .plats {
-                    width: 95%;
-                    margin-bottom: 25px;
+                    width: 97%;
                         h2 {
                             display: flex;
                             padding-left: 15px;
@@ -434,6 +430,7 @@ footer {
                             text-decoration: underline $menthe 4px;
                         }
                     .assiete-plat {
+                        margin-left: 3px;
                             h3 {
                                 font-size: 18px;
                             }
@@ -448,8 +445,7 @@ footer {
                     }
                 }
                     .desserts {
-                        width: 95%;
-                        margin-bottom: 25px;
+                        width: 97%;
                             h2 {
                                 display: flex;
                                 padding-left: 15px;
@@ -457,6 +453,7 @@ footer {
                                 text-decoration: underline $menthe 4px;
                             }
                         .assiete-dessert {
+                            margin-left: 3px;
                                 h3 {
                                     font-size: 18px;
                                 }
