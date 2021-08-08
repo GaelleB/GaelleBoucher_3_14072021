@@ -114,6 +114,7 @@ main img {
 
 .menu .entrees .assiete-entree h3 {
   font-size: 23px;
+  margin-top: 5px;
   padding-left: 20px;
 }
 
@@ -132,12 +133,14 @@ main img {
 }
 
 .menu .entrees .assiete-entree .p-prix p {
+  margin-top: 0;
+  margin-bottom: 5px;
   padding-left: 20px;
 }
 
 .menu .entrees .assiete-entree .p-prix span {
   font-weight: bold;
-  padding-top: 16px;
+  margin-top: 0;
   padding-right: 20px;
 }
 
@@ -172,6 +175,7 @@ main img {
 
 .menu .plats .assiete-plat h3 {
   font-size: 23px;
+  margin-top: 5px;
   padding-left: 20px;
 }
 
@@ -190,12 +194,14 @@ main img {
 }
 
 .menu .plats .assiete-plat .p-prix p {
+  margin-top: 0;
+  margin-bottom: 5px;
   padding-left: 20px;
 }
 
 .menu .plats .assiete-plat .p-prix span {
   font-weight: bold;
-  padding-top: 16px;
+  margin-top: 0;
   padding-right: 20px;
 }
 
@@ -230,6 +236,7 @@ main img {
 
 .menu .desserts .assiete-dessert h3 {
   font-size: 23px;
+  margin-top: 5px;
   padding-left: 20px;
 }
 
@@ -248,12 +255,14 @@ main img {
 }
 
 .menu .desserts .assiete-dessert .p-prix p {
+  margin-top: 0;
+  margin-bottom: 5px;
   padding-left: 20px;
 }
 
 .menu .desserts .assiete-dessert .p-prix span {
   font-weight: bold;
-  padding-top: 16px;
+  margin-top: 0;
   padding-right: 20px;
 }
 
@@ -356,21 +365,22 @@ footer .fa-hands-helping {
   .menu {
     width: 100%;
     height: auto;
-    background-color: #f2f2f2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 30px;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
   }
   .menu .entrees {
     width: 100%;
+    margin-right: 15px;
     margin-bottom: 25px;
   }
   .menu .entrees h2 {
@@ -381,20 +391,21 @@ footer .fa-hands-helping {
     height: auto;
   }
   .menu .entrees .assiete-entree h3 {
-    font-size: 18px;
+    font-size: 15px;
   }
   .menu .entrees .assiete-entree .p-prix {
     width: 100%;
   }
   .menu .entrees .assiete-entree .p-prix p {
-    font-size: 15px;
+    font-size: 12px;
   }
   .menu .entrees .assiete-entree .p-prix span {
-    font-size: 15px;
+    font-size: 12px;
   }
   .menu .plats {
     width: 100%;
     margin-bottom: 25px;
+    margin-right: 15px;
   }
   .menu .plats h2 {
     display: -webkit-box;
@@ -414,16 +425,16 @@ footer .fa-hands-helping {
     height: auto;
   }
   .menu .plats .assiete-plat h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .menu .plats .assiete-plat .p-prix {
     width: 100%;
   }
   .menu .plats .assiete-plat .p-prix p {
-    font-size: 18px;
+    font-size: 12px;
   }
   .menu .plats .assiete-plat .p-prix span {
-    font-size: 18px;
+    font-size: 12px;
   }
   .menu .desserts {
     width: 100%;
@@ -447,16 +458,16 @@ footer .fa-hands-helping {
     height: auto;
   }
   .menu .desserts .assiete-dessert h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .menu .desserts .assiete-dessert .p-prix {
     width: 100%;
   }
   .menu .desserts .assiete-dessert .p-prix p {
-    font-size: 18px;
+    font-size: 12px;
   }
   .menu .desserts .assiete-dessert .p-prix span {
-    font-size: 18px;
+    font-size: 12px;
   }
   .button-command {
     border: transparent 1px solid;
@@ -472,6 +483,7 @@ footer .fa-hands-helping {
   }
   footer {
     width: 100%;
+    margin-top: 20px;
   }
 }
 

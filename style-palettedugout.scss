@@ -74,6 +74,7 @@ main img {
                         h3 {
                             $font-family-primary: 'Shrikhand', cursive;
                             font-size: 23px;
+                            margin-top: 5px;
                             padding-left: 20px;
                         }
                             .p-prix {
@@ -82,13 +83,15 @@ main img {
                                 flex-direction: row;
                                 justify-content: space-between;
                                     p {
+                                        margin-top: 0;
+                                        margin-bottom: 5px;
                                         padding-left: 20px;
                                     }
-                                span {
-                                    font-weight: bold;
-                                    padding-top: 16px;
-                                    padding-right: 20px;
-                                }    
+                                        span {
+                                            font-weight: bold;
+                                            margin-top: 0;
+                                            padding-right: 20px;
+                                        }   
                             }
                     }
         }
@@ -113,6 +116,7 @@ main img {
                             h3 {
                                 $font-family-primary: 'Shrikhand', cursive;
                                 font-size: 23px;
+                                margin-top: 5px;
                                 padding-left: 20px;
                             }
                                 .p-prix {
@@ -121,13 +125,15 @@ main img {
                                     flex-direction: row;
                                     justify-content: space-between;
                                         p {
+                                            margin-top: 0;
+                                            margin-bottom: 5px;
                                             padding-left: 20px;
                                         }
-                                    span {
-                                        font-weight: bold;
-                                        padding-top: 16px;
-                                        padding-right: 20px;
-                                    }    
+                                            span {
+                                                font-weight: bold;
+                                                margin-top: 0;
+                                                padding-right: 20px;
+                                            }      
                                 }
                         }
             }
@@ -152,6 +158,7 @@ main img {
                                 h3 {
                                     $font-family-primary: 'Shrikhand', cursive;
                                     font-size: 23px;
+                                    margin-top: 5px;
                                     padding-left: 20px;
                                 }
                                     .p-prix {
@@ -160,13 +167,15 @@ main img {
                                         flex-direction: row;
                                         justify-content: space-between;
                                             p {
+                                                margin-top: 0;
+                                                margin-bottom: 5px;
                                                 padding-left: 20px;
                                             }
-                                        span {
-                                            font-weight: bold;
-                                            padding-top: 16px;
-                                            padding-right: 20px;
-                                        }    
+                                                span {
+                                                    font-weight: bold;
+                                                    margin-top: 0;
+                                                    padding-right: 20px;
+                                                }    
                                     }
                             }
                 }
@@ -251,13 +260,14 @@ footer {
     .menu {
         width: 100%;
         height: auto;
-        background-color: #f2f2f2;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 30px;
+        flex-direction: row;
+        align-items: center;
+        background-color: #f2f2f2;
+        margin-bottom: 20px;
             .entrees {
                 width: 100%;
+                margin-right: 15px;
                 margin-bottom: 25px;
                     h2 {
                         font-size: 20px;
@@ -266,15 +276,15 @@ footer {
                     width: 100%;
                     height: auto;
                         h3 {
-                            font-size: 18px;
+                            font-size: 15px;
                         }
                             .p-prix {
                                 width: 100%;
                                 p {
-                                    font-size: 15px;
+                                    font-size: 12px;
                                 }
                                     span {
-                                        font-size: 15px;
+                                        font-size: 12px;
                                     }
                             }
                 }
@@ -282,6 +292,7 @@ footer {
                 .plats {
                     width: 100%;
                     margin-bottom: 25px;
+                    margin-right: 15px;
                         h2 {
                             display: flex;
                             flex-direction: row;
@@ -292,15 +303,15 @@ footer {
                         width: 100%;
                         height: auto;
                             h3 {
-                                font-size: 20px;
+                                font-size: 15px;
                             }
                                 .p-prix {
                                     width: 100%;
                                     p {
-                                        font-size: 18px;
+                                        font-size: 12px;
                                     }
                                         span {
-                                            font-size: 18px;
+                                            font-size: 12px;
                                         }
                                 }
                     }
@@ -318,15 +329,15 @@ footer {
                             width: 100%;
                             height: auto;
                                 h3 {
-                                    font-size: 20px;
+                                    font-size: 15px;
                                 }
                                     .p-prix {
                                         width: 100%;
                                         p {
-                                            font-size: 18px;
+                                            font-size: 12px;
                                         }
                                             span {
-                                                font-size: 18px;
+                                                font-size: 12px;
                                             }
                                     }
                         }
@@ -346,6 +357,7 @@ footer {
     
     footer {
         width: 100%;
+        margin-top: 20px;
     }
 }
 

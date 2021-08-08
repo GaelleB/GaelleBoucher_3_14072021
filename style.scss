@@ -155,21 +155,18 @@ header {
 .fonctionnement {
     $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 0;
-        h2 {
-            display: flex;
-            flex-direction: row;
-            font-size: 25px;
-            text-align: center;
-            padding: 0 50px 20px 0;
-        }
+    height: auto;
+    display: block;
+    h2 {
+        text-align: center;
+        align-items: center;
+        font-size: 25px;
+    }
             .fonction {
-                display: flex;
                 width: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
                 :hover {
                     background-color: #eddcf7;
                     border-radius: 25px;
@@ -216,77 +213,79 @@ header {
     $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 15px;
+    display: block;
     background-color: #f2f2f2;
+    padding-top: 15px;
         h2 {
-            align-self: flex-start;
-            margin-left: 20px;
+            text-align: center;
+            align-items: center;
             font-size: 25px;
-        }    
-            .carte-resto {
+        }
+            .resto {
+                width: 100%;
                 display: flex;
                 flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                height: 400px;
-                width: 20%;
-                border: 5px white solid;
-                border-radius: 30px;
-                box-shadow: 2px 2px 2px #F2F2F2;
-                background-color: white;
-                overflow: hidden;
-                position: relative;
-                margin: 10px 5px 20px 0;
-                    .new {
-                        display: flex;
-                        background: #99E2D0;
-                        color: #2c9c81;
-                        border-radius: 3px;
-                        position: absolute;
-                        padding: 10px;
-                        margin-left: 280px;
-                        font-weight: bold;
-                    }
-                        img {
-                            object-fit: cover;
-                            width: 100%;
-                            height: 60%;
-                            border-radius: 20px 20px 0 0;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .carte-resto {
+                    height: 300px;
+                    width: 30%;
+                    border: 5px white solid;
+                    border-radius: 30px;
+                    box-shadow: 2px 2px 2px #F2F2F2;
+                    background-color: white;
+                    overflow: hidden;
+                    position: relative;
+                    margin: 10px 5px 20px 0;
+                        .new {
+                            display: flex;
+                            background: #99E2D0;
+                            color: #2c9c81;
+                            border-radius: 3px;
+                            position: absolute;
+                            padding: 10px;
+                            margin-left: 360px;
+                            font-weight: bold;
                         }
-            }
-                    .titre-lieu-resto {
-                        width: 100%;
-                        height: 300px;
-                        display: flex;
-                        flex-direction: column;
-                        position: absolute;
-                        padding: 20px;
-                            h3 {
-                                margin-top: 0;
-                                font-size: 22px;
-                                color: black;
+                            img {
+                                object-fit: cover;
+                                width: 100%;
+                                height: 65%;
+                                border-radius: 20px 20px 0 0;
                             }
-                                .p-coeur {
-                                    display: flex;
-                                    flex-direction: row;
-                                    align-items: center;
-                                        p {
-                                        font-size: 20px;
-                                        color: black;
-                                            
-                                    }
-                                        .fa-heart {
-                                            padding-left: 200px;
-                                            color: black;
-                                        }
+                }
+                        .titre-lieu-resto {
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            padding: 20px;
+                                h3 {
+                                    margin-top: 0;
+                                    font-size: 22px;
+                                    color: black;
                                 }
-                                    
+                                    .p-coeur {
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                            p {
+                                                margin-top: 0;
+                                                font-size: 20px;
+                                                color: black;
+                                                
+                                        }
+                                            .fa-heart {
+                                                margin-top: -15px;
+                                                padding-left: 200px;
+                                                color: black;
+                                            }
+                                    }
                                         
-                    }
+                                            
+                        }
+            }    
+            
 }
 
 footer {
@@ -341,27 +340,26 @@ footer {
 
     .fonctionnement {
         width: 100%;
+        display: block;
         h2 {
-            font-size: 20px;
+            align-items: center;
+            text-align: center;
+            font-size: 25px;
         }
-            .fonction {
-                display: flex;
-                    .inside-fonction {
-                            .number {
-                                margin-top: 12px;
-                                margin-right: 210px;
+            .inside-fonction {
+                .number {
+                    margin-top: 12px;
+                    margin-right: 210px;
+                }
+                .icone-titre {
+                    .fa-mobile-alt, .fa-list-ul, .fa-store {
+                            font-size: 14px;
+                        }
+                            h4 {
+                                font-size: 14px;
                             }
-                            .icone-titre {
-                                .fa-mobile-alt, .fa-list-ul, .fa-store {
-                                        font-size: 14px;
-                                    }
-                                        h4 {
-                                            font-size: 14px;
-                                        }
-                            }
-                    }
-            }
-
+                }
+            } 
     }
 
 
@@ -369,55 +367,81 @@ footer {
         $font-family-secondary: 'Roboto', sans-serif;
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: block;
         border-radius: 15px;
         background-color: #f2f2f2;
         padding: 20px 0;
             h2 {
-                font-size: 20px;
-            }    
+                align-items: center;
+                text-align: center;
+                font-size: 25px;
+            }
+            .resto {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-evenly;
+
                 .carte-resto {
                     height: 300px;
                     width: 35%;
                     border: 5px white solid;
                     border-radius: 30px;
                     box-shadow: 2px 2px 2px #F2F2F2;
-                    margin-left: 40px;
-                    margin-right: 20px;
-                    margin-top: 40px;
+                    background-color: white;
+                    overflow: hidden;
+                    position: relative;
+                    margin: 10px 5px 20px 0;
                         .new {
+                            display: flex;
                             background: #99E2D0;
                             color: #2c9c81;
                             border-radius: 3px;
                             position: absolute;
-                            padding: 8px;
-                            margin-left: 270px;
+                            padding: 10px;
+                            margin-left: 260px;
                             font-weight: bold;
                         }
-                }
-                    .titre-lieu-resto {
-                        width: 100%;
-                        background-color: white;
-                        padding: 20px;
-                            h3 {
-                                font-size: 18px;
+                            img {
+                                object-fit: cover;
+                                width: 100%;
+                                height: 60%;
+                                border-radius: 20px 20px 0 0;
                             }
-                                .p-coeur {
-                                    display: flex;
-                                    flex-direction: row;
-                                    align-items: center;
-                                        p {
-                                            font-size: 15px;
-                                        }
-                                            .fa-heart {
-                                                font-size: 15px;
-                                                padding-left: 180px;
-                                            }
+                }
+                        .titre-lieu-resto {
+                            width: 100%;
+                            height: 200px;
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            padding: 20px;
+                                h3 {
+                                    margin-top: 0;
+                                    font-size: 20px;
+                                    color: black;
                                 }
-                    }
+                                    .p-coeur {
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        text-align: center;
+                                            p {
+                                                margin-top: 0;
+                                                font-size: 16px;
+                                                color: black;
+                                                
+                                            }
+                                            .fa-heart {
+                                                margin-top: -18px;
+                                                padding-left: 200px;
+                                                color: black;
+                                            }
+                                    }       
+                        }
+            }    
     }
 }
 
@@ -435,62 +459,94 @@ footer {
         width: 100%;
         display: block;
         h2 {
-            font-size: 20px;
-            margin-left: 25px;
+            font-size: 25px;
+            margin-right: 160px;
         }
             .fonction {
-                display: block;          
+                display: block;
+                    .inside-fonction {
+                        margin-left: 20px;
+                        align-items: center;
+                        text-align: center;
+                        width: 90%;
+                            .number {
+                                margin-right: 330px;
+                            }
+                            .icone-titre {
+                                margin-left: 0px;
+                            }
+                    }
             }
     }
     
     #restaurants {
         $font-family-secondary: 'Roboto', sans-serif;
         width: 100%;
-        height: auto;
         display: block;
-        justify-content: center;
-        border-radius: 15px;
-        background-color: #f2f2f2;
-        padding: 20px 0;
+        margin-top: 25px;
             h2 {
-                font-size: 20px;
-            }    
-                .carte-resto {
-                    height: auto;
-                    width: 100%;
-                    border: 5px white solid;
-                    border-radius: 30px;
-                    box-shadow: 2px 2px 2px #F2F2F2;
-                    margin-left: 40px;
-                    margin-right: 20px;
-                    margin-top: 40px;
-                        .new {
-                            background: #99E2D0;
-                            color: #2c9c81;
-                            border-radius: 3px;
-                            position: absolute;
-                            padding: 8px;
-                            margin-left: 270px;
-                            font-weight: bold;
+                font-size: 25px;
+                padding-top: 15px;
+                margin-right: 210px;
+            }
+                .resto {
+                    display: block;
+                        .carte-resto {
+                            width: 97%;
+                            height: 240px;
+                            border: 5px white solid;
+                            border-radius: 30px;
+                            box-shadow: 2px 2px 2px #F2F2F2;
+                            background-color: white;
+                            overflow: hidden;
+                            position: relative;
+                                .new {
+                                    display: flex;
+                                    background: #99E2D0;
+                                    color: #2c9c81;
+                                    border-radius: 3px;
+                                    position: absolute;
+                                    padding: 10px;
+                                    margin-left: 280px;
+                                    font-weight: bold;
+                                }
+                                    img {
+                                        object-fit: cover;
+                                        width: 100%;
+                                        height: 60%;
+                                        border-radius: 20px 20px 0 0;
+                                    }
+                        }
+                                    .titre-lieu-resto {
+                                        width: 100%;
+                                        height: 200px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        position: absolute;
+                                        padding: 20px;
+                                            h3 {
+                                                margin-top: 0;
+                                                font-size: 20px;
+                                                color: black;
+                                            }
+                                                .p-coeur {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    align-items: center;
+                                                    text-align: center;
+                                                        p {
+                                                            font-size: 20px;
+                                                            color: black;
+                                                            
+                                                        }
+                                                        .fa-heart {
+                                                            margin-top: -70px;
+                                                            padding-left: 200px;
+                                                            color: black;
+                                                            font-size: 30px;
+                                                        }
+                                                }       
+                                    }
                         }
                 }
-                    .titre-lieu-resto {
-                        width: 100%;
-                        background-color: white;
-                        padding: 20px;
-                            h3 {
-                                margin-top: 0;
-                                font-size: 18px;
-                            }
-                                .p-coeur {
-                                    p {
-                                        margin-top: 0;
-                                        font-size: 15px;
-                                    }
-                                        .fa-heart {
-                                            font-size: 15px;
-                                        }
-                                }
-                    }
-    }
 }
