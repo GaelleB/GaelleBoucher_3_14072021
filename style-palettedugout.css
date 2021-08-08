@@ -56,8 +56,6 @@ main img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-text-decoration: underline #9356DC;
-          text-decoration: underline #9356DC;
 }
 
 .titre-coeur h1 {
@@ -93,8 +91,8 @@ main img {
 .menu .entrees h2 {
   font-size: 25px;
   text-align: center;
-  -webkit-text-decoration: underline #FF79DA;
-          text-decoration: underline #FF79DA;
+  -webkit-text-decoration: underline #99E2D0;
+          text-decoration: underline #99E2D0;
 }
 
 .menu .entrees .assiete-entree {
@@ -153,8 +151,8 @@ main img {
 .menu .plats h2 {
   font-size: 25px;
   text-align: center;
-  -webkit-text-decoration: underline #FF79DA;
-          text-decoration: underline #FF79DA;
+  -webkit-text-decoration: underline #99E2D0;
+          text-decoration: underline #99E2D0;
 }
 
 .menu .plats .assiete-plat {
@@ -213,8 +211,8 @@ main img {
 .menu .desserts h2 {
   font-size: 25px;
   text-align: center;
-  -webkit-text-decoration: underline #FF79DA;
-          text-decoration: underline #FF79DA;
+  -webkit-text-decoration: underline #99E2D0;
+          text-decoration: underline #99E2D0;
 }
 
 .menu .desserts .assiete-dessert {
@@ -302,6 +300,10 @@ footer h2 {
   text-decoration: none;
 }
 
+footer a:link {
+  text-decoration: none;
+}
+
 footer a:visited {
   color: white;
 }
@@ -315,10 +317,6 @@ footer li {
 
 footer li a {
   color: white;
-}
-
-footer li a:link {
-  text-decoration: none;
 }
 
 footer .fa-utensils {

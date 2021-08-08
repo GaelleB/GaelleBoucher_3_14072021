@@ -221,6 +221,7 @@ header {
 
 .fonctionnement .fonction :hover {
   background-color: #eddcf7;
+  border-radius: 25px;
 }
 
 .fonctionnement .inside-fonction {
@@ -408,6 +409,10 @@ footer h2 {
   padding-top: 10px;
   padding-left: 40px;
   color: white;
+  text-decoration: none;
+}
+
+footer a:link {
   text-decoration: none;
 }
 

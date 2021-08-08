@@ -36,7 +36,6 @@ main img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-decoration: underline $violet;
         h1 {
             $font-family-primary: 'Shrikhand', cursive;
             font-size: 45px;
@@ -61,7 +60,7 @@ main img {
                     $font-family-primary: 'Shrikhand', cursive;
                     font-size: 25px;
                     text-align: center;
-                    text-decoration: underline $rose;
+                    text-decoration: underline $menthe;
                 }
                     .assiete-entree {
                         width: 100%;
@@ -101,7 +100,7 @@ main img {
                         $font-family-primary: 'Shrikhand', cursive;
                         font-size: 25px;
                         text-align: center;
-                        text-decoration: underline $rose;
+                        text-decoration: underline $menthe;
                     }
                         .assiete-plat {
                             width: 100%;
@@ -141,7 +140,7 @@ main img {
                             $font-family-primary: 'Shrikhand', cursive;
                             font-size: 25px;
                             text-align: center;
-                            text-decoration: underline $rose;
+                            text-decoration: underline $menthe;
                         }
                             .assiete-dessert {
                                 width: 100%;
@@ -204,6 +203,9 @@ footer {
             color: white;
             text-decoration: none;
         }
+            a:link {
+                text-decoration: none;
+            }
             a:visited {
                 color: white;
             }
@@ -215,9 +217,6 @@ footer {
                     a {
                         color: white;
                     }
-                        a:link {
-                            text-decoration: none;
-                        }
             }
             .fa-utensils {
                 padding-right: 20px;
