@@ -10,29 +10,26 @@ body {
 }
 
 header {
-  width: auto;
-  height: auto;
+  width: 100%;
+  -o-object-fit:  cover;
+     object-fit:  cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 header .fa-arrow-left {
-  left: 0;
+  margin-left: -420px;
 }
 
 header .logo-header {
-  padding-right: 850px;
+  margin-right: 420px;
 }
 
 main img {

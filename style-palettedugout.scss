@@ -11,17 +11,18 @@ body {
 }    
 
 header {
-    width: auto;
-    height: auto;
+    width: 100%;
+    $font-family-primary: 'Shrikhand', cursive;
+    object-fit: cover;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    
         .fa-arrow-left {
-            left: 0;
+            margin-left: -420px;
         }
             .logo-header {
-                padding-right: 850px;
+                margin-right: 420px;
             }
 }
 
