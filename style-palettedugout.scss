@@ -1,6 +1,6 @@
-$violet: #9356DC;
-$rose: #FF79DA;
-$menthe: #99E2D0;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
 $font-family-primary: 'Shrikhand', cursive; /*Logo et Titres*/
 $font-family-secondary: 'Roboto', sans-serif; /*Texte*/
 
@@ -78,22 +78,24 @@ main img {
                             margin-top: 5px;
                             padding-left: 20px;
                         }
-                            .p-prix {
-                                font-size: 21px;
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-between;
-                                    p {
-                                        margin-top: 0;
-                                        margin-bottom: 5px;
-                                        padding-left: 20px;
-                                    }
-                                        span {
-                                            font-weight: bold;
-                                            margin-top: 0;
-                                            padding-right: 20px;
-                                        }   
+                            p {
+                                font-size: 20px;
+                                margin-top: 0;
+                                margin-bottom: 5px;
+                                padding-left: 20px;
                             }
+                                .check {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    span {
+                                        font-weight: bold;
+                                        margin-top: 0;
+                                        padding-right: 20px;
+                                    }
+                                }
+                            
                     }
         }
             .plats {
@@ -190,7 +192,7 @@ main img {
     color: white;
     font-size: 15px;
     font-weight: bold;
-    background-color: $rose;
+    background: -webkit-linear-gradient($color-primary 30%, $color-secondary 70%);
     box-shadow: 2px 2px 5px #9e9e9e;
 }
 
@@ -352,7 +354,7 @@ footer {
             color: white;
             font-size: 15px;
             font-weight: bold;
-            background-color: $rose;
+            background-color: $color-secondary;
             box-shadow: 2px 2px 5px #9e9e9e;
     }
     
@@ -417,7 +419,7 @@ footer {
                         display: flex;
                         padding-left: 15px;
                         font-size: 20px;
-                        text-decoration: underline $menthe 4px;
+                        text-decoration: underline $color-tertiary 4px;
                     }
                 .assiete-entree {
                     margin-left: 3px;
@@ -440,7 +442,7 @@ footer {
                             display: flex;
                             padding-left: 15px;
                             font-size: 20px;
-                            text-decoration: underline $menthe 4px;
+                            text-decoration: underline $color-tertiary 4px;
                         }
                     .assiete-plat {
                         margin-left: 3px;
@@ -463,7 +465,7 @@ footer {
                                 display: flex;
                                 padding-left: 15px;
                                 font-size: 20px;
-                                text-decoration: underline $menthe 4px;
+                                text-decoration: underline $color-tertiary 4px;
                             }
                         .assiete-dessert {
                             margin-left: 3px;
@@ -489,7 +491,7 @@ footer {
         color: white;
         font-size: 15px;
         font-weight: bold;
-        background-color: $rose;
+        background: -webkit-linear-gradient ($color-primary 60%, $color-secondary 40%);
         box-shadow: 2px 2px 5px #9e9e9e;
 }
     

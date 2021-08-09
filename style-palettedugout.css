@@ -115,8 +115,14 @@ main img {
   padding-left: 20px;
 }
 
-.menu .entrees .assiete-entree .p-prix {
-  font-size: 21px;
+.menu .entrees .assiete-entree p {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.menu .entrees .assiete-entree .check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,18 +130,15 @@ main img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.menu .entrees .assiete-entree .p-prix p {
-  margin-top: 0;
-  margin-bottom: 5px;
-  padding-left: 20px;
-}
-
-.menu .entrees .assiete-entree .p-prix span {
+.menu .entrees .assiete-entree .check span {
   font-weight: bold;
   margin-top: 0;
   padding-right: 20px;
@@ -271,7 +274,7 @@ main img {
   color: white;
   font-size: 15px;
   font-weight: bold;
-  background-color: #FF79DA;
+  background: -webkit-linear-gradient(#9356DC 30%, #FF79DA 70%);
   -webkit-box-shadow: 2px 2px 5px #9e9e9e;
           box-shadow: 2px 2px 5px #9e9e9e;
 }
@@ -625,7 +628,7 @@ footer .fa-hands-helping {
     color: white;
     font-size: 15px;
     font-weight: bold;
-    background-color: #FF79DA;
+    background: -webkit-linear-gradient #9356DC 60%, #FF79DA 40%;
     -webkit-box-shadow: 2px 2px 5px #9e9e9e;
             box-shadow: 2px 2px 5px #9e9e9e;
   }
