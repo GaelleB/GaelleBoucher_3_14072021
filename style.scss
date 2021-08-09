@@ -274,16 +274,21 @@ header {
                                                 font-size: 20px;
                                                 color: black;
                                                 
-                                        }
-                                            .fa-heart {
-                                                margin-top: -15px;
-                                                padding-left: 200px;
-                                                color: black;
-                                                font-size: 25px;
-                                                    :hover {
-                                                        background: -webkit-linear-gradient($color-primary 30%, $color-secondary 70%);
-                                                    }
                                             }
+                                                .fa-heart {
+                                                    margin-top: -15px;
+                                                    padding-left: 200px;
+                                                    color: black;
+                                                    font-size: 25px;
+                                                }
+
+                                                .fa-heart:hover {
+                                                    background: -webkit-linear-gradient($color-primary 70%, $color-secondary 30%);
+                                                    -webkit-background-clip: text;
+                                                    background-clip: text;
+                                                    -webkit-text-fill-color: transparent;
+                                                    transition:  0.5s ease-out;
+                                                }
                                     }
                         }
             }    

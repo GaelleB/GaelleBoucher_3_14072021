@@ -376,8 +376,13 @@ header {
   font-size: 25px;
 }
 
-#restaurants .resto .titre-lieu-resto .p-coeur .fa-heart :hover {
-  background: -webkit-linear-gradient(#9356DC 30%, #FF79DA 70%);
+#restaurants .resto .titre-lieu-resto .p-coeur .fa-heart:hover {
+  background: -webkit-linear-gradient(#9356DC 70%, #FF79DA 30%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 footer {
