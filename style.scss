@@ -283,11 +283,11 @@ header {
                                                 }
 
                                                 .fa-heart:hover {
-                                                    background: linear-gradient($color-primary 60%, $color-secondary 40%);
+                                                    background: linear-gradient ($color-primary, $color-secondary);
                                                     -webkit-background-clip: text;
                                                     background-clip: text;
                                                     -webkit-text-fill-color: transparent;
-                                                    transition:  1s ease-out;
+                                                    transition:  0.2s ease-out;
                                                     font-weight: bold;
                                                 }
                                     }
