@@ -486,13 +486,13 @@ footer {
     .button-command {
         border: transparent 1px solid;  
         border-radius: 25px;
-        padding: 15px 30px;
-        margin: 20px 100px;
+        padding: 16px;
         color: white;
-        font-size: 15px;
-        font-weight: bold;
-        background: -webkit-linear-gradient ($color-primary 60%, $color-secondary 40%);
-        box-shadow: 2px 2px 5px #9e9e9e;
+        font-size: 1em;
+        font-weight: 500;
+        margin: 20px;
+        background: -webkit-linear-gradient($color-primary 10%, $color-secondary 90%);
+        box-shadow: 1px 1px 5px #9e9e9e;
 }
     
     footer {

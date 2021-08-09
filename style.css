@@ -377,12 +377,14 @@ header {
 }
 
 #restaurants .resto .titre-lieu-resto .p-coeur .fa-heart:hover {
-  background: -webkit-linear-gradient(#9356DC 70%, #FF79DA 30%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #9356DC), color-stop(40%, #FF79DA));
+  background: linear-gradient(#9356DC 60%, #FF79DA 40%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  font-weight: bold;
 }
 
 footer {
