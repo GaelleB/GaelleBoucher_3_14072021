@@ -357,10 +357,10 @@ footer .fa-hands-helping {
             align-items: center;
   }
   header .fa-arrow-left {
-    left: 0;
+    margin-left: 10px;
   }
   header .logo-header {
-    padding-right: 390px;
+    margin-right: 450px;
   }
   .menu {
     width: 100%;
@@ -514,10 +514,10 @@ footer .fa-hands-helping {
             align-items: center;
   }
   header .fa-arrow-left {
-    left: 0;
+    margin-left: 10px;
   }
   header .logo-header {
-    padding-right: 70px;
+    margin-right: 90px;
   }
   main img {
     -o-object-fit: cover;
