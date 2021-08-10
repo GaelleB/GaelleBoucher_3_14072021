@@ -10,6 +10,30 @@ body {
     margin: 0;
 }
 
+.loader-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hide 0s ease-in 3s forwards;
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
 .loader {
     width: 150px;
     height: 150px;
