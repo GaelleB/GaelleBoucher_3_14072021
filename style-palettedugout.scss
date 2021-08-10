@@ -412,14 +412,14 @@ footer {
         display: flex;
         flex-direction: column;
         background-color: #f2f2f2;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
             .entrees {
                 width: 97%;
                     h2 {
                         display: flex;
                         padding-left: 15px;
                         font-size: 20px;
-                        text-decoration: underline $color-tertiary 4px;
+                        border-bottom: 4px $color-tertiary solid;
                     }
                 .assiete-entree {
                     margin-left: 3px;
@@ -442,7 +442,7 @@ footer {
                             display: flex;
                             padding-left: 15px;
                             font-size: 20px;
-                            text-decoration: underline $color-tertiary 4px;
+                            border-bottom: 4px $color-tertiary solid;
                         }
                     .assiete-plat {
                         margin-left: 3px;
@@ -465,7 +465,7 @@ footer {
                                 display: flex;
                                 padding-left: 15px;
                                 font-size: 20px;
-                                text-decoration: underline $color-tertiary 4px;
+                                border-bottom: 4px $color-tertiary solid;
                             }
                         .assiete-dessert {
                             margin-left: 3px;

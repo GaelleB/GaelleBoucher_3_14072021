@@ -546,7 +546,7 @@ footer .fa-hands-helping {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #f2f2f2;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .menu .entrees {
     width: 97%;
@@ -557,8 +557,7 @@ footer .fa-hands-helping {
     display: flex;
     padding-left: 15px;
     font-size: 20px;
-    -webkit-text-decoration: underline #99E2D0 4px;
-            text-decoration: underline #99E2D0 4px;
+    border-bottom: 4px #99E2D0 solid;
   }
   .menu .entrees .assiete-entree {
     margin-left: 3px;
@@ -581,8 +580,7 @@ footer .fa-hands-helping {
     display: flex;
     padding-left: 15px;
     font-size: 20px;
-    -webkit-text-decoration: underline #99E2D0 4px;
-            text-decoration: underline #99E2D0 4px;
+    border-bottom: 4px #99E2D0 solid;
   }
   .menu .plats .assiete-plat {
     margin-left: 3px;
@@ -605,8 +603,7 @@ footer .fa-hands-helping {
     display: flex;
     padding-left: 15px;
     font-size: 20px;
-    -webkit-text-decoration: underline #99E2D0 4px;
-            text-decoration: underline #99E2D0 4px;
+    border-bottom: 4px #99E2D0 solid;
   }
   .menu .desserts .assiete-dessert {
     margin-left: 3px;
