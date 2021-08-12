@@ -95,53 +95,70 @@ main img {
   height: auto;
   background-color: white;
   border: white 2px solid;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
 }
 
-.menu .entrees .assiete-entree h3 {
+.menu .entrees .assiete-entree .titre-txt h3 {
   font-size: 23px;
   margin-top: 5px;
+  margin-bottom: 12px;
   padding-left: 20px;
 }
 
-.menu .entrees .assiete-entree p {
+.menu .entrees .assiete-entree .titre-txt p {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 5px;
   padding-left: 20px;
 }
 
-.menu .entrees .assiete-entree .check {
+.menu .entrees .assiete-entree span {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 160px;
+  padding-right: 20px;
+}
+
+.menu .entrees .assiete-entree .check-container {
+  border: 1px solid transparent;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  padding: 12px;
+  -webkit-transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in-out;
+}
+
+.menu .entrees .assiete-entree .check-container .check {
+  border-radius: 10px;
+  background-color: white;
+  padding: 3px;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
-.menu .entrees .assiete-entree .check span {
-  font-weight: bold;
-  margin-top: 0;
-  padding-right: 20px;
+.menu .entrees .assiete-entree .check-container .check .fa-check {
+  color: #99E2D0;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .menu .plats {
