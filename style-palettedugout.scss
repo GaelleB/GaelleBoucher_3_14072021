@@ -100,7 +100,7 @@ main img {
                                     background-color: $color-tertiary;
                                     padding: 12px;
                                     transition: all 450ms ease-in-out;
-                                    .check {
+                                    .check:hover {
                                         border-radius: 10px;
                                         background-color: white;
                                         padding: 3px;
@@ -109,7 +109,8 @@ main img {
                                         justify-content: center;
                                         align-items: center;
                                         transition: all 400ms ease-in-out;
-                                            .fa-check {
+                                        transform: rotate(360deg);
+                                            .fa-check:hover {
                                                 color: $color-tertiary;
                                                 font-weight: 600;
                                                 font-size: 16px;
