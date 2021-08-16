@@ -87,36 +87,36 @@ main img {
                                     padding-left: 20px;
                                 }
                         }
-                            span {
-                                font-size: 20px;
-                                margin-top: 0;
-                                margin-bottom: 5px;
-                                padding-left: 160px;
-                                padding-right: 20px;
-                            }
-                                .check-container {
-                                    border: 1px solid transparent;
-                                    border-radius: 0 15px 15px 0;
-                                    background-color: $color-tertiary;
-                                    padding: 12px;
-                                    transition: all 450ms ease-in-out;
-                                    .check:hover {
-                                        border-radius: 10px;
-                                        background-color: white;
-                                        padding: 3px;
-                                        font-size: 18px;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        transition: all 400ms ease-in-out;
-                                        transform: rotate(360deg);
-                                            .fa-check:hover {
-                                                color: $color-tertiary;
-                                                font-weight: 600;
-                                                font-size: 16px;
-                                            }
-                                    }
+                        span {
+                            font-size: 20px;
+                            margin-top: 0;
+                            margin-bottom: 5px;
+                            padding-left: 160px;
+                            padding-right: 20px;
+                        }
+                            .check-container {
+                                color: white;
+                                border: 1px solid transparent;
+                                border-radius: 0 15px 15px 0;
+                                background-color: $color-tertiary;
+                                padding: 12px;
+                                transition: all 450ms ease-in-out;
+                                .check:hover {
+                                    border-radius: 10px;
+                                    background-color: white;
+                                    padding: 3px;
+                                    font-size: 18px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: all 400ms ease-in-out;
+                                        .fa-check {
+                                            color: $color-tertiary;
+                                            font-weight: 600;
+                                            font-size: 16px;
+                                        }
                                 }
+                            }
                     }
         }
             .plats {

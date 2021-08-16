@@ -129,6 +129,7 @@ main img {
 }
 
 .menu .entrees .assiete-entree .check-container {
+  color: white;
   border: 1px solid transparent;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
@@ -153,11 +154,9 @@ main img {
           align-items: center;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 
-.menu .entrees .assiete-entree .check-container .check:hover .fa-check:hover {
+.menu .entrees .assiete-entree .check-container .check:hover .fa-check {
   color: #99E2D0;
   font-weight: 600;
   font-size: 16px;
