@@ -227,9 +227,8 @@ header {
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-evenly;
-
                 .carte-resto {
-                    height: 300px;
+                    height: 250px;
                     width: 30%;
                     border: 5px white solid;
                     border-radius: 30px;
@@ -242,8 +241,8 @@ header {
                             display: flex;
                             background: #99E2D0;
                             color: #2c9c81;
-                            border-radius: 3px;
                             position: absolute;
+                            border-radius: 3px;
                             padding: 10px;
                             margin-left: 360px;
                             font-weight: bold;
@@ -251,49 +250,154 @@ header {
                             img {
                                 object-fit: cover;
                                 width: 100%;
-                                height: 65%;
+                                height: 60%;
                                 border-radius: 20px 20px 0 0;
                             }
                 }
-                        .titre-lieu-resto {
-                            display: flex;
-                            flex-direction: column;
-                            position: absolute;
-                            padding: 20px;
-                                h3 {
-                                    margin-top: 0;
-                                    font-size: 22px;
-                                    color: black;
-                                }
-                                    .p-coeur {
-                                        display: flex;
-                                        flex-direction: row;
-                                        align-items: center;
-                                            p {
-                                                margin-top: 0;
-                                                font-size: 20px;
-                                                color: black;
-                                                
-                                            }
-                                                .fa-heart {
-                                                    margin-top: -15px;
-                                                    padding-left: 200px;
-                                                    color: black;
-                                                    font-size: 25px;
-                                                }
-
-                                                .fa-heart:hover {
-                                                    background: linear-gradient($color-primary, $color-secondary);
-                                                    -webkit-background-clip: text;
-                                                    background-clip: text;
-                                                    -webkit-text-fill-color: transparent;
-                                                    transition: 0.5s ease-out;
-                                                    font-weight: bold;
-                                                }
-                                    }
+                .titre-lieu-resto1 {
+                    position: absolute;
+                        h3 {
+                            margin: 0;
+                            padding-top: 10px;
+                            padding-left: 10px;
+                            font-size: 20px;
+                            color: black;
                         }
-            }    
-            
+                            .p-coeur {
+                                display: flex;
+                                flex-direction: row;
+                                    p {
+                                        margin-top: 5px;
+                                        padding-left: 9px;
+                                        font-size: 20px;
+                                        color: black;
+                                        
+                                    }
+                                        .fa-heart {
+                                            padding-left: 225px;
+                                            color: black;
+                                            font-size: 25px;
+                                        }
+
+                                            .fa-heart:hover {
+                                                background: linear-gradient($color-primary, $color-secondary);
+                                                -webkit-background-clip: text;
+                                                background-clip: text;
+                                                -webkit-text-fill-color: transparent;
+                                                transition: 0.5s ease-out;
+                                                font-weight: bold;
+                                            }  
+                            }
+                }
+
+                            .titre-lieu-resto2 {
+                                position: absolute;
+                                    h3 {
+                                        margin: 0;
+                                        padding-top: 10px;
+                                        padding-left: 10px;
+                                        font-size: 20px;
+                                        color: black;
+                                    }
+                                        .p-coeur {
+                                            display: flex;
+                                            flex-direction: row;
+                                                p {
+                                                    margin-top: 5px;
+                                                    padding-left: 9px;
+                                                    font-size: 20px;
+                                                    color: black;
+                                                    
+                                                }
+                                                    .fa-heart {
+                                                        padding-left: 270px;
+                                                        color: black;
+                                                        font-size: 25px;
+                                                    }
+
+                                                        .fa-heart:hover {
+                                                            background: linear-gradient($color-primary, $color-secondary);
+                                                            -webkit-background-clip: text;
+                                                            background-clip: text;
+                                                            -webkit-text-fill-color: transparent;
+                                                            transition: 0.5s ease-out;
+                                                            font-weight: bold;
+                                                        }  
+                                        }
+                            }
+
+                            .titre-lieu-resto3 {
+                                position: absolute;
+                                    h3 {
+                                        margin: 0;
+                                        padding-top: 10px;
+                                        padding-left: 10px;
+                                        font-size: 20px;
+                                        color: black;
+                                    }
+                                        .p-coeur {
+                                            display: flex;
+                                            flex-direction: row;
+                                                p {
+                                                    margin-top: 5px;
+                                                    padding-left: 9px;
+                                                    font-size: 20px;
+                                                    color: black;
+                                                    
+                                                }
+                                                    .fa-heart {
+                                                        padding-left: 270px;
+                                                        color: black;
+                                                        font-size: 25px;
+                                                    }
+
+                                                        .fa-heart:hover {
+                                                            background: linear-gradient($color-primary, $color-secondary);
+                                                            -webkit-background-clip: text;
+                                                            background-clip: text;
+                                                            -webkit-text-fill-color: transparent;
+                                                            transition: 0.5s ease-out;
+                                                            font-weight: bold;
+                                                        }  
+                                        }
+                            }
+
+                            .titre-lieu-resto4 {
+                                position: absolute;
+                                    h3 {
+                                        margin: 0;
+                                        padding-top: 10px;
+                                        padding-left: 10px;
+                                        font-size: 20px;
+                                        color: black;
+                                    }
+                                        .p-coeur {
+                                            display: flex;
+                                            flex-direction: row;
+                                                p {
+                                                    margin-top: 5px;
+                                                    padding-left: 9px;
+                                                    font-size: 20px;
+                                                    color: black;
+                                                    
+                                                }
+                                                    .fa-heart {
+                                                        padding-left: 225px;
+                                                        color: black;
+                                                        font-size: 25px;
+                                                    }
+
+                                                        .fa-heart:hover {
+                                                            background: linear-gradient($color-primary, $color-secondary);
+                                                            -webkit-background-clip: text;
+                                                            background-clip: text;
+                                                            -webkit-text-fill-color: transparent;
+                                                            transition: 0.5s ease-out;
+                                                            font-weight: bold;
+                                                        }  
+                                        }
+                            }    
+            }           
 }
 
 footer {
@@ -391,7 +495,6 @@ footer {
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-evenly;
-
                 .carte-resto {
                     height: 300px;
                     width: 35%;
@@ -419,36 +522,148 @@ footer {
                                 border-radius: 20px 20px 0 0;
                             }
                 }
-                        .titre-lieu-resto {
-                            width: 100%;
-                            height: 200px;
-                            display: flex;
-                            flex-direction: column;
-                            position: absolute;
-                            padding: 20px;
-                                h3 {
-                                    margin-top: 0;
-                                    font-size: 20px;
-                                    color: black;
-                                }
-                                    .p-coeur {
-                                        display: flex;
-                                        flex-direction: row;
-                                        align-items: center;
-                                        text-align: center;
-                                            p {
-                                                margin-top: 0;
-                                                font-size: 16px;
-                                                color: black;
-                                                
-                                            }
-                                            .fa-heart {
-                                                margin-top: -18px;
-                                                padding-left: 200px;
-                                                color: black;
-                                            }
-                                    }       
-                        }
+                            .titre-lieu-resto1 {
+                                position: absolute;
+                                    h3 {
+                                        margin: 0;
+                                        padding-top: 10px;
+                                        padding-left: 10px;
+                                        font-size: 20px;
+                                        color: black;
+                                    }
+                                        .p-coeur {
+                                            display: flex;
+                                            flex-direction: row;
+                                                p {
+                                                    padding-top: 10px;
+                                                    padding-left: 9px;
+                                                    font-size: 18px;
+                                                    color: black;
+                                                    
+                                                }
+                                                    .fa-heart {
+                                                        padding-left: 200px;
+                                                        color: black;
+                                                        font-size: 25px;
+                                                    }
+
+                                                        .fa-heart:hover {
+                                                            background: linear-gradient($color-primary, $color-secondary);
+                                                            -webkit-background-clip: text;
+                                                            background-clip: text;
+                                                            -webkit-text-fill-color: transparent;
+                                                            transition: 0.5s ease-out;
+                                                            font-weight: bold;
+                                                        }  
+                                        }
+                            }
+
+                            .titre-lieu-resto2 {
+                                position: absolute;
+                                    h3 {
+                                        margin: 0;
+                                        padding-top: 10px;
+                                        padding-left: 10px;
+                                        font-size: 20px;
+                                        color: black;
+                                    }
+                                        .p-coeur {
+                                            display: flex;
+                                            flex-direction: row;
+                                                p {
+                                                    padding-top: 10px;
+                                                    padding-left: 9px;
+                                                    font-size: 18px;
+                                                    color: black;
+                                                    
+                                                }
+                                                    .fa-heart {
+                                                        padding-left: 230px;
+                                                        color: black;
+                                                        font-size: 25px;
+                                                    }
+
+                                                        .fa-heart:hover {
+                                                            background: linear-gradient($color-primary, $color-secondary);
+                                                            -webkit-background-clip: text;
+                                                            background-clip: text;
+                                                            -webkit-text-fill-color: transparent;
+                                                            transition: 0.5s ease-out;
+                                                            font-weight: bold;
+                                                        }  
+                                        }
+                            }
+
+                            .titre-lieu-resto3 {
+                                position: absolute;
+                                    h3 {
+                                        margin: 0;
+                                        padding-top: 10px;
+                                        padding-left: 10px;
+                                        font-size: 20px;
+                                        color: black;
+                                    }
+                                        .p-coeur {
+                                            display: flex;
+                                            flex-direction: row;
+                                                p {
+                                                    padding-top: 10px;
+                                                    padding-left: 9px;
+                                                    font-size: 20px;
+                                                    color: black;
+                                                    
+                                                }
+                                                    .fa-heart {
+                                                        padding-left: 215px;
+                                                        color: black;
+                                                        font-size: 25px;
+                                                    }
+
+                                                        .fa-heart:hover {
+                                                            background: linear-gradient($color-primary, $color-secondary);
+                                                            -webkit-background-clip: text;
+                                                            background-clip: text;
+                                                            -webkit-text-fill-color: transparent;
+                                                            transition: 0.5s ease-out;
+                                                            font-weight: bold;
+                                                        }  
+                                        }
+                            }
+
+                            .titre-lieu-resto4 {
+                                position: absolute;
+                                    h3 {
+                                        margin: 0;
+                                        padding-top: 10px;
+                                        padding-left: 10px;
+                                        font-size: 20px;
+                                        color: black;
+                                    }
+                                        .p-coeur {
+                                            display: flex;
+                                            flex-direction: row;
+                                                p {
+                                                    padding-top: 10px;
+                                                    padding-left: 9px;
+                                                    font-size: 18px;
+                                                    color: black;
+                                                    
+                                                }
+                                                    .fa-heart {
+                                                        padding-left: 185px;
+                                                        color: black;
+                                                        font-size: 25px;
+                                                    }
+
+                                                        .fa-heart:hover {
+                                                            background: linear-gradient($color-primary, $color-secondary);
+                                                            -webkit-background-clip: text;
+                                                            background-clip: text;
+                                                            -webkit-text-fill-color: transparent;
+                                                            transition: 0.5s ease-out;
+                                                        }  
+                                        }
+                            }    
             }    
     }
 }
@@ -501,7 +716,7 @@ footer {
                     display: block;
                         .carte-resto {
                             width: 97%;
-                            height: 240px;
+                            height: 200px;
                             border: 5px white solid;
                             border-radius: 30px;
                             box-shadow: 2px 2px 2px #F2F2F2;
@@ -512,8 +727,8 @@ footer {
                                     display: flex;
                                     background: #99E2D0;
                                     color: #2c9c81;
-                                    border-radius: 3px;
                                     position: absolute;
+                                    border-radius: 3px;
                                     padding: 10px;
                                     margin-left: 280px;
                                     font-weight: bold;
@@ -525,34 +740,150 @@ footer {
                                         border-radius: 20px 20px 0 0;
                                     }
                         }
-                                    .titre-lieu-resto {
+                                    .titre-lieu-resto1 {
                                         width: 100%;
-                                        height: 200px;
-                                        display: flex;
-                                        flex-direction: column;
                                         position: absolute;
-                                        padding: 20px;
                                             h3 {
-                                                margin-top: 0;
+                                                margin: 0;
+                                                padding-top: 10px;
+                                                padding-left: 10px;
                                                 font-size: 20px;
                                                 color: black;
                                             }
                                                 .p-coeur {
                                                     display: flex;
                                                     flex-direction: row;
-                                                    align-items: center;
-                                                    text-align: center;
                                                         p {
+                                                            margin-top: 5px;
+                                                            padding-left: 9px;
                                                             font-size: 20px;
                                                             color: black;
                                                             
                                                         }
-                                                        .fa-heart {
-                                                            margin-top: -70px;
-                                                            padding-left: 200px;
+                                                            .fa-heart {
+                                                                padding-left: 210px;
+                                                                color: black;
+                                                                font-size: 25px;
+                                                            }
+        
+                                                                .fa-heart:hover {
+                                                                    background: linear-gradient($color-primary, $color-secondary);
+                                                                    -webkit-background-clip: text;
+                                                                    background-clip: text;
+                                                                    -webkit-text-fill-color: transparent;
+                                                                    transition: 0.5s ease-out;
+                                                                    font-weight: bold;
+                                                                }  
+                                                }
+                                    }
+
+                                    .titre-lieu-resto2 {
+                                        width: 100%;
+                                        position: absolute;
+                                            h3 {
+                                                margin: 0;
+                                                padding-top: 10px;
+                                                padding-left: 10px;
+                                                font-size: 20px;
+                                                color: black;
+                                            }
+                                                .p-coeur {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                        p {
+                                                            margin-top: 5px;
+                                                            padding-left: 9px;
+                                                            font-size: 20px;
                                                             color: black;
-                                                            font-size: 30px;
-                                                        }   
+                                                            
+                                                        }
+                                                            .fa-heart {
+                                                                padding-left: 245px;
+                                                                color: black;
+                                                                font-size: 25px;
+                                                            }
+        
+                                                                .fa-heart:hover {
+                                                                    background: linear-gradient($color-primary, $color-secondary);
+                                                                    -webkit-background-clip: text;
+                                                                    background-clip: text;
+                                                                    -webkit-text-fill-color: transparent;
+                                                                    transition: 0.5s ease-out;
+                                                                    font-weight: bold;
+                                                                }  
+                                                }
+                                    }
+
+                                    .titre-lieu-resto3 {
+                                        width: 100%;
+                                        position: absolute;
+                                            h3 {
+                                                margin: 0;
+                                                padding-top: 10px;
+                                                padding-left: 10px;
+                                                font-size: 20px;
+                                                color: black;
+                                            }
+                                                .p-coeur {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                        p {
+                                                            margin-top: 5px;
+                                                            padding-left: 9px;
+                                                            font-size: 20px;
+                                                            color: black;
+                                                            
+                                                        }
+                                                            .fa-heart {
+                                                                padding-left: 235px;
+                                                                color: black;
+                                                                font-size: 25px;
+                                                            }
+        
+                                                                .fa-heart:hover {
+                                                                    background: linear-gradient($color-primary, $color-secondary);
+                                                                    -webkit-background-clip: text;
+                                                                    background-clip: text;
+                                                                    -webkit-text-fill-color: transparent;
+                                                                    transition: 0.5s ease-out;
+                                                                    font-weight: bold;
+                                                                }  
+                                                }
+                                    }
+
+                                    .titre-lieu-resto4 {
+                                        width: 100%;
+                                        position: absolute;
+                                            h3 {
+                                                margin: 0;
+                                                padding-top: 10px;
+                                                padding-left: 10px;
+                                                font-size: 20px;
+                                                color: black;
+                                            }
+                                                .p-coeur {
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                        p {
+                                                            margin-top: 5px;
+                                                            padding-left: 9px;
+                                                            font-size: 20px;
+                                                            color: black;
+                                                            
+                                                        }
+                                                            .fa-heart {
+                                                                padding-left: 190px;
+                                                                color: black;
+                                                                font-size: 25px;
+                                                            }
+        
+                                                                .fa-heart:hover {
+                                                                    background: linear-gradient($color-primary, $color-secondary);
+                                                                    -webkit-background-clip: text;
+                                                                    background-clip: text;
+                                                                    -webkit-text-fill-color: transparent;
+                                                                    transition: 0.5s ease-out;
+                                                                }  
                                                 }
                                     }
                 }
