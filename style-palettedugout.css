@@ -1,6 +1,326 @@
 @charset "UTF-8";
 /*Logo et Titres*/
 /*Texte*/
+/*Version mobile*/
+@media screen and (max-width: 767px) {
+  body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding:  0;
+    margin: 0;
+  }
+  header {
+    width: 100%;
+    -o-object-fit:  cover;
+       object-fit:  cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .fa-arrow-left {
+    margin-left: 150px;
+  }
+  header .logo-header {
+    margin-right: 200px;
+  }
+  main img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100px;
+  }
+  .titre-coeur {
+    background-color: #f2f2f2;
+    border-radius: 30px 30px 0 0;
+    text-decoration: none;
+  }
+  .titre-coeur h1 {
+    font-family:   "Shrikhand", cursive;
+    font-size: 35px;
+  }
+  .titre-coeur h1 .coeur {
+    font-size: 25px;
+  }
+  .menu {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+  }
+  .menu .entrees {
+    width: 97%;
+  }
+  .menu .entrees h2 {
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+    border-bottom: 4px #99E2D0 solid;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    left: 0;
+    font-weight: normal;
+  }
+  .menu .entrees .assiete-entree {
+    margin-left: 3px;
+  }
+  .menu .entrees .assiete-entree h3 {
+    font-size: 10px;
+  }
+  .menu .entrees .assiete-entree .p-prix p {
+    font-size: 10px;
+  }
+  .menu .entrees .assiete-entree .p-prix span {
+    font-size: 15px;
+  }
+  .menu .plats {
+    width: 97%;
+  }
+  .menu .plats h2 {
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+    border-bottom: 4px #99E2D0 solid;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    left: 0;
+    font-weight: normal;
+  }
+  .menu .plats .assiete-plat {
+    margin-left: 3px;
+  }
+  .menu .plats .assiete-plat h3 {
+    font-size: 18px;
+  }
+  .menu .plats .assiete-plat .p-prix p {
+    font-size: 16px;
+  }
+  .menu .plats .assiete-plat .p-prix span {
+    font-size: 15px;
+  }
+  .menu .desserts {
+    width: 97%;
+  }
+  .menu .desserts h2 {
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+    border-bottom: 4px #99E2D0 solid;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    left: 0;
+    font-weight: normal;
+  }
+  .menu .desserts .assiete-dessert {
+    margin-left: 3px;
+  }
+  .menu .desserts .assiete-dessert h3 {
+    font-size: 18px;
+  }
+  .menu .desserts .assiete-dessert .p-prix p {
+    font-size: 16px;
+  }
+  .menu .desserts .assiete-dessert .p-prix span {
+    font-size: 15px;
+  }
+  .button-command {
+    border: transparent 1px solid;
+    border-radius: 25px;
+    padding: 15px 40px;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 50px 0 80px 100px;
+    background: -webkit-linear-gradient(#9356DC 10%, #FF79DA 90%);
+    -webkit-box-shadow: 1px 1px 5px #9e9e9e;
+            box-shadow: 1px 1px 5px #9e9e9e;
+  }
+  footer {
+    width: auto;
+    height: auto;
+  }
+}
+
+/*Version tablette*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding:  0;
+    margin: 0;
+  }
+  header {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .fa-arrow-left {
+    margin-left: 10px;
+  }
+  header .logo-header {
+    margin-right: 450px;
+  }
+  .menu {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+  }
+  .menu .entrees {
+    width: 100%;
+    margin-right: 15px;
+    margin-bottom: 25px;
+  }
+  .menu .entrees h2 {
+    font-size: 20px;
+  }
+  .menu .entrees .assiete-entree {
+    width: 100%;
+    height: auto;
+  }
+  .menu .entrees .assiete-entree h3 {
+    font-size: 15px;
+  }
+  .menu .entrees .assiete-entree .p-prix {
+    width: 100%;
+  }
+  .menu .entrees .assiete-entree .p-prix p {
+    font-size: 12px;
+  }
+  .menu .entrees .assiete-entree .p-prix span {
+    font-size: 12px;
+  }
+  .menu .plats {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-right: 15px;
+  }
+  .menu .plats h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 20px;
+  }
+  .menu .plats .assiete-plat {
+    width: 100%;
+    height: auto;
+  }
+  .menu .plats .assiete-plat h3 {
+    font-size: 15px;
+  }
+  .menu .plats .assiete-plat .p-prix {
+    width: 100%;
+  }
+  .menu .plats .assiete-plat .p-prix p {
+    font-size: 12px;
+  }
+  .menu .plats .assiete-plat .p-prix span {
+    font-size: 12px;
+  }
+  .menu .desserts {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .menu .desserts h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 20px;
+  }
+  .menu .desserts .assiete-dessert {
+    width: 100%;
+    height: auto;
+  }
+  .menu .desserts .assiete-dessert h3 {
+    font-size: 15px;
+  }
+  .menu .desserts .assiete-dessert .p-prix {
+    width: 100%;
+  }
+  .menu .desserts .assiete-dessert .p-prix p {
+    font-size: 12px;
+  }
+  .menu .desserts .assiete-dessert .p-prix span {
+    font-size: 12px;
+  }
+  .button-command {
+    border: transparent 1px solid;
+    border-radius: 25px;
+    padding: 15px 30px;
+    margin: 20px 430px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #FF79DA;
+    -webkit-box-shadow: 2px 2px 5px #9e9e9e;
+            box-shadow: 2px 2px 5px #9e9e9e;
+  }
+  footer {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/*Version Ordinateur*/
 body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -346,325 +666,5 @@ footer .fa-utensils {
 
 footer .fa-hands-helping {
   padding-right: 10px;
-}
-
-/*Version tablette*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding:  0;
-    margin: 0;
-  }
-  header {
-    width: auto;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .fa-arrow-left {
-    margin-left: 10px;
-  }
-  header .logo-header {
-    margin-right: 450px;
-  }
-  .menu {
-    width: 100%;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #f2f2f2;
-    margin-bottom: 20px;
-  }
-  .menu .entrees {
-    width: 100%;
-    margin-right: 15px;
-    margin-bottom: 25px;
-  }
-  .menu .entrees h2 {
-    font-size: 20px;
-  }
-  .menu .entrees .assiete-entree {
-    width: 100%;
-    height: auto;
-  }
-  .menu .entrees .assiete-entree h3 {
-    font-size: 15px;
-  }
-  .menu .entrees .assiete-entree .p-prix {
-    width: 100%;
-  }
-  .menu .entrees .assiete-entree .p-prix p {
-    font-size: 12px;
-  }
-  .menu .entrees .assiete-entree .p-prix span {
-    font-size: 12px;
-  }
-  .menu .plats {
-    width: 100%;
-    margin-bottom: 25px;
-    margin-right: 15px;
-  }
-  .menu .plats h2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 20px;
-  }
-  .menu .plats .assiete-plat {
-    width: 100%;
-    height: auto;
-  }
-  .menu .plats .assiete-plat h3 {
-    font-size: 15px;
-  }
-  .menu .plats .assiete-plat .p-prix {
-    width: 100%;
-  }
-  .menu .plats .assiete-plat .p-prix p {
-    font-size: 12px;
-  }
-  .menu .plats .assiete-plat .p-prix span {
-    font-size: 12px;
-  }
-  .menu .desserts {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-  .menu .desserts h2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 20px;
-  }
-  .menu .desserts .assiete-dessert {
-    width: 100%;
-    height: auto;
-  }
-  .menu .desserts .assiete-dessert h3 {
-    font-size: 15px;
-  }
-  .menu .desserts .assiete-dessert .p-prix {
-    width: 100%;
-  }
-  .menu .desserts .assiete-dessert .p-prix p {
-    font-size: 12px;
-  }
-  .menu .desserts .assiete-dessert .p-prix span {
-    font-size: 12px;
-  }
-  .button-command {
-    border: transparent 1px solid;
-    border-radius: 25px;
-    padding: 15px 30px;
-    margin: 20px 430px;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: #FF79DA;
-    -webkit-box-shadow: 2px 2px 5px #9e9e9e;
-            box-shadow: 2px 2px 5px #9e9e9e;
-  }
-  footer {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-
-/*Version mobile*/
-@media screen and (max-width: 767px) {
-  body {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding:  0;
-    margin: 0;
-  }
-  header {
-    width: auto;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header .fa-arrow-left {
-    margin-left: 10px;
-  }
-  header .logo-header {
-    margin-right: 90px;
-  }
-  main img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .titre-coeur {
-    background-color: #f2f2f2;
-    border-radius: 30px 30px 0 0;
-    text-decoration: none;
-  }
-  .titre-coeur h1 {
-    font-family:   "Shrikhand", cursive;
-    font-size: 35px;
-  }
-  .titre-coeur h1 .coeur {
-    font-size: 25px;
-  }
-  .menu {
-    width: auto;
-    height: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #f2f2f2;
-    margin-bottom: 20px;
-  }
-  .menu .entrees {
-    width: 97%;
-  }
-  .menu .entrees h2 {
-    width: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 20px;
-    border-bottom: 4px #99E2D0 solid;
-    padding-left: 0px;
-    padding-bottom: 10px;
-    margin-left: 15px;
-    left: 0;
-    font-weight: normal;
-  }
-  .menu .entrees .assiete-entree {
-    margin-left: 3px;
-  }
-  .menu .entrees .assiete-entree h3 {
-    font-size: 10px;
-  }
-  .menu .entrees .assiete-entree .p-prix p {
-    font-size: 10px;
-  }
-  .menu .entrees .assiete-entree .p-prix span {
-    font-size: 15px;
-  }
-  .menu .plats {
-    width: 97%;
-  }
-  .menu .plats h2 {
-    width: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 20px;
-    border-bottom: 4px #99E2D0 solid;
-    padding-left: 0px;
-    padding-bottom: 10px;
-    margin-left: 15px;
-    left: 0;
-    font-weight: normal;
-  }
-  .menu .plats .assiete-plat {
-    margin-left: 3px;
-  }
-  .menu .plats .assiete-plat h3 {
-    font-size: 18px;
-  }
-  .menu .plats .assiete-plat .p-prix p {
-    font-size: 16px;
-  }
-  .menu .plats .assiete-plat .p-prix span {
-    font-size: 15px;
-  }
-  .menu .desserts {
-    width: 97%;
-  }
-  .menu .desserts h2 {
-    width: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 20px;
-    border-bottom: 4px #99E2D0 solid;
-    padding-left: 0px;
-    padding-bottom: 10px;
-    margin-left: 15px;
-    left: 0;
-    font-weight: normal;
-  }
-  .menu .desserts .assiete-dessert {
-    margin-left: 3px;
-  }
-  .menu .desserts .assiete-dessert h3 {
-    font-size: 18px;
-  }
-  .menu .desserts .assiete-dessert .p-prix p {
-    font-size: 16px;
-  }
-  .menu .desserts .assiete-dessert .p-prix span {
-    font-size: 15px;
-  }
-  .button-command {
-    border: transparent 1px solid;
-    border-radius: 25px;
-    padding: 15px 40px;
-    color: white;
-    font-size: 1em;
-    font-weight: 500;
-    margin: 50px 0 80px 100px;
-    background: -webkit-linear-gradient(#9356DC 10%, #FF79DA 90%);
-    -webkit-box-shadow: 1px 1px 5px #9e9e9e;
-            box-shadow: 1px 1px 5px #9e9e9e;
-  }
-  footer {
-    width: auto;
-    height: auto;
-  }
 }
 /*# sourceMappingURL=style-palettedugout.css.map */

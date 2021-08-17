@@ -4,6 +4,291 @@ $color-tertiary: #99E2D0;
 $font-family-primary: 'Shrikhand', cursive; /*Logo et Titres*/
 $font-family-secondary: 'Roboto', sans-serif; /*Texte*/
 
+/*Version mobile*/
+
+@media screen and (max-width:767px) {
+
+    body {
+        flex: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        width: 100%;
+        $font-family-primary: 'Shrikhand', cursive;
+        object-fit: cover;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+            .fa-arrow-left {
+                margin-left: 150px;
+            }
+                .logo-header {
+                    margin-right: 200px;
+                }
+    }
+    
+    main img {
+        object-fit: cover;
+        width: 100%;
+        height: 100px;
+    }
+
+    .titre-coeur {
+        background-color: #f2f2f2;
+        border-radius: 30px 30px 0 0;
+        text-decoration: none;
+            h1 {
+                font-family: $font-family-primary;
+                font-size: 35px;
+                .coeur {
+                    font-size: 25px;
+                }
+            }
+    }
+
+    .menu {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        margin-bottom: 20px;
+            .entrees {
+                width: 97%;
+                    h2 {
+                        width: 50px;
+                        display: flex;
+                        font-size: 20px;
+                        border-bottom: 4px $color-tertiary solid;
+                        padding-left: 0px;
+                        padding-bottom: 10px;
+                        margin-left: 15px;
+                        left: 0;
+                        font-weight: normal;
+                    }
+                .assiete-entree {
+                    margin-left: 3px;
+                        h3 {
+                            font-size: 10px;
+                        }
+                            .p-prix {
+                                p {
+                                    font-size: 10px;
+                                }
+                                    span {
+                                        font-size: 15px;
+                                    }
+                            }
+                }
+            }
+                .plats {
+                    width: 97%;
+                        h2 {
+                            width: 50px;
+                        display: flex;
+                        font-size: 20px;
+                        border-bottom: 4px $color-tertiary solid;
+                        padding-left: 0px;
+                        padding-bottom: 10px;
+                        margin-left: 15px;
+                        left: 0;
+                        font-weight: normal;
+                        }
+                    .assiete-plat {
+                        margin-left: 3px;
+                            h3 {
+                                font-size: 18px;
+                            }
+                                .p-prix {
+                                    p {
+                                        font-size: 16px;
+                                    }
+                                        span {
+                                            font-size: 15px;
+                                        }
+                                }
+                    }
+                }
+                    .desserts {
+                        width: 97%;
+                            h2 {
+                                width: 50px;
+                                display: flex;
+                                font-size: 20px;
+                                border-bottom: 4px $color-tertiary solid;
+                                padding-left: 0px;
+                                padding-bottom: 10px;
+                                margin-left: 15px;
+                                left: 0;
+                                font-weight: normal;
+                            }
+                        .assiete-dessert {
+                            margin-left: 3px;
+                                h3 {
+                                    font-size: 18px;
+                                }
+                                    .p-prix {
+                                        p {
+                                            font-size: 16px;
+                                        }
+                                            span {
+                                                font-size: 15px;
+                                            }
+                                    }
+                        }
+                    }
+    }
+    .button-command {
+        border: transparent 1px solid;  
+        border-radius: 25px;
+        padding: 15px 40px;
+        color: white;
+        font-size: 1em;
+        font-weight: 500;
+        margin: 50px 0 80px 100px;
+        background: -webkit-linear-gradient($color-primary 10%, $color-secondary 90%);
+        box-shadow: 1px 1px 5px #9e9e9e;
+}
+    
+    footer {
+        width: auto;
+        height: auto;
+    }
+}
+
+/*Version tablette*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    body {
+        flex: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+            .fa-arrow-left {
+                margin-left: 10px;
+            }
+                .logo-header {
+                    margin-right: 450px;
+                }
+    }
+
+    .menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #f2f2f2;
+        margin-bottom: 20px;
+            .entrees {
+                width: 100%;
+                margin-right: 15px;
+                margin-bottom: 25px;
+                    h2 {
+                        font-size: 20px;
+                    }
+                .assiete-entree {
+                    width: 100%;
+                    height: auto;
+                        h3 {
+                            font-size: 15px;
+                        }
+                            .p-prix {
+                                width: 100%;
+                                p {
+                                    font-size: 12px;
+                                }
+                                    span {
+                                        font-size: 12px;
+                                    }
+                            }
+                }
+            }
+                .plats {
+                    width: 100%;
+                    margin-bottom: 25px;
+                    margin-right: 15px;
+                        h2 {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            font-size: 20px;
+                        }
+                    .assiete-plat {
+                        width: 100%;
+                        height: auto;
+                            h3 {
+                                font-size: 15px;
+                            }
+                                .p-prix {
+                                    width: 100%;
+                                    p {
+                                        font-size: 12px;
+                                    }
+                                        span {
+                                            font-size: 12px;
+                                        }
+                                }
+                    }
+                }
+                    .desserts {
+                        width: 100%;
+                        margin-bottom: 25px;
+                            h2 {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                font-size: 20px;
+                            }
+                        .assiete-dessert {
+                            width: 100%;
+                            height: auto;
+                                h3 {
+                                    font-size: 15px;
+                                }
+                                    .p-prix {
+                                        width: 100%;
+                                        p {
+                                            font-size: 12px;
+                                        }
+                                            span {
+                                                font-size: 12px;
+                                            }
+                                    }
+                        }
+                    }
+    }
+    .button-command {
+            border: transparent 1px solid;  
+            border-radius: 25px;
+            padding: 15px 30px;
+            margin: 20px 430px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: $color-secondary;
+            box-shadow: 2px 2px 5px #9e9e9e;
+    }
+    
+    footer {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/*Version Ordinateur*/
+
 body {
     flex: 1;
     padding: 0;
@@ -256,283 +541,3 @@ footer {
             }
 }
 
-/*Version tablette*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    
-    body {
-        flex: 1;
-        padding: 0;
-        margin: 0;
-    }
-
-    header {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-            .fa-arrow-left {
-                margin-left: 10px;
-            }
-                .logo-header {
-                    margin-right: 450px;
-                }
-    }
-
-    .menu {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color: #f2f2f2;
-        margin-bottom: 20px;
-            .entrees {
-                width: 100%;
-                margin-right: 15px;
-                margin-bottom: 25px;
-                    h2 {
-                        font-size: 20px;
-                    }
-                .assiete-entree {
-                    width: 100%;
-                    height: auto;
-                        h3 {
-                            font-size: 15px;
-                        }
-                            .p-prix {
-                                width: 100%;
-                                p {
-                                    font-size: 12px;
-                                }
-                                    span {
-                                        font-size: 12px;
-                                    }
-                            }
-                }
-            }
-                .plats {
-                    width: 100%;
-                    margin-bottom: 25px;
-                    margin-right: 15px;
-                        h2 {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            font-size: 20px;
-                        }
-                    .assiete-plat {
-                        width: 100%;
-                        height: auto;
-                            h3 {
-                                font-size: 15px;
-                            }
-                                .p-prix {
-                                    width: 100%;
-                                    p {
-                                        font-size: 12px;
-                                    }
-                                        span {
-                                            font-size: 12px;
-                                        }
-                                }
-                    }
-                }
-                    .desserts {
-                        width: 100%;
-                        margin-bottom: 25px;
-                            h2 {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: center;
-                                font-size: 20px;
-                            }
-                        .assiete-dessert {
-                            width: 100%;
-                            height: auto;
-                                h3 {
-                                    font-size: 15px;
-                                }
-                                    .p-prix {
-                                        width: 100%;
-                                        p {
-                                            font-size: 12px;
-                                        }
-                                            span {
-                                                font-size: 12px;
-                                            }
-                                    }
-                        }
-                    }
-    }
-    .button-command {
-            border: transparent 1px solid;  
-            border-radius: 25px;
-            padding: 15px 30px;
-            margin: 20px 430px;
-            color: white;
-            font-size: 15px;
-            font-weight: bold;
-            background-color: $color-secondary;
-            box-shadow: 2px 2px 5px #9e9e9e;
-    }
-    
-    footer {
-        width: 100%;
-        margin-top: 20px;
-    }
-}
-
-/*Version mobile*/
-
-@media screen and (max-width:767px) {
-
-    body {
-        flex: 1;
-        padding: 0;
-        margin: 0;
-    }
-
-    header {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-            .fa-arrow-left {
-                margin-left: 10px;
-            }
-                .logo-header {
-                    margin-right: 90px;
-                }
-    }
-    
-    main img {
-        object-fit: cover;
-    }
-
-    .titre-coeur {
-        background-color: #f2f2f2;
-        border-radius: 30px 30px 0 0;
-        text-decoration: none;
-            h1 {
-                font-family: $font-family-primary;
-                font-size: 35px;
-                .coeur {
-                    font-size: 25px;
-                }
-            }
-    }
-
-    .menu {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        background-color: #f2f2f2;
-        margin-bottom: 20px;
-            .entrees {
-                width: 97%;
-                    h2 {
-                        width: 50px;
-                        display: flex;
-                        font-size: 20px;
-                        border-bottom: 4px $color-tertiary solid;
-                        padding-left: 0px;
-                        padding-bottom: 10px;
-                        margin-left: 15px;
-                        left: 0;
-                        font-weight: normal;
-                    }
-                .assiete-entree {
-                    margin-left: 3px;
-                        h3 {
-                            font-size: 10px;
-                        }
-                            .p-prix {
-                                p {
-                                    font-size: 10px;
-                                }
-                                    span {
-                                        font-size: 15px;
-                                    }
-                            }
-                }
-            }
-                .plats {
-                    width: 97%;
-                        h2 {
-                            width: 50px;
-                        display: flex;
-                        font-size: 20px;
-                        border-bottom: 4px $color-tertiary solid;
-                        padding-left: 0px;
-                        padding-bottom: 10px;
-                        margin-left: 15px;
-                        left: 0;
-                        font-weight: normal;
-                        }
-                    .assiete-plat {
-                        margin-left: 3px;
-                            h3 {
-                                font-size: 18px;
-                            }
-                                .p-prix {
-                                    p {
-                                        font-size: 16px;
-                                    }
-                                        span {
-                                            font-size: 15px;
-                                        }
-                                }
-                    }
-                }
-                    .desserts {
-                        width: 97%;
-                            h2 {
-                                width: 50px;
-                                display: flex;
-                                font-size: 20px;
-                                border-bottom: 4px $color-tertiary solid;
-                                padding-left: 0px;
-                                padding-bottom: 10px;
-                                margin-left: 15px;
-                                left: 0;
-                                font-weight: normal;
-                            }
-                        .assiete-dessert {
-                            margin-left: 3px;
-                                h3 {
-                                    font-size: 18px;
-                                }
-                                    .p-prix {
-                                        p {
-                                            font-size: 16px;
-                                        }
-                                            span {
-                                                font-size: 15px;
-                                            }
-                                    }
-                        }
-                    }
-    }
-    .button-command {
-        border: transparent 1px solid;  
-        border-radius: 25px;
-        padding: 15px 40px;
-        color: white;
-        font-size: 1em;
-        font-weight: 500;
-        margin: 50px 0 80px 100px;
-        background: -webkit-linear-gradient($color-primary 10%, $color-secondary 90%);
-        box-shadow: 1px 1px 5px #9e9e9e;
-}
-    
-    footer {
-        width: auto;
-        height: auto;
-    }
-}
