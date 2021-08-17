@@ -231,7 +231,7 @@ svg {
     background-color: #f2f2f2;
   }
   .descrip h2 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
   }
   .descrip p {
@@ -242,9 +242,9 @@ svg {
     border-radius: 25px;
     padding: 16px;
     color: white;
-    font-size: 1em;
+    font-size: 15px;
     font-weight: 500;
-    margin: 20px;
+    margin-bottom: 70px;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
     -webkit-transition: 350ms 0ms ease-out;
@@ -255,24 +255,13 @@ svg {
   }
   .fonctionnement {
     width: 100%;
-    margin-left: 20px;
   }
   .fonctionnement h2 {
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 25px;
+    font-size: 22px;
+    padding-left: 15px;
   }
   .fonctionnement .fonction {
-    display: block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
+    width: 100%;
   }
   .fonctionnement .fonction :hover {
     background-color: #eddcf7;
@@ -290,7 +279,7 @@ svg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 40px 20px 5px;
+    margin: 0 20px 20px 30px;
     border-radius: 25px;
   }
   .fonctionnement .number {
@@ -299,8 +288,7 @@ svg {
     background-color: #9356DC;
     border-radius: 50%;
     padding: 5px 10px;
-    margin-top: 18px;
-    margin-right: 250px;
+    margin: 18px 330px 0 0;
   }
   .fonctionnement .icone-titre {
     display: -webkit-box;
@@ -329,11 +317,8 @@ svg {
     padding-top: 15px;
   }
   #restaurants h2 {
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 25px;
+    font-size: 22px;
+    padding-left: 10px;
   }
   #restaurants .resto {
     width: auto;
@@ -347,7 +332,7 @@ svg {
   }
   #restaurants .resto .carte-resto {
     height: 200px;
-    width: 97%;
+    width: 95%;
     border: 5px white solid;
     border-radius: 30px;
     -webkit-box-shadow: 2px 2px 2px #F2F2F2;
@@ -355,7 +340,7 @@ svg {
     background-color: white;
     overflow: hidden;
     position: relative;
-    margin: 10px 5px 20px 0;
+    margin: 10px 5px 20px 5px;
   }
   #restaurants .resto .carte-resto .new {
     display: -webkit-box;
