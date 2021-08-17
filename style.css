@@ -578,15 +578,6 @@ svg {
     padding:  0;
     margin: 0;
   }
-  #restaurants {
-    width: 100%;
-    height: auto;
-    background-color: #f2f2f2;
-    padding: 20px 0;
-  }
-  #restaurants .carte-resto {
-    width: 100%;
-  }
 }
 
 /*Version ordinateur*/
@@ -643,7 +634,7 @@ svg {
     border-radius: 25px;
     padding: 16px;
     color: white;
-    font-size: 1em;
+    font-size: 15px;
     font-weight: 500;
     margin: 20px;
     background: -webkit-linear-gradient(#9356DC 10%, #FF79DA 90%);
