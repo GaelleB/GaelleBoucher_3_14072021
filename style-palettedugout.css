@@ -132,6 +132,7 @@ main img {
   border: 1px solid transparent;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
+  color: white;
   padding: 12px;
   -webkit-transition: all 450ms ease-in-out;
   transition: all 450ms ease-in-out;
