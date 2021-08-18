@@ -17,12 +17,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   header .fa-arrow-left {
     margin-left: 150px;
@@ -345,18 +339,14 @@ header {
 }
 
 header .fa-arrow-left {
-  margin-left: -420px;
-}
-
-header .logo-header {
-  margin-right: 420px;
+  margin-right: 100px;
 }
 
 main img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 
 .titre-coeur {
@@ -376,7 +366,7 @@ main img {
 }
 
 .titre-coeur h1 {
-  font-size: 45px;
+  font-size: 30px;
 }
 
 .titre-coeur .fa-heart {
@@ -390,10 +380,10 @@ main img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -401,7 +391,7 @@ main img {
 }
 
 .menu .entrees {
-  width: 25%;
+  width: 97%;
   height: auto;
 }
 
@@ -412,7 +402,6 @@ main img {
 
 .menu .entrees .assiete-entree {
   width: 100%;
-  height: auto;
   background-color: white;
   border: white 2px solid;
   border-radius: 15px;
@@ -420,14 +409,17 @@ main img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
 }
 
 .menu .entrees .assiete-entree .titre-txt h3 {
-  font-size: 23px;
+  font-size: 18px;
   margin-top: 5px;
   margin-bottom: 12px;
   padding-left: 20px;
@@ -462,7 +454,7 @@ main img {
   border-radius: 10px;
   background-color: white;
   padding: 3px;
-  font-size: 18px;
+  font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,7 +475,7 @@ main img {
 }
 
 .menu .plats {
-  width: 25%;
+  width: 97%;
   height: auto;
 }
 
@@ -544,7 +536,7 @@ main img {
 }
 
 .menu .desserts {
-  width: 25%;
+  width: 97%;
   height: auto;
 }
 
@@ -608,7 +600,7 @@ main img {
   border: transparent 1px solid;
   border-radius: 25px;
   padding: 15px 30px;
-  margin: 20px 860px;
+  margin: 20px 110px 40px 110px;
   color: white;
   font-size: 15px;
   font-weight: bold;

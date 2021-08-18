@@ -578,6 +578,229 @@ svg {
     padding:  0;
     margin: 0;
   }
+  #restaurants {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #f2f2f2;
+    padding-top: 15px;
+  }
+  #restaurants h2 {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 25px;
+  }
+  #restaurants .resto {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #restaurants .resto .carte-resto {
+    height: 230px;
+    width: 35%;
+    border: 5px white solid;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 2px #F2F2F2;
+            box-shadow: 2px 2px 2px #F2F2F2;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 50px 20px 0;
+  }
+  #restaurants .resto .carte-resto .new {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #99E2D0;
+    color: #2c9c81;
+    position: absolute;
+    border-radius: 3px;
+    padding: 10px;
+    margin-left: 580px;
+    font-weight: bold;
+  }
+  #restaurants .resto .carte-resto img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0 0;
+  }
+  #restaurants .resto .titre-lieu-resto1 {
+    position: absolute;
+  }
+  #restaurants .resto .titre-lieu-resto1 h3 {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: black;
+  }
+  #restaurants .resto .titre-lieu-resto1 .p-coeur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #restaurants .resto .titre-lieu-resto1 .p-coeur p {
+    margin-top: 5px;
+    padding-left: 9px;
+    font-size: 20px;
+    color: black;
+  }
+  #restaurants .resto .titre-lieu-resto1 .p-coeur .fa-heart {
+    padding-left: 500px;
+    color: black;
+    font-size: 25px;
+  }
+  #restaurants .resto .titre-lieu-resto1 .p-coeur .fa-heart:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    font-weight: bold;
+  }
+  #restaurants .resto .titre-lieu-resto2 {
+    position: absolute;
+  }
+  #restaurants .resto .titre-lieu-resto2 h3 {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: black;
+  }
+  #restaurants .resto .titre-lieu-resto2 .p-coeur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #restaurants .resto .titre-lieu-resto2 .p-coeur p {
+    margin-top: 5px;
+    padding-left: 9px;
+    font-size: 20px;
+    color: black;
+  }
+  #restaurants .resto .titre-lieu-resto2 .p-coeur .fa-heart {
+    padding-left: 530px;
+    color: black;
+    font-size: 25px;
+  }
+  #restaurants .resto .titre-lieu-resto2 .p-coeur .fa-heart:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    font-weight: bold;
+  }
+  #restaurants .resto .titre-lieu-resto3 {
+    position: absolute;
+  }
+  #restaurants .resto .titre-lieu-resto3 h3 {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: black;
+  }
+  #restaurants .resto .titre-lieu-resto3 .p-coeur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #restaurants .resto .titre-lieu-resto3 .p-coeur p {
+    margin-top: 5px;
+    padding-left: 9px;
+    font-size: 20px;
+    color: black;
+  }
+  #restaurants .resto .titre-lieu-resto3 .p-coeur .fa-heart {
+    padding-left: 530px;
+    color: black;
+    font-size: 25px;
+  }
+  #restaurants .resto .titre-lieu-resto3 .p-coeur .fa-heart:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    font-weight: bold;
+  }
+  #restaurants .resto .titre-lieu-resto4 {
+    position: absolute;
+  }
+  #restaurants .resto .titre-lieu-resto4 h3 {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: black;
+  }
+  #restaurants .resto .titre-lieu-resto4 .p-coeur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #restaurants .resto .titre-lieu-resto4 .p-coeur p {
+    margin-top: 5px;
+    padding-left: 9px;
+    font-size: 20px;
+    color: black;
+  }
+  #restaurants .resto .titre-lieu-resto4 .p-coeur .fa-heart {
+    padding-left: 500px;
+    color: black;
+    font-size: 25px;
+  }
+  #restaurants .resto .titre-lieu-resto4 .p-coeur .fa-heart:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    font-weight: bold;
+  }
 }
 
 /*Version ordinateur*/
@@ -738,16 +961,18 @@ svg {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
   #restaurants .resto .carte-resto {
-    height: 250px;
-    width: 30%;
+    height: 230px;
+    width: 35%;
     border: 5px white solid;
     border-radius: 30px;
     -webkit-box-shadow: 2px 2px 2px #F2F2F2;
@@ -755,7 +980,7 @@ svg {
     background-color: white;
     overflow: hidden;
     position: relative;
-    margin: 10px 5px 20px 0;
+    margin: 10px 50px 20px 0;
   }
   #restaurants .resto .carte-resto .new {
     display: -webkit-box;
@@ -766,7 +991,7 @@ svg {
     position: absolute;
     border-radius: 3px;
     padding: 10px;
-    margin-left: 360px;
+    margin-left: 580px;
     font-weight: bold;
   }
   #restaurants .resto .carte-resto img {
@@ -802,7 +1027,7 @@ svg {
     color: black;
   }
   #restaurants .resto .titre-lieu-resto1 .p-coeur .fa-heart {
-    padding-left: 225px;
+    padding-left: 500px;
     color: black;
     font-size: 25px;
   }
@@ -842,7 +1067,7 @@ svg {
     color: black;
   }
   #restaurants .resto .titre-lieu-resto2 .p-coeur .fa-heart {
-    padding-left: 270px;
+    padding-left: 530px;
     color: black;
     font-size: 25px;
   }
@@ -882,7 +1107,7 @@ svg {
     color: black;
   }
   #restaurants .resto .titre-lieu-resto3 .p-coeur .fa-heart {
-    padding-left: 270px;
+    padding-left: 530px;
     color: black;
     font-size: 25px;
   }
@@ -922,7 +1147,7 @@ svg {
     color: black;
   }
   #restaurants .resto .titre-lieu-resto4 .p-coeur .fa-heart {
-    padding-left: 225px;
+    padding-left: 500px;
     color: black;
     font-size: 25px;
   }
