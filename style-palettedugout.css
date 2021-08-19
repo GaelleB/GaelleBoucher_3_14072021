@@ -107,14 +107,14 @@ main img {
 }
 
 .menu .entrees .assiete-entree .titre-txt h3 {
-  font-size: 23px;
+  font-size: 20px;
   margin-top: 5px;
   margin-bottom: 12px;
   padding-left: 20px;
 }
 
 .menu .entrees .assiete-entree .titre-txt p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 5px;
   padding-left: 20px;
@@ -179,50 +179,73 @@ main img {
   height: auto;
   background-color: white;
   border: white 2px solid;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
 }
 
-.menu .plats .assiete-plat h3 {
-  font-size: 23px;
+.menu .plats .assiete-plat .titre-txt h3 {
+  font-size: 20px;
   margin-top: 5px;
+  margin-bottom: 12px;
   padding-left: 20px;
 }
 
-.menu .plats .assiete-plat .p-prix {
-  font-size: 21px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.menu .plats .assiete-plat .p-prix p {
+.menu .plats .assiete-plat .titre-txt p {
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 5px;
   padding-left: 20px;
 }
 
-.menu .plats .assiete-plat .p-prix span {
-  font-weight: bold;
+.menu .plats .assiete-plat span {
+  font-size: 20px;
   margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 160px;
   padding-right: 20px;
+}
+
+.menu .plats .assiete-plat .check-container {
+  border: 1px solid transparent;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  color: white;
+  padding: 12px;
+  -webkit-transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in-out;
+}
+
+.menu .plats .assiete-plat .check-container .check:hover {
+  border-radius: 10px;
+  background-color: white;
+  padding: 3px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.menu .plats .assiete-plat .check-container .check:hover .fa-check:hover {
+  color: #99E2D0;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .menu .desserts {
@@ -240,50 +263,73 @@ main img {
   height: auto;
   background-color: white;
   border: white 2px solid;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
 }
 
-.menu .desserts .assiete-dessert h3 {
-  font-size: 23px;
+.menu .desserts .assiete-dessert .titre-txt h3 {
+  font-size: 20px;
   margin-top: 5px;
+  margin-bottom: 12px;
   padding-left: 20px;
 }
 
-.menu .desserts .assiete-dessert .p-prix {
-  font-size: 21px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.menu .desserts .assiete-dessert .p-prix p {
+.menu .desserts .assiete-dessert .titre-txt p {
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 5px;
   padding-left: 20px;
 }
 
-.menu .desserts .assiete-dessert .p-prix span {
-  font-weight: bold;
+.menu .desserts .assiete-dessert span {
+  font-size: 20px;
   margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 160px;
   padding-right: 20px;
+}
+
+.menu .desserts .assiete-dessert .check-container {
+  border: 1px solid transparent;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  color: white;
+  padding: 12px;
+  -webkit-transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in-out;
+}
+
+.menu .desserts .assiete-dessert .check-container .check:hover {
+  border-radius: 10px;
+  background-color: white;
+  padding: 3px;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.menu .desserts .assiete-dessert .check-container .check:hover .fa-check:hover {
+  color: #99E2D0;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .button-command {

@@ -75,13 +75,13 @@ main img {
                         .titre-txt {
                             h3 {
                                 $font-family-primary: 'Shrikhand', cursive;
-                                font-size: 23px;
+                                font-size: 20px;
                                 margin-top: 5px;
                                 margin-bottom: 12px;
                                 padding-left: 20px;
                             }
                                 p {
-                                    font-size: 20px;
+                                    font-size: 18px;
                                     margin-top: 0;
                                     margin-bottom: 5px;
                                     padding-left: 20px;
@@ -133,33 +133,57 @@ main img {
                             height: auto;
                             background-color: white;
                             border: white 2px solid;
-                            border-radius: 20px;
+                            border-radius: 15px;
                             margin-bottom: 20px;
                             display: flex;
-                            flex-direction: column;
-                            justify-content: space-evenly;
-                            h3 {
-                                $font-family-primary: 'Shrikhand', cursive;
-                                font-size: 23px;
-                                margin-top: 5px;
-                                padding-left: 20px;
-                            }
-                                .p-prix {
-                                    font-size: 21px;
-                                    display: flex;
-                                    flex-direction: row;
-                                    justify-content: space-between;
-                                        p {
-                                            margin-top: 0;
-                                            margin-bottom: 5px;
-                                            padding-left: 20px;
-                                        }
-                                            span {
-                                                font-weight: bold;
-                                                margin-top: 0;
-                                                padding-right: 20px;
-                                            }      
+                            align-items: center;
+                            overflow: hidden;
+                            .titre-txt {
+                                h3 {
+                                    $font-family-primary: 'Shrikhand', cursive;
+                                    font-size: 20px;
+                                    margin-top: 5px;
+                                    margin-bottom: 12px;
+                                    padding-left: 20px;
                                 }
+                                    p {
+                                        font-size: 18px;
+                                        margin-top: 0;
+                                        margin-bottom: 5px;
+                                        padding-left: 20px;
+                                    }
+                            }
+                                span {
+                                    font-size: 20px;
+                                    margin-top: 0;
+                                    margin-bottom: 5px;
+                                    padding-left: 160px;
+                                    padding-right: 20px;
+                                }
+                                    .check-container {
+                                        border: 1px solid transparent;
+                                        border-radius: 0 15px 15px 0;
+                                        background-color: $color-tertiary;
+                                        color: white;
+                                        padding: 12px;
+                                        transition: all 450ms ease-in-out;
+                                        .check:hover {
+                                            border-radius: 10px;
+                                            background-color: white;
+                                            padding: 3px;
+                                            font-size: 18px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            transition: all 400ms ease-in-out;
+                                            transform: rotate(360deg);
+                                                .fa-check:hover {
+                                                    color: $color-tertiary;
+                                                    font-weight: 600;
+                                                    font-size: 16px;
+                                                }
+                                        }
+                                    }
                         }
             }
                 .desserts {
@@ -175,33 +199,57 @@ main img {
                                 height: auto;
                                 background-color: white;
                                 border: white 2px solid;
-                                border-radius: 20px;
+                                border-radius: 15px;
                                 margin-bottom: 20px;
                                 display: flex;
-                                flex-direction: column;
-                                justify-content: space-evenly;
-                                h3 {
-                                    $font-family-primary: 'Shrikhand', cursive;
-                                    font-size: 23px;
-                                    margin-top: 5px;
-                                    padding-left: 20px;
-                                }
-                                    .p-prix {
-                                        font-size: 21px;
-                                        display: flex;
-                                        flex-direction: row;
-                                        justify-content: space-between;
-                                            p {
-                                                margin-top: 0;
-                                                margin-bottom: 5px;
-                                                padding-left: 20px;
-                                            }
-                                                span {
-                                                    font-weight: bold;
-                                                    margin-top: 0;
-                                                    padding-right: 20px;
-                                                }    
+                                align-items: center;
+                                overflow: hidden;
+                                .titre-txt {
+                                    h3 {
+                                        $font-family-primary: 'Shrikhand', cursive;
+                                        font-size: 20px;
+                                        margin-top: 5px;
+                                        margin-bottom: 12px;
+                                        padding-left: 20px;
                                     }
+                                        p {
+                                            font-size: 18px;
+                                            margin-top: 0;
+                                            margin-bottom: 5px;
+                                            padding-left: 20px;
+                                        }
+                                }
+                                    span {
+                                        font-size: 20px;
+                                        margin-top: 0;
+                                        margin-bottom: 5px;
+                                        padding-left: 160px;
+                                        padding-right: 20px;
+                                    }
+                                        .check-container {
+                                            border: 1px solid transparent;
+                                            border-radius: 0 15px 15px 0;
+                                            background-color: $color-tertiary;
+                                            color: white;
+                                            padding: 12px;
+                                            transition: all 450ms ease-in-out;
+                                            .check:hover {
+                                                border-radius: 10px;
+                                                background-color: white;
+                                                padding: 3px;
+                                                font-size: 18px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                transition: all 400ms ease-in-out;
+                                                transform: rotate(360deg);
+                                                    .fa-check:hover {
+                                                        color: $color-tertiary;
+                                                        font-weight: 600;
+                                                        font-size: 16px;
+                                                    }
+                                            }
+                                        }
                             }
                 }
 }
@@ -234,12 +282,12 @@ footer {
             color: white;
             text-decoration: none;
         }
-            a:link {
-                text-decoration: none;
-            }
-            a:visited {
-                color: white;
-            }
+                a:link {
+                    text-decoration: none;
+                }
+                    a:visited {
+                        color: white;
+                    }
             li {
                 color: white;
                 list-style: none;
