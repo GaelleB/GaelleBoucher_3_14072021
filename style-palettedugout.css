@@ -64,6 +64,24 @@ main img {
   padding: 10px 0 0 20px;
 }
 
+@-webkit-keyframes apparition-menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes apparition-menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .menu {
   width: 100%;
   height: auto;
@@ -83,6 +101,9 @@ main img {
 .menu .entrees {
   width: 25%;
   height: auto;
+  opacity: 1;
+  -webkit-animation: apparition-menu 0.5s ease-in-out;
+          animation: apparition-menu 0.5s ease-in-out;
 }
 
 .menu .entrees h2 {
@@ -90,7 +111,7 @@ main img {
   text-align: center;
 }
 
-.menu .entrees .assiete-entree {
+.menu .entrees .assiete-entree1, .menu .entrees .assiete-entree2, .menu .entrees .assiete-entree3 {
   width: 100%;
   height: auto;
   background-color: white;
@@ -104,31 +125,40 @@ main img {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 5px 4px #c6c5c5;
+          box-shadow: 4px 5px 4px #c6c5c5;
+  margin-bottom: 20px;
 }
 
-.menu .entrees .assiete-entree .titre-txt h3 {
+.menu .entrees .assiete-entree1 .titre-txt, .menu .entrees .assiete-entree2 .titre-txt, .menu .entrees .assiete-entree3 .titre-txt {
+  width: 90%;
+}
+
+.menu .entrees .assiete-entree1 .titre-txt h3, .menu .entrees .assiete-entree2 .titre-txt h3, .menu .entrees .assiete-entree3 .titre-txt h3 {
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 12px;
   padding-left: 20px;
 }
 
-.menu .entrees .assiete-entree .titre-txt p {
+.menu .entrees .assiete-entree1 .titre-txt p, .menu .entrees .assiete-entree2 .titre-txt p, .menu .entrees .assiete-entree3 .titre-txt p {
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 5px;
   padding-left: 20px;
 }
 
-.menu .entrees .assiete-entree span {
+.menu .entrees .assiete-entree1 span, .menu .entrees .assiete-entree2 span, .menu .entrees .assiete-entree3 span {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 5px;
-  padding-left: 160px;
+  margin-left: 75px;
   padding-right: 20px;
 }
 
-.menu .entrees .assiete-entree .check-container {
+.menu .entrees .assiete-entree1 .check-container, .menu .entrees .assiete-entree2 .check-container, .menu .entrees .assiete-entree3 .check-container {
+  width: 10%;
   border: 1px solid transparent;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
@@ -138,11 +168,7 @@ main img {
   transition: all 450ms ease-in-out;
 }
 
-.menu .entrees .assiete-entree .check-container .check:hover {
-  border-radius: 10px;
-  background-color: white;
-  padding: 3px;
-  font-size: 18px;
+.menu .entrees .assiete-entree1 .check-container .check:hover, .menu .entrees .assiete-entree2 .check-container .check:hover, .menu .entrees .assiete-entree3 .check-container .check:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,13 +178,17 @@ main img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  padding: 3px;
+  font-size: 18px;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.menu .entrees .assiete-entree .check-container .check:hover .fa-check:hover {
+.menu .entrees .assiete-entree1 .check-container .check:hover .fa-check:hover, .menu .entrees .assiete-entree2 .check-container .check:hover .fa-check:hover, .menu .entrees .assiete-entree3 .check-container .check:hover .fa-check:hover {
   color: #99E2D0;
   font-weight: 600;
   font-size: 16px;
@@ -167,6 +197,9 @@ main img {
 .menu .plats {
   width: 25%;
   height: auto;
+  opacity: 1;
+  -webkit-animation: apparition-menu 1s ease-in-out;
+          animation: apparition-menu 1s ease-in-out;
 }
 
 .menu .plats h2 {
@@ -188,6 +221,10 @@ main img {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 5px 4px #c6c5c5;
+          box-shadow: 4px 5px 4px #c6c5c5;
+  margin-bottom: 20px;
 }
 
 .menu .plats .assiete-plat .titre-txt h3 {
@@ -208,11 +245,12 @@ main img {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 5px;
-  padding-left: 160px;
+  margin-left: 60px;
   padding-right: 20px;
 }
 
 .menu .plats .assiete-plat .check-container {
+  width: 15px;
   border: 1px solid transparent;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
@@ -251,6 +289,9 @@ main img {
 .menu .desserts {
   width: 25%;
   height: auto;
+  opacity: 1;
+  -webkit-animation: apparition-menu 1.5s ease-in-out;
+          animation: apparition-menu 1.5s ease-in-out;
 }
 
 .menu .desserts h2 {
@@ -272,6 +313,10 @@ main img {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 5px 4px #c6c5c5;
+          box-shadow: 4px 5px 4px #c6c5c5;
+  margin-bottom: 20px;
 }
 
 .menu .desserts .assiete-dessert .titre-txt h3 {
@@ -292,11 +337,12 @@ main img {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 5px;
-  padding-left: 160px;
+  padding-left: 75px;
   padding-right: 20px;
 }
 
 .menu .desserts .assiete-dessert .check-container {
+  width: 15px;
   border: 1px solid transparent;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
@@ -304,7 +350,6 @@ main img {
   padding: 12px;
   -webkit-transition: all 450ms ease-in-out;
   transition: all 450ms ease-in-out;
-  overflow: hidden;
 }
 
 .menu .desserts .assiete-dessert .check-container .check:hover {

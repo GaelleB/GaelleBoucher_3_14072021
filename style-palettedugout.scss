@@ -47,6 +47,16 @@ main img {
             }
 }
 
+@keyframes apparition-menu {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 .menu {
     width: 100%;
     height: auto;
@@ -57,12 +67,15 @@ main img {
         .entrees {
             width: 25%;
             height: auto;
+            opacity: 1;
+            animation: apparition-menu 0.5s ease-in-out;
+            
                 h2 {
                     $font-family-primary: 'Shrikhand', cursive;
                     font-size: 25px;
                     text-align: center;
                 }
-                    .assiete-entree {
+                    .assiete-entree1, .assiete-entree2, .assiete-entree3 {
                         width: 100%;
                         height: auto;
                         background-color: white;
@@ -72,7 +85,11 @@ main img {
                         display: flex;
                         align-items: center;
                         overflow: hidden;
+                        cursor: pointer;
+                        box-shadow: 4px 5px 4px #c6c5c5;
+                        margin-bottom: 20px;
                         .titre-txt {
+                            width: 90%;
                             h3 {
                                 $font-family-primary: 'Shrikhand', cursive;
                                 font-size: 20px;
@@ -91,10 +108,83 @@ main img {
                                 font-size: 20px;
                                 margin-top: 0;
                                 margin-bottom: 5px;
-                                padding-left: 160px;
+                                margin-left: 75px;
                                 padding-right: 20px;
                             }
+                            .check-container {
+                                width: 10%;
+                                border: 1px solid transparent;
+                                border-radius: 0 15px 15px 0;
+                                background-color: $color-tertiary;
+                                color: white;
+                                padding: 12px;
+                                transition: all 450ms ease-in-out;
+                                .check:hover {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 10px;
+                                    background-color: white;
+                                    padding: 3px;
+                                    font-size: 18px;
+                                    transition: all 400ms ease-in-out;
+                                    transform: rotate(360deg);
+                                        .fa-check:hover {
+                                            color: $color-tertiary;
+                                            font-weight: 600;
+                                            font-size: 16px;
+                                        }
+                                }
+                            }
+                    }
+        }
+            .plats {
+                width: 25%;
+                height: auto;
+                opacity: 1;
+                animation: apparition-menu 1s ease-in-out;
+                    h2 {
+                        $font-family-primary: 'Shrikhand', cursive;
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                        .assiete-plat {
+                            width: 100%;
+                            height: auto;
+                            background-color: white;
+                            border: white 2px solid;
+                            border-radius: 15px;
+                            margin-bottom: 20px;
+                            display: flex;
+                            align-items: center;
+                            overflow: hidden;
+                            cursor: pointer;
+                            box-shadow: 4px 5px 4px #c6c5c5;
+                            margin-bottom: 20px;
+                            .titre-txt {
+                                h3 {
+                                    $font-family-primary: 'Shrikhand', cursive;
+                                    font-size: 20px;
+                                    margin-top: 5px;
+                                    margin-bottom: 12px;
+                                    padding-left: 20px;
+                                }
+                                    p {
+                                        font-size: 18px;
+                                        margin-top: 0;
+                                        margin-bottom: 5px;
+                                        padding-left: 20px;
+                                    }
+                            }
+                                span {
+                                    font-size: 20px;
+                                    margin-top: 0;
+                                    margin-bottom: 5px;
+                                    margin-left: 60px;
+                                    padding-right: 20px;
+                                }
                                 .check-container {
+                                    width: 15px;
                                     border: 1px solid transparent;
                                     border-radius: 0 15px 15px 0;
                                     background-color: $color-tertiary;
@@ -118,49 +208,55 @@ main img {
                                             }
                                     }
                                 }
-                    }
-        }
-            .plats {
-                width: 25%;
-                height: auto;
-                    h2 {
-                        $font-family-primary: 'Shrikhand', cursive;
-                        font-size: 25px;
-                        text-align: center;
-                    }
-                        .assiete-plat {
-                            width: 100%;
-                            height: auto;
-                            background-color: white;
-                            border: white 2px solid;
-                            border-radius: 15px;
-                            margin-bottom: 20px;
-                            display: flex;
-                            align-items: center;
-                            overflow: hidden;
-                            .titre-txt {
-                                h3 {
-                                    $font-family-primary: 'Shrikhand', cursive;
-                                    font-size: 20px;
-                                    margin-top: 5px;
-                                    margin-bottom: 12px;
-                                    padding-left: 20px;
-                                }
-                                    p {
-                                        font-size: 18px;
-                                        margin-top: 0;
-                                        margin-bottom: 5px;
+                        }
+            }
+                .desserts {
+                    width: 25%;
+                    height: auto;
+                    opacity: 1;
+                    animation: apparition-menu 1.5s ease-in-out;
+                        h2 {
+                            $font-family-primary: 'Shrikhand', cursive;
+                            font-size: 25px;
+                            text-align: center;
+                        }
+                            .assiete-dessert {
+                                width: 100%;
+                                height: auto;
+                                background-color: white;
+                                border: white 2px solid;
+                                border-radius: 15px;
+                                margin-bottom: 20px;
+                                display: flex;
+                                align-items: center;
+                                overflow: hidden;
+                                cursor: pointer;
+                                box-shadow: 4px 5px 4px #c6c5c5;
+                                margin-bottom: 20px;
+                                .titre-txt {
+                                    h3 {
+                                        $font-family-primary: 'Shrikhand', cursive;
+                                        font-size: 20px;
+                                        margin-top: 5px;
+                                        margin-bottom: 12px;
                                         padding-left: 20px;
                                     }
-                            }
-                                span {
-                                    font-size: 20px;
-                                    margin-top: 0;
-                                    margin-bottom: 5px;
-                                    padding-left: 160px;
-                                    padding-right: 20px;
+                                        p {
+                                            font-size: 18px;
+                                            margin-top: 0;
+                                            margin-bottom: 5px;
+                                            padding-left: 20px;
+                                        }
                                 }
+                                    span {
+                                        font-size: 20px;
+                                        margin-top: 0;
+                                        margin-bottom: 5px;
+                                        padding-left: 75px;
+                                        padding-right: 20px;
+                                    }
                                     .check-container {
+                                        width: 15px;
                                         border: 1px solid transparent;
                                         border-radius: 0 15px 15px 0;
                                         background-color: $color-tertiary;
@@ -184,73 +280,6 @@ main img {
                                                 }
                                         }
                                     }
-                        }
-            }
-                .desserts {
-                    width: 25%;
-                    height: auto;
-                        h2 {
-                            $font-family-primary: 'Shrikhand', cursive;
-                            font-size: 25px;
-                            text-align: center;
-                        }
-                            .assiete-dessert {
-                                width: 100%;
-                                height: auto;
-                                background-color: white;
-                                border: white 2px solid;
-                                border-radius: 15px;
-                                margin-bottom: 20px;
-                                display: flex;
-                                align-items: center;
-                                overflow: hidden;
-                                .titre-txt {
-                                    h3 {
-                                        $font-family-primary: 'Shrikhand', cursive;
-                                        font-size: 20px;
-                                        margin-top: 5px;
-                                        margin-bottom: 12px;
-                                        padding-left: 20px;
-                                    }
-                                        p {
-                                            font-size: 18px;
-                                            margin-top: 0;
-                                            margin-bottom: 5px;
-                                            padding-left: 20px;
-                                        }
-                                }
-                                    span {
-                                        font-size: 20px;
-                                        margin-top: 0;
-                                        margin-bottom: 5px;
-                                        padding-left: 160px;
-                                        padding-right: 20px;
-                                    }
-                                        .check-container {
-                                            border: 1px solid transparent;
-                                            border-radius: 0 15px 15px 0;
-                                            background-color: $color-tertiary;
-                                            color: white;
-                                            padding: 12px;
-                                            transition: all 450ms ease-in-out;
-                                            overflow: hidden;
-                                            .check:hover {
-                                                border-radius: 10px;
-                                                background-color: white;
-                                                padding: 3px;
-                                                font-size: 18px;
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                transition: all 400ms ease-in-out;
-                                                transform: rotate(360deg);
-                                                    .fa-check:hover {
-                                                        color: $color-tertiary;
-                                                        font-weight: 600;
-                                                        font-size: 16px;
-                                                    }
-                                            }
-                                        }
                             }
                 }
 }
