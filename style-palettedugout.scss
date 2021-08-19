@@ -233,6 +233,7 @@ main img {
                                             color: white;
                                             padding: 12px;
                                             transition: all 450ms ease-in-out;
+                                            overflow: hidden;
                                             .check:hover {
                                                 border-radius: 10px;
                                                 background-color: white;

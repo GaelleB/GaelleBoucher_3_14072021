@@ -304,6 +304,7 @@ main img {
   padding: 12px;
   -webkit-transition: all 450ms ease-in-out;
   transition: all 450ms ease-in-out;
+  overflow: hidden;
 }
 
 .menu .desserts .assiete-dessert .check-container .check:hover {
