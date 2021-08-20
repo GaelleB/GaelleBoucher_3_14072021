@@ -129,69 +129,91 @@ main img {
   -webkit-box-shadow: 4px 5px 4px #c6c5c5;
           box-shadow: 4px 5px 4px #c6c5c5;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.menu .entrees .assiete-entree1 .titre-txt, .menu .entrees .assiete-entree2 .titre-txt, .menu .entrees .assiete-entree3 .titre-txt {
+.menu .entrees .assiete-entree1:hover .titre-txt, .menu .entrees .assiete-entree2:hover .titre-txt, .menu .entrees .assiete-entree3:hover .titre-txt {
+  width: 75%;
+}
+
+.menu .entrees .assiete-entree1:hover .check, .menu .entrees .assiete-entree2:hover .check, .menu .entrees .assiete-entree3:hover .check {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu .entrees .assiete-entree1:hover .check::after, .menu .entrees .assiete-entree2:hover .check::after, .menu .entrees .assiete-entree3:hover .check::after {
+  -webkit-transform: rotate(-720deg);
+          transform: rotate(-720deg);
+}
+
+.menu .entrees .assiete-entree1 input, .menu .entrees .assiete-entree2 input, .menu .entrees .assiete-entree3 input {
+  visibility: hidden;
+}
+
+.menu .entrees .titre-txt {
   width: 90%;
+  margin: 3.5% 3% 3.8%;
+  -webkit-transition: width 800ms;
+  transition: width 800ms;
 }
 
-.menu .entrees .assiete-entree1 .titre-txt h3, .menu .entrees .assiete-entree2 .titre-txt h3, .menu .entrees .assiete-entree3 .titre-txt h3 {
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 12px;
-  padding-left: 20px;
+.menu .entrees .titre-txt h3 {
+  font-size: 1.18em;
+  margin-bottom: 6px;
 }
 
-.menu .entrees .assiete-entree1 .titre-txt p, .menu .entrees .assiete-entree2 .titre-txt p, .menu .entrees .assiete-entree3 .titre-txt p {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  padding-left: 20px;
+.menu .entrees .titre-txt p {
+  width: 100%;
+  overflow: hidden;
+  display: block;
 }
 
-.menu .entrees .assiete-entree1 span, .menu .entrees .assiete-entree2 span, .menu .entrees .assiete-entree3 span {
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  margin-left: 75px;
-  padding-right: 20px;
+.menu .entrees .titre-txt p, .menu .entrees .titre-txt span {
+  font-size: 1.01em;
 }
 
-.menu .entrees .assiete-entree1 .check-container, .menu .entrees .assiete-entree2 .check-container, .menu .entrees .assiete-entree3 .check-container {
-  width: 10%;
-  border: 1px solid transparent;
-  border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
-  color: white;
-  padding: 12px;
-  -webkit-transition: all 450ms ease-in-out;
-  transition: all 450ms ease-in-out;
-}
-
-.menu .entrees .assiete-entree1 .check-container .check:hover, .menu .entrees .assiete-entree2 .check-container .check:hover, .menu .entrees .assiete-entree3 .check-container .check:hover {
+.menu .entrees .titre-txt .p-prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.menu .entrees .check {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  right: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 10px;
-  background-color: white;
-  padding: 3px;
-  font-size: 18px;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 66px;
+  -webkit-transform: translateX(12vh);
+          transform: translateX(12vh);
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+  background-color: #99E2D0;
 }
 
-.menu .entrees .assiete-entree1 .check-container .check:hover .fa-check:hover, .menu .entrees .assiete-entree2 .check-container .check:hover .fa-check:hover, .menu .entrees .assiete-entree3 .check-container .check:hover .fa-check:hover {
-  color: #99E2D0;
-  font-weight: 600;
-  font-size: 16px;
+.menu .entrees .check:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f058";
+  font-size: 1.4em;
+  color: white;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 600ms 100ms;
+  transition: -webkit-transform 600ms 100ms;
+  transition: transform 600ms 100ms;
+  transition: transform 600ms 100ms, -webkit-transform 600ms 100ms;
 }
 
 .menu .plats {
@@ -207,7 +229,7 @@ main img {
   text-align: center;
 }
 
-.menu .plats .assiete-plat {
+.menu .plats .assiete-plat1, .menu .plats .assiete-plat2, .menu .plats .assiete-plat3 {
   width: 100%;
   height: auto;
   background-color: white;
@@ -225,65 +247,91 @@ main img {
   -webkit-box-shadow: 4px 5px 4px #c6c5c5;
           box-shadow: 4px 5px 4px #c6c5c5;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.menu .plats .assiete-plat .titre-txt h3 {
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 12px;
-  padding-left: 20px;
+.menu .plats .assiete-plat1:hover .titre-txt, .menu .plats .assiete-plat2:hover .titre-txt, .menu .plats .assiete-plat3:hover .titre-txt {
+  width: 75%;
 }
 
-.menu .plats .assiete-plat .titre-txt p {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  padding-left: 20px;
+.menu .plats .assiete-plat1:hover .check, .menu .plats .assiete-plat2:hover .check, .menu .plats .assiete-plat3:hover .check {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
-.menu .plats .assiete-plat span {
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  margin-left: 60px;
-  padding-right: 20px;
+.menu .plats .assiete-plat1:hover .check::after, .menu .plats .assiete-plat2:hover .check::after, .menu .plats .assiete-plat3:hover .check::after {
+  -webkit-transform: rotate(-720deg);
+          transform: rotate(-720deg);
 }
 
-.menu .plats .assiete-plat .check-container {
-  width: 15px;
-  border: 1px solid transparent;
-  border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
-  color: white;
-  padding: 12px;
-  -webkit-transition: all 450ms ease-in-out;
-  transition: all 450ms ease-in-out;
+.menu .plats .assiete-plat1 input, .menu .plats .assiete-plat2 input, .menu .plats .assiete-plat3 input {
+  visibility: hidden;
 }
 
-.menu .plats .assiete-plat .check-container .check:hover {
-  border-radius: 10px;
-  background-color: white;
-  padding: 3px;
-  font-size: 18px;
+.menu .plats .titre-txt {
+  width: 90%;
+  margin: 3.5% 3% 3.8%;
+  -webkit-transition: width 800ms;
+  transition: width 800ms;
+}
+
+.menu .plats .titre-txt h3 {
+  font-size: 1.18em;
+  margin-bottom: 6px;
+}
+
+.menu .plats .titre-txt p {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+.menu .plats .titre-txt p, .menu .plats .titre-txt span {
+  font-size: 1.01em;
+}
+
+.menu .plats .titre-txt .p-prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.menu .plats .check {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  right: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 66px;
+  -webkit-transform: translateX(12vh);
+          transform: translateX(12vh);
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+  background-color: #99E2D0;
 }
 
-.menu .plats .assiete-plat .check-container .check:hover .fa-check:hover {
-  color: #99E2D0;
-  font-weight: 600;
-  font-size: 16px;
+.menu .plats .check:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f058";
+  font-size: 1.4em;
+  color: white;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 600ms 100ms;
+  transition: -webkit-transform 600ms 100ms;
+  transition: transform 600ms 100ms;
+  transition: transform 600ms 100ms, -webkit-transform 600ms 100ms;
 }
 
 .menu .desserts {
@@ -299,7 +347,7 @@ main img {
   text-align: center;
 }
 
-.menu .desserts .assiete-dessert {
+.menu .desserts .assiete-dessert1, .menu .desserts .assiete-dessert2, .menu .desserts .assiete-dessert3 {
   width: 100%;
   height: auto;
   background-color: white;
@@ -317,65 +365,91 @@ main img {
   -webkit-box-shadow: 4px 5px 4px #c6c5c5;
           box-shadow: 4px 5px 4px #c6c5c5;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.menu .desserts .assiete-dessert .titre-txt h3 {
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 12px;
-  padding-left: 20px;
+.menu .desserts .assiete-dessert1:hover .titre-txt, .menu .desserts .assiete-dessert2:hover .titre-txt, .menu .desserts .assiete-dessert3:hover .titre-txt {
+  width: 75%;
 }
 
-.menu .desserts .assiete-dessert .titre-txt p {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  padding-left: 20px;
+.menu .desserts .assiete-dessert1:hover .check, .menu .desserts .assiete-dessert2:hover .check, .menu .desserts .assiete-dessert3:hover .check {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
-.menu .desserts .assiete-dessert span {
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  padding-left: 75px;
-  padding-right: 20px;
+.menu .desserts .assiete-dessert1:hover .check::after, .menu .desserts .assiete-dessert2:hover .check::after, .menu .desserts .assiete-dessert3:hover .check::after {
+  -webkit-transform: rotate(-720deg);
+          transform: rotate(-720deg);
 }
 
-.menu .desserts .assiete-dessert .check-container {
-  width: 15px;
-  border: 1px solid transparent;
-  border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
-  color: white;
-  padding: 12px;
-  -webkit-transition: all 450ms ease-in-out;
-  transition: all 450ms ease-in-out;
+.menu .desserts .assiete-dessert1 input, .menu .desserts .assiete-dessert2 input, .menu .desserts .assiete-dessert3 input {
+  visibility: hidden;
 }
 
-.menu .desserts .assiete-dessert .check-container .check:hover {
-  border-radius: 10px;
-  background-color: white;
-  padding: 3px;
-  font-size: 18px;
+.menu .desserts .titre-txt {
+  width: 90%;
+  margin: 3.5% 3% 3.8%;
+  -webkit-transition: width 800ms;
+  transition: width 800ms;
+}
+
+.menu .desserts .titre-txt h3 {
+  font-size: 1.18em;
+  margin-bottom: 6px;
+}
+
+.menu .desserts .titre-txt p {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+.menu .desserts .titre-txt p, .menu .desserts .titre-txt span {
+  font-size: 1.01em;
+}
+
+.menu .desserts .titre-txt .p-prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.menu .desserts .check {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  right: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 66px;
+  -webkit-transform: translateX(12vh);
+          transform: translateX(12vh);
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+  background-color: #99E2D0;
 }
 
-.menu .desserts .assiete-dessert .check-container .check:hover .fa-check:hover {
-  color: #99E2D0;
-  font-weight: 600;
-  font-size: 16px;
+.menu .desserts .check:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f058";
+  font-size: 1.4em;
+  color: white;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 600ms 100ms;
+  transition: -webkit-transform 600ms 100ms;
+  transition: transform 600ms 100ms;
+  transition: transform 600ms 100ms, -webkit-transform 600ms 100ms;
 }
 
 .button-command {

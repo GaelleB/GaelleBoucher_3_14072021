@@ -88,55 +88,70 @@ main img {
                         cursor: pointer;
                         box-shadow: 4px 5px 4px #c6c5c5;
                         margin-bottom: 20px;
-                        .titre-txt {
-                            width: 90%;
-                            h3 {
-                                $font-family-primary: 'Shrikhand', cursive;
-                                font-size: 20px;
-                                margin-top: 5px;
-                                margin-bottom: 12px;
-                                padding-left: 20px;
+                        position: relative;
+
+                        &:hover {
+                            .titre-txt{
+                                width: 75%;
                             }
-                                p {
-                                    font-size: 18px;
-                                    margin-top: 0;
-                                    margin-bottom: 5px;
-                                    padding-left: 20px;
+                    
+                            .check{
+                                transform: translateX(0);
+                                &::after{
+                                    transform: rotate(-720deg);
                                 }
+                            }
                         }
-                            span {
-                                font-size: 20px;
-                                margin-top: 0;
-                                margin-bottom: 5px;
-                                margin-left: 75px;
-                                padding-right: 20px;
-                            }
-                            .check-container {
-                                width: 10%;
-                                border: 1px solid transparent;
-                                border-radius: 0 15px 15px 0;
-                                background-color: $color-tertiary;
-                                color: white;
-                                padding: 12px;
-                                transition: all 450ms ease-in-out;
-                                .check:hover {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    border-radius: 10px;
-                                    background-color: white;
-                                    padding: 3px;
-                                    font-size: 18px;
-                                    transition: all 400ms ease-in-out;
-                                    transform: rotate(360deg);
-                                        .fa-check:hover {
-                                            color: $color-tertiary;
-                                            font-weight: 600;
-                                            font-size: 16px;
-                                        }
-                                }
-                            }
+                    
+                        input{
+                            visibility: hidden;
+                        }
                     }
+                        .titre-txt{
+                            width: 90%;
+                            margin: 3.5% 3% 3.8%;
+                            transition: width 800ms;
+                        
+                            h3{
+                                font-size: 1.18em;
+                                margin-bottom: 6px;
+                            }
+                        
+                            p{
+                                width: 100%;
+                                overflow: hidden;
+                                display: block;
+                            }
+                        
+                            p, span{
+                                font-size: 1.01em;
+                            }
+                        
+                            .p-prix{
+                                display: flex;
+                            }
+                        }
+                        
+                        .check{
+                            position: absolute;
+                            display: flex;
+                            top: 0;
+                            right:0;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
+                            width: 66px;
+                            transform: translateX(12vh);
+                            transition: transform 800ms;
+                            background-color: #99E2D0;
+                            &:after {
+                                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
+                                font-size: 1.4em;
+                                color: white;
+                                transform: rotate(0deg);
+                                transition: transform 600ms 100ms;
+                            }
+                        }
         }
             .plats {
                 width: 25%;
@@ -148,66 +163,82 @@ main img {
                         font-size: 25px;
                         text-align: center;
                     }
-                        .assiete-plat {
-                            width: 100%;
-                            height: auto;
-                            background-color: white;
-                            border: white 2px solid;
-                            border-radius: 15px;
-                            margin-bottom: 20px;
-                            display: flex;
-                            align-items: center;
-                            overflow: hidden;
-                            cursor: pointer;
-                            box-shadow: 4px 5px 4px #c6c5c5;
-                            margin-bottom: 20px;
-                            .titre-txt {
-                                h3 {
-                                    $font-family-primary: 'Shrikhand', cursive;
-                                    font-size: 20px;
-                                    margin-top: 5px;
-                                    margin-bottom: 12px;
-                                    padding-left: 20px;
-                                }
-                                    p {
-                                        font-size: 18px;
-                                        margin-top: 0;
-                                        margin-bottom: 5px;
-                                        padding-left: 20px;
-                                    }
+                    .assiete-plat1, .assiete-plat2, .assiete-plat3 {
+                        width: 100%;
+                        height: auto;
+                        background-color: white;
+                        border: white 2px solid;
+                        border-radius: 15px;
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        cursor: pointer;
+                        box-shadow: 4px 5px 4px #c6c5c5;
+                        margin-bottom: 20px;
+                        position: relative;
+
+                        &:hover {
+                            .titre-txt{
+                                width: 75%;
                             }
-                                span {
-                                    font-size: 20px;
-                                    margin-top: 0;
-                                    margin-bottom: 5px;
-                                    margin-left: 60px;
-                                    padding-right: 20px;
+                    
+                            .check{
+                                transform: translateX(0);
+                                &::after{
+                                    transform: rotate(-720deg);
                                 }
-                                .check-container {
-                                    width: 15px;
-                                    border: 1px solid transparent;
-                                    border-radius: 0 15px 15px 0;
-                                    background-color: $color-tertiary;
-                                    color: white;
-                                    padding: 12px;
-                                    transition: all 450ms ease-in-out;
-                                    .check:hover {
-                                        border-radius: 10px;
-                                        background-color: white;
-                                        padding: 3px;
-                                        font-size: 18px;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        transition: all 400ms ease-in-out;
-                                        transform: rotate(360deg);
-                                            .fa-check:hover {
-                                                color: $color-tertiary;
-                                                font-weight: 600;
-                                                font-size: 16px;
-                                            }
-                                    }
-                                }
+                            }
+                        }
+                    
+                        input{
+                            visibility: hidden;
+                        }
+                    }
+                        .titre-txt{
+                            width: 90%;
+                            margin: 3.5% 3% 3.8%;
+                            transition: width 800ms;
+                        
+                            h3{
+                                font-size: 1.18em;
+                                margin-bottom: 6px;
+                            }
+                        
+                            p{
+                                width: 100%;
+                                overflow: hidden;
+                                display: block;
+                            }
+                        
+                            p, span{
+                                font-size: 1.01em;
+                            }
+                        
+                            .p-prix{
+                                display: flex;
+                            }
+                        }
+                        
+                        .check{
+                            position: absolute;
+                            display: flex;
+                            top: 0;
+                            right:0;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100%;
+                            width: 66px;
+                            transform: translateX(12vh);
+                            transition: transform 800ms;
+                            background-color: #99E2D0;
+                            &:after {
+                                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
+                                font-size: 1.4em;
+                                color: white;
+                                transform: rotate(0deg);
+                                transition: transform 600ms 100ms;
+                            }
                         }
             }
                 .desserts {
@@ -220,66 +251,82 @@ main img {
                             font-size: 25px;
                             text-align: center;
                         }
-                            .assiete-dessert {
-                                width: 100%;
-                                height: auto;
-                                background-color: white;
-                                border: white 2px solid;
-                                border-radius: 15px;
-                                margin-bottom: 20px;
-                                display: flex;
-                                align-items: center;
-                                overflow: hidden;
-                                cursor: pointer;
-                                box-shadow: 4px 5px 4px #c6c5c5;
-                                margin-bottom: 20px;
-                                .titre-txt {
-                                    h3 {
-                                        $font-family-primary: 'Shrikhand', cursive;
-                                        font-size: 20px;
-                                        margin-top: 5px;
-                                        margin-bottom: 12px;
-                                        padding-left: 20px;
-                                    }
-                                        p {
-                                            font-size: 18px;
-                                            margin-top: 0;
-                                            margin-bottom: 5px;
-                                            padding-left: 20px;
-                                        }
+                        .assiete-dessert1, .assiete-dessert2, .assiete-dessert3 {
+                            width: 100%;
+                            height: auto;
+                            background-color: white;
+                            border: white 2px solid;
+                            border-radius: 15px;
+                            margin-bottom: 20px;
+                            display: flex;
+                            align-items: center;
+                            overflow: hidden;
+                            cursor: pointer;
+                            box-shadow: 4px 5px 4px #c6c5c5;
+                            margin-bottom: 20px;
+                            position: relative;
+    
+                            &:hover {
+                                .titre-txt{
+                                    width: 75%;
                                 }
-                                    span {
-                                        font-size: 20px;
-                                        margin-top: 0;
-                                        margin-bottom: 5px;
-                                        padding-left: 75px;
-                                        padding-right: 20px;
+                        
+                                .check{
+                                    transform: translateX(0);
+                                    &::after{
+                                        transform: rotate(-720deg);
                                     }
-                                    .check-container {
-                                        width: 15px;
-                                        border: 1px solid transparent;
-                                        border-radius: 0 15px 15px 0;
-                                        background-color: $color-tertiary;
-                                        color: white;
-                                        padding: 12px;
-                                        transition: all 450ms ease-in-out;
-                                        .check:hover {
-                                            border-radius: 10px;
-                                            background-color: white;
-                                            padding: 3px;
-                                            font-size: 18px;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            transition: all 400ms ease-in-out;
-                                            transform: rotate(360deg);
-                                                .fa-check:hover {
-                                                    color: $color-tertiary;
-                                                    font-weight: 600;
-                                                    font-size: 16px;
-                                                }
-                                        }
-                                    }
+                                }
+                            }
+                        
+                            input{
+                                visibility: hidden;
+                            }
+                        }
+                            .titre-txt{
+                                width: 90%;
+                                margin: 3.5% 3% 3.8%;
+                                transition: width 800ms;
+                            
+                                h3{
+                                    font-size: 1.18em;
+                                    margin-bottom: 6px;
+                                }
+                            
+                                p{
+                                    width: 100%;
+                                    overflow: hidden;
+                                    display: block;
+                                }
+                            
+                                p, span{
+                                    font-size: 1.01em;
+                                }
+                            
+                                .p-prix{
+                                    display: flex;
+                                }
+                            }
+                            
+                            .check{
+                                position: absolute;
+                                display: flex;
+                                top: 0;
+                                right:0;
+                                align-items: center;
+                                justify-content: center;
+                                height: 100%;
+                                width: 66px;
+                                transform: translateX(12vh);
+                                transition: transform 800ms;
+                                background-color: #99E2D0;
+                                &:after {
+                                    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
+                                    font-size: 1.4em;
+                                    color: white;
+                                    transform: rotate(0deg);
+                                    transition: transform 600ms 100ms;
+                                }
                             }
                 }
 }
