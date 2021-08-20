@@ -133,7 +133,7 @@ main img {
 }
 
 .menu .entrees .assiete-entree1:hover .titre-txt, .menu .entrees .assiete-entree2:hover .titre-txt, .menu .entrees .assiete-entree3:hover .titre-txt {
-  width: 75%;
+  width: 60%;
 }
 
 .menu .entrees .assiete-entree1:hover .check, .menu .entrees .assiete-entree2:hover .check, .menu .entrees .assiete-entree3:hover .check {
@@ -146,19 +146,15 @@ main img {
           transform: rotate(-720deg);
 }
 
-.menu .entrees .assiete-entree1 input, .menu .entrees .assiete-entree2 input, .menu .entrees .assiete-entree3 input {
-  visibility: hidden;
-}
-
 .menu .entrees .titre-txt {
-  width: 90%;
+  width: 80%;
   margin: 3.5% 3% 3.8%;
   -webkit-transition: width 800ms;
   transition: width 800ms;
 }
 
 .menu .entrees .titre-txt h3 {
-  font-size: 1.18em;
+  font-size: 20px;
   margin-bottom: 6px;
 }
 
@@ -169,7 +165,7 @@ main img {
 }
 
 .menu .entrees .titre-txt p, .menu .entrees .titre-txt span {
-  font-size: 1.01em;
+  font-size: 17px;
 }
 
 .menu .entrees .titre-txt .p-prix {
@@ -192,9 +188,9 @@ main img {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  width: 66px;
-  -webkit-transform: translateX(12vh);
-          transform: translateX(12vh);
+  width: 20%;
+  -webkit-transform: translateX(110px);
+          transform: translateX(110px);
   -webkit-transition: -webkit-transform 800ms;
   transition: -webkit-transform 800ms;
   transition: transform 800ms;
@@ -206,7 +202,7 @@ main img {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f058";
-  font-size: 1.4em;
+  font-size: 20px;
   color: white;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);

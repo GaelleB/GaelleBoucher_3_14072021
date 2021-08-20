@@ -91,43 +91,39 @@ main img {
                         position: relative;
 
                         &:hover {
-                            .titre-txt{
-                                width: 75%;
+                            .titre-txt {
+                                width: 60%;
                             }
                     
                             .check{
                                 transform: translateX(0);
-                                &::after{
+                                &::after {
                                     transform: rotate(-720deg);
                                 }
                             }
                         }
-                    
-                        input{
-                            visibility: hidden;
-                        }
                     }
-                        .titre-txt{
-                            width: 90%;
+                        .titre-txt {
+                            width: 80%;
                             margin: 3.5% 3% 3.8%;
                             transition: width 800ms;
                         
-                            h3{
-                                font-size: 1.18em;
+                            h3 {
+                                font-size: 20px;
                                 margin-bottom: 6px;
                             }
                         
-                            p{
+                            p {
                                 width: 100%;
                                 overflow: hidden;
                                 display: block;
                             }
                         
-                            p, span{
-                                font-size: 1.01em;
+                            p, span {
+                                font-size: 17px;
                             }
                         
-                            .p-prix{
+                            .p-prix {
                                 display: flex;
                             }
                         }
@@ -140,13 +136,13 @@ main img {
                             align-items: center;
                             justify-content: center;
                             height: 100%;
-                            width: 66px;
-                            transform: translateX(12vh);
+                            width: 20%;
+                            transform: translateX(110px);
                             transition: transform 800ms;
                             background-color: #99E2D0;
                             &:after {
                                 font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
-                                font-size: 1.4em;
+                                font-size: 20px;
                                 color: white;
                                 transform: rotate(0deg);
                                 transition: transform 600ms 100ms;
