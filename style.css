@@ -244,6 +244,14 @@ header {
           box-shadow: 1px 1px 5px #9e9e9e;
 }
 
+.descrip button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 1px 4px 5px 1px #c9c5c5;
+          box-shadow: 1px 4px 5px 1px #c9c5c5;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .fonctionnement {
   width: 100%;
   height: auto;
