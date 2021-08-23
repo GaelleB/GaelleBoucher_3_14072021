@@ -67,6 +67,7 @@ main img {
 }
 
 .menu {
+    $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
     height: auto;
     display: flex;
@@ -120,7 +121,7 @@ main img {
                     }
                         .titre-txt {
                             width: 80%;
-                            margin: 3.5% 3% 3.8%;
+                            margin: 15px 10px 15px;
                             transition: width 800ms;
                         
                             h3 {
@@ -209,7 +210,7 @@ main img {
                     }
                         .titre-txt {
                             width: 80%;
-                            margin: 3.5% 3% 3.8%;
+                            margin: 15px 10px;
                             transition: width 800ms;
                         
                             h3 {
@@ -476,7 +477,7 @@ footer {
                 }
                     .titre-txt {
                         width: 80%;
-                        margin: 3.5% 3% 3.8%;
+                        margin: 15px 10px;
                         transition: width 800ms;
                     
                         h3 {

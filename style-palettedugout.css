@@ -170,7 +170,7 @@ main img {
 
 .menu .entrees .titre-txt {
   width: 80%;
-  margin: 3.5% 3% 3.8%;
+  margin: 15px 10px 15px;
   -webkit-transition: width 800ms;
   transition: width 800ms;
 }
@@ -293,7 +293,7 @@ main img {
 
 .menu .plats .titre-txt {
   width: 80%;
-  margin: 3.5% 3% 3.8%;
+  margin: 15px 10px;
   -webkit-transition: width 800ms;
   transition: width 800ms;
 }
@@ -653,7 +653,7 @@ footer .fa-hands-helping {
   }
   .menu .entrees .titre-txt, .menu .plats .titre-txt, .menu .desserts .titre-txt {
     width: 80%;
-    margin: 3.5% 3% 3.8%;
+    margin: 15px 10px;
     -webkit-transition: width 800ms;
     transition: width 800ms;
   }
