@@ -593,7 +593,7 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 100%;
-  background-color: #595959;
+  background-color: #423f3f;
 }
 
 footer h2 {
@@ -861,9 +861,13 @@ footer .fa-hands-helping {
     padding: 0;
     margin: 0;
   }
+  .descrip {
+    padding-bottom: 40px;
+  }
   .fonctionnement {
     width: 100%;
     display: block;
+    padding-top: 25px;
   }
   .fonctionnement h2 {
     font-size: 25px;
@@ -894,6 +898,7 @@ footer .fa-hands-helping {
     width: 100%;
     display: block;
     margin-top: 25px;
+    padding-bottom: 50px;
   }
   #restaurants h2 {
     font-size: 25px;
@@ -1092,6 +1097,11 @@ footer .fa-hands-helping {
     -webkit-transition: 0.5s ease-out;
     transition: 0.5s ease-out;
     font-weight: bold;
+  }
+  footer {
+    width: auto;
+    height: auto;
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
