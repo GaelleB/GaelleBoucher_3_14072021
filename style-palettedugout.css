@@ -96,14 +96,15 @@ main img {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background-color: #f2f2f2;
+  padding-bottom: 30px;
 }
 
 .menu .entrees {
   width: 25%;
   height: auto;
   opacity: 1;
-  -webkit-animation: apparition-menu 0.5s ease-in-out;
-          animation: apparition-menu 0.5s ease-in-out;
+  -webkit-animation: apparition-menu 1s ease-in-out;
+          animation: apparition-menu 1s ease-in-out;
 }
 
 .menu .entrees h2 {
@@ -113,7 +114,7 @@ main img {
 
 .menu .entrees .assiete-entree1, .menu .entrees .assiete-entree2, .menu .entrees .assiete-entree3 {
   width: 100%;
-  height: auto;
+  height: 110px;
   background-color: white;
   border: white 2px solid;
   border-radius: 15px;
@@ -124,7 +125,14 @@ main img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
   -webkit-box-shadow: 4px 5px 4px #c6c5c5;
           box-shadow: 4px 5px 4px #c6c5c5;
@@ -133,7 +141,7 @@ main img {
 }
 
 .menu .entrees .assiete-entree1:hover .titre-txt, .menu .entrees .assiete-entree2:hover .titre-txt, .menu .entrees .assiete-entree3:hover .titre-txt {
-  width: 60%;
+  width: 50%;
 }
 
 .menu .entrees .assiete-entree1:hover .check, .menu .entrees .assiete-entree2:hover .check, .menu .entrees .assiete-entree3:hover .check {
@@ -216,8 +224,8 @@ main img {
   width: 25%;
   height: auto;
   opacity: 1;
-  -webkit-animation: apparition-menu 1s ease-in-out;
-          animation: apparition-menu 1s ease-in-out;
+  -webkit-animation: apparition-menu 2s ease-in-out;
+          animation: apparition-menu 2s ease-in-out;
 }
 
 .menu .plats h2 {
@@ -334,8 +342,8 @@ main img {
   width: 25%;
   height: auto;
   opacity: 1;
-  -webkit-animation: apparition-menu 1.5s ease-in-out;
-          animation: apparition-menu 1.5s ease-in-out;
+  -webkit-animation: apparition-menu 3s ease-in-out;
+          animation: apparition-menu 3s ease-in-out;
 }
 
 .menu .desserts h2 {
@@ -546,14 +554,13 @@ footer .fa-hands-helping {
   }
   .menu {
     width: 100%;
-    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -569,8 +576,8 @@ footer .fa-hands-helping {
     font-size: 20px;
   }
   .menu .entrees .assiete-entree {
-    width: 100%;
-    height: auto;
+    width: 97%;
+    height: 20px;
   }
   .menu .entrees .assiete-entree h3 {
     font-size: 15px;
