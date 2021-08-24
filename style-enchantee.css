@@ -245,6 +245,7 @@ main img {
 .menu .plats h2 {
   font-size: 25px;
   text-align: center;
+  padding-bottom: 60px;
 }
 
 .menu .plats .assiete-plat1, .menu .plats .assiete-plat2, .menu .plats .assiete-plat3 {
@@ -368,6 +369,7 @@ main img {
 .menu .desserts h2 {
   font-size: 25px;
   text-align: center;
+  padding-bottom: 60px;
 }
 
 .menu .desserts .assiete-dessert1, .menu .desserts .assiete-dessert2, .menu .desserts .assiete-dessert3 {
