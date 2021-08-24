@@ -98,7 +98,6 @@ main img {
                         flex-grow: 1;
                         white-space: nowrap;
                         overflow: hidden;
-                        text-overflow: ellipsis;
                         align-items: center;
                         cursor: pointer;
                         box-shadow: 4px 5px 4px #c6c5c5;
@@ -132,6 +131,7 @@ main img {
                             p {
                                 width: 100%;
                                 overflow: hidden;
+                                text-overflow: ellipsis;
                                 display: block;
                             }
                         
@@ -187,7 +187,6 @@ main img {
                         flex-grow: 1;
                         white-space: nowrap;
                         overflow: hidden;
-                        text-overflow: ellipsis;
                         align-items: center;
                         cursor: pointer;
                         box-shadow: 4px 5px 4px #c6c5c5;
@@ -221,6 +220,7 @@ main img {
                             p {
                                 width: 100%;
                                 overflow: hidden;
+                                text-overflow: ellipsis;
                                 display: block;
                             }
                         
@@ -276,7 +276,6 @@ main img {
                             flex-grow: 1;
                             white-space: nowrap;
                             overflow: hidden;
-                            text-overflow: ellipsis;
                             align-items: center;
                             cursor: pointer;
                             box-shadow: 4px 5px 4px #c6c5c5;
@@ -310,6 +309,7 @@ main img {
                                 p {
                                     width: 100%;
                                     overflow: hidden;
+                                    text-overflow: ellipsis;
                                     display: block;
                                 }
                             

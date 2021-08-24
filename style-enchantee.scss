@@ -1,7 +1,7 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$font-family-primary: 'Shrikhand', cursive; /*Logo et Titres*/
+$font-family-primary: 'Shrikhand', cursive; /*Logo et Titres*/
 $font-family-secondary: 'Roboto', sans-serif; /*Texte*/
 
 body {
@@ -98,7 +98,6 @@ main img {
                         flex-grow: 1;
                         white-space: nowrap;
                         overflow: hidden;
-                        text-overflow: ellipsis;
                         align-items: center;
                         cursor: pointer;
                         box-shadow: 4px 5px 4px #c6c5c5;
@@ -132,6 +131,7 @@ main img {
                             p {
                                 width: 100%;
                                 overflow: hidden;
+                                text-overflow: ellipsis;
                                 display: block;
                             }
                         
@@ -188,7 +188,6 @@ main img {
                         flex-grow: 1;
                         white-space: nowrap;
                         overflow: hidden;
-                        text-overflow: ellipsis;
                         align-items: center;
                         cursor: pointer;
                         box-shadow: 4px 5px 4px #c6c5c5;
@@ -222,6 +221,7 @@ main img {
                             p {
                                 width: 100%;
                                 overflow: hidden;
+                                text-overflow: ellipsis;
                                 display: block;
                             }
                         
@@ -278,7 +278,6 @@ main img {
                             flex-grow: 1;
                             white-space: nowrap;
                             overflow: hidden;
-                            text-overflow: ellipsis;
                             align-items: center;
                             cursor: pointer;
                             box-shadow: 4px 5px 4px #c6c5c5;
@@ -312,6 +311,7 @@ main img {
                                 p {
                                     width: 100%;
                                     overflow: hidden;
+                                    text-overflow: ellipsis;
                                     display: block;
                                 }
                             
