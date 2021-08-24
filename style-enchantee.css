@@ -772,7 +772,7 @@ footer .fa-hands-helping {
   }
   .titre-coeur h1 {
     font-family: "Shrikhand", cursive;
-    font-size: 35px;
+    font-size: 30px;
   }
   .titre-coeur .fa-heart {
     font-size: 25px;
@@ -800,10 +800,10 @@ footer .fa-hands-helping {
     background-color: #f2f2f2;
     margin-bottom: 20px;
   }
-  .menu .entrees {
+  .menu .entrees, .menu .plats, .menu .desserts {
     width: 99%;
   }
-  .menu .entrees h2 {
+  .menu .entrees h2, .menu .plats h2, .menu .desserts h2 {
     width: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -816,72 +816,16 @@ footer .fa-hands-helping {
     left: 0;
     font-weight: normal;
   }
-  .menu .entrees .assiete-entree {
+  .menu .entrees .assiete-entree, .menu .entrees .assiete-plat, .menu .entrees .assiete-dessert, .menu .plats .assiete-entree, .menu .plats .assiete-plat, .menu .plats .assiete-dessert, .menu .desserts .assiete-entree, .menu .desserts .assiete-plat, .menu .desserts .assiete-dessert {
     margin-left: 3px;
   }
-  .menu .entrees .assiete-entree h3 {
+  .menu .entrees .assiete-entree h3, .menu .entrees .assiete-plat h3, .menu .entrees .assiete-dessert h3, .menu .plats .assiete-entree h3, .menu .plats .assiete-plat h3, .menu .plats .assiete-dessert h3, .menu .desserts .assiete-entree h3, .menu .desserts .assiete-plat h3, .menu .desserts .assiete-dessert h3 {
     font-size: 18px;
   }
-  .menu .entrees .assiete-entree .p-prix p {
+  .menu .entrees .assiete-entree .p-prix p, .menu .entrees .assiete-plat .p-prix p, .menu .entrees .assiete-dessert .p-prix p, .menu .plats .assiete-entree .p-prix p, .menu .plats .assiete-plat .p-prix p, .menu .plats .assiete-dessert .p-prix p, .menu .desserts .assiete-entree .p-prix p, .menu .desserts .assiete-plat .p-prix p, .menu .desserts .assiete-dessert .p-prix p {
     font-size: 16px;
   }
-  .menu .entrees .assiete-entree .p-prix span {
-    font-size: 15px;
-  }
-  .menu .plats {
-    width: 99%;
-  }
-  .menu .plats h2 {
-    width: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 20px;
-    border-bottom: 4px #99E2D0 solid;
-    padding-left: 0px;
-    padding-bottom: 10px;
-    margin-left: 15px;
-    left: 0;
-    font-weight: normal;
-  }
-  .menu .plats .assiete-plat {
-    margin-left: 3px;
-  }
-  .menu .plats .assiete-plat h3 {
-    font-size: 18px;
-  }
-  .menu .plats .assiete-plat .p-prix p {
-    font-size: 16px;
-  }
-  .menu .plats .assiete-plat .p-prix span {
-    font-size: 15px;
-  }
-  .menu .desserts {
-    width: 99%;
-  }
-  .menu .desserts h2 {
-    width: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 20px;
-    border-bottom: 4px #99E2D0 solid;
-    padding-left: 0px;
-    padding-bottom: 10px;
-    margin-left: 15px;
-    left: 0;
-    font-weight: normal;
-  }
-  .menu .desserts .assiete-dessert {
-    margin-left: 3px;
-  }
-  .menu .desserts .assiete-dessert h3 {
-    font-size: 18px;
-  }
-  .menu .desserts .assiete-dessert .p-prix p {
-    font-size: 16px;
-  }
-  .menu .desserts .assiete-dessert .p-prix span {
+  .menu .entrees .assiete-entree .p-prix span, .menu .entrees .assiete-plat .p-prix span, .menu .entrees .assiete-dessert .p-prix span, .menu .plats .assiete-entree .p-prix span, .menu .plats .assiete-plat .p-prix span, .menu .plats .assiete-dessert .p-prix span, .menu .desserts .assiete-entree .p-prix span, .menu .desserts .assiete-plat .p-prix span, .menu .desserts .assiete-dessert .p-prix span {
     font-size: 15px;
   }
   .button-command {
@@ -889,7 +833,7 @@ footer .fa-hands-helping {
     border-radius: 25px;
     padding: 15px 40px;
     color: white;
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 500;
     margin: 50px 0 80px 100px;
     background: -webkit-linear-gradient(#9356DC 10%, #FF79DA 90%);
