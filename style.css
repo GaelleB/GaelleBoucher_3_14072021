@@ -73,7 +73,7 @@ svg {
 .load {
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  stroke-dasharray: 570;
+  stroke-dasharray: 570px;
   stroke-width: 20px;
 }
 
@@ -246,8 +246,8 @@ header {
 
 .descrip button:hover {
   cursor: pointer;
-  -webkit-box-shadow: 1px 4px 5px 1px #c9c5c5;
-          box-shadow: 1px 4px 5px 1px #c9c5c5;
+  -webkit-box-shadow: 5px 4px 5px 4px #c9c5c5;
+          box-shadow: 5px 4px 5px 4px #c9c5c5;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
