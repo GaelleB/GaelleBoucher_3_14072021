@@ -105,6 +105,8 @@ svg {
     }
 }
 
+/*Header*/
+
 header {
     width: 100%;
     $font-family-primary: 'Shrikhand', cursive;
@@ -112,6 +114,8 @@ header {
     display: flex;
     justify-content: center;
 }
+
+/*Localisation*/
 
 .loc {
     width: 100%;
@@ -128,6 +132,8 @@ header {
             }
         }
 }
+
+/*Description*/
 
 .descrip {
     width: 100%;
@@ -160,6 +166,8 @@ header {
                     }
                 }
 }
+
+/*Fonctionnement*/
 
 .fonctionnement {
     $font-family-secondary: 'Roboto', sans-serif;
@@ -218,6 +226,8 @@ header {
             }                  
 }
 
+/*Restaurants*/
+
 #restaurants {
     $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
@@ -264,7 +274,7 @@ header {
                                 height: 60%;
                                 border-radius: 20px 20px 0 0;
                             }
-                }
+                
                     .titre-lieu-resto1 {
                         position: absolute;
                             h3 {
@@ -296,7 +306,7 @@ header {
                                                 -webkit-background-clip: text;
                                                 background-clip: text;
                                                 -webkit-text-fill-color: transparent;
-                                                transition: 0.5s ease-out;
+                                                transition: 1s ease-out;
                                                 font-weight: bold;
                                             }  
                                 }
@@ -333,7 +343,7 @@ header {
                                                         -webkit-background-clip: text;
                                                         background-clip: text;
                                                         -webkit-text-fill-color: transparent;
-                                                        transition: 0.5s ease-out;
+                                                        transition: 1s ease-out;
                                                         font-weight: bold;
                                                     }  
                                     }
@@ -370,7 +380,7 @@ header {
                                                             -webkit-background-clip: text;
                                                             background-clip: text;
                                                             -webkit-text-fill-color: transparent;
-                                                            transition: 0.5s ease-out;
+                                                            transition: 1s ease-out;
                                                             font-weight: bold;
                                                         }  
                                         }
@@ -407,14 +417,16 @@ header {
                                                                 -webkit-background-clip: text;
                                                                 background-clip: text;
                                                                 -webkit-text-fill-color: transparent;
-                                                                transition: 0.5s ease-out;
+                                                                transition: 1s ease-out;
                                                                 font-weight: bold;
                                                             }  
                                             }
-                                }    
+                                        }   
+                } 
             }           
 }
 
+/*Footer*/
 footer {
     $font-family-secondary: 'Roboto', sans-serif;
     display: flex;
@@ -537,7 +549,7 @@ footer {
                                 height: 60%;
                                 border-radius: 20px 20px 0 0;
                             }
-                }
+                
                     .titre-lieu-resto1 {
                         position: absolute;
                             h3 {
@@ -648,7 +660,8 @@ footer {
                                                             font-size: 25px;
                                                         }  
                                             }
-                                }    
+                                } 
+                }   
             }    
     }
 }
@@ -663,9 +676,13 @@ footer {
         margin: 0;
     } 
     
+    /*Description*/
+
     .descrip {
         padding-bottom: 40px;
     }
+
+    /*Fonctionnement*/
 
     .fonctionnement {
         width: 100%;
@@ -697,6 +714,8 @@ footer {
             }
     }
     
+    /*Restaurants*/
+
     #restaurants {
         $font-family-secondary: 'Roboto', sans-serif;
         width: 100%;
@@ -737,7 +756,7 @@ footer {
                                         height: 60%;
                                         border-radius: 20px 20px 0 0;
                                     }
-                        }
+                        
                             .titre-lieu-resto1 {
                                 width: 100%;
                                 position: absolute;
@@ -880,7 +899,7 @@ footer {
                                                                 }
             
                                                                 .fa-heart:hover {
-                                                                    background: ($color-primary, $color-secondary);
+                                                                    background: linear-gradient($color-primary, $color-secondary);
                                                                     -webkit-background-clip: text;
                                                                     background-clip: text;
                                                                     -webkit-text-fill-color: transparent;
@@ -889,9 +908,12 @@ footer {
                                                                 }  
                                                     }
                                         }
+                        }
                 }
     }
 
+    /*Footer*/
+    
     footer {
         width: auto;
         height: auto;
