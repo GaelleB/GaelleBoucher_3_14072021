@@ -8,6 +8,7 @@ body {
   margin: 0;
 }
 
+/*Loading spinner*/
 .loader-container {
   height: 100%;
   width: 100%;
@@ -773,6 +774,16 @@ footer .fa-hands-helping {
     color: black;
     font-size: 25px;
   }
+  #restaurants .resto .carte-resto .titre-lieu-resto1 .p-coeur .fa-heart:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    font-weight: bold;
+  }
   #restaurants .resto .carte-resto .titre-lieu-resto2 {
     position: absolute;
   }
@@ -802,6 +813,16 @@ footer .fa-hands-helping {
     padding-left: 380px;
     color: black;
     font-size: 25px;
+  }
+  #restaurants .resto .carte-resto .titre-lieu-resto2 .p-coeur .fa-heart:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    font-weight: bold;
   }
   #restaurants .resto .carte-resto .titre-lieu-resto3 {
     position: absolute;
@@ -833,6 +854,16 @@ footer .fa-hands-helping {
     color: black;
     font-size: 25px;
   }
+  #restaurants .resto .carte-resto .titre-lieu-resto3 .p-coeur .fa-heart:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    font-weight: bold;
+  }
   #restaurants .resto .carte-resto .titre-lieu-resto4 {
     position: absolute;
   }
@@ -862,6 +893,16 @@ footer .fa-hands-helping {
     padding-left: 335px;
     color: black;
     font-size: 25px;
+  }
+  #restaurants .resto .carte-resto .titre-lieu-resto4 .p-coeur .fa-heart:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    font-weight: bold;
   }
 }
 
@@ -989,7 +1030,8 @@ footer .fa-hands-helping {
     font-size: 25px;
   }
   #restaurants .resto .carte-resto .titre-lieu-resto1 .p-coeur .fa-heart:hover {
-    background: #9356DC, #FF79DA;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1029,7 +1071,8 @@ footer .fa-hands-helping {
     font-size: 25px;
   }
   #restaurants .resto .carte-resto .titre-lieu-resto2 .p-coeur .fa-heart:hover {
-    background: #9356DC, #FF79DA;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1069,7 +1112,8 @@ footer .fa-hands-helping {
     font-size: 25px;
   }
   #restaurants .resto .carte-resto .titre-lieu-resto3 .p-coeur .fa-heart:hover {
-    background: #9356DC, #FF79DA;
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background: linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
