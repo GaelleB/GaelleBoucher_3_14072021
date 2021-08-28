@@ -575,6 +575,14 @@ footer {
                                                 color: black;
                                                 font-size: 25px;
                                             }
+                                            .fa-heart:hover {
+                                                background: linear-gradient($color-primary, $color-secondary);
+                                                -webkit-background-clip: text;
+                                                background-clip: text;
+                                                -webkit-text-fill-color: transparent;
+                                                transition: 1s ease-out;
+                                                font-weight: bold;
+                                            } 
                                 }
                     }
 
@@ -602,6 +610,14 @@ footer {
                                                     padding-left: 380px;
                                                     color: black;
                                                     font-size: 25px;
+                                                }
+                                                .fa-heart:hover {
+                                                    background: linear-gradient($color-primary, $color-secondary);
+                                                    -webkit-background-clip: text;
+                                                    background-clip: text;
+                                                    -webkit-text-fill-color: transparent;
+                                                    transition: 1s ease-out;
+                                                    font-weight: bold;
                                                 } 
                                     }
                         }
@@ -630,7 +646,15 @@ footer {
                                                         padding-left: 368px;
                                                         color: black;
                                                         font-size: 25px;
-                                                    }  
+                                                    }
+                                                    .fa-heart:hover {
+                                                        background: linear-gradient($color-primary, $color-secondary);
+                                                        -webkit-background-clip: text;
+                                                        background-clip: text;
+                                                        -webkit-text-fill-color: transparent;
+                                                        transition: 1s ease-out;
+                                                        font-weight: bold;
+                                                    }   
                                         }
                             }
 
@@ -659,6 +683,14 @@ footer {
                                                             color: black;
                                                             font-size: 25px;
                                                         }  
+                                                        .fa-heart:hover {
+                                                            background: linear-gradient($color-primary, $color-secondary);
+                                                            -webkit-background-clip: text;
+                                                            background-clip: text;
+                                                            -webkit-text-fill-color: transparent;
+                                                            transition: 1s ease-out;
+                                                            font-weight: bold;
+                                                        } 
                                             }
                                 } 
                 }   
@@ -785,13 +817,13 @@ footer {
                                                     }
 
                                                     .fa-heart:hover {
-                                                        background: ($color-primary, $color-secondary);
+                                                        background: linear-gradient($color-primary, $color-secondary);
                                                         -webkit-background-clip: text;
                                                         background-clip: text;
                                                         -webkit-text-fill-color: transparent;
-                                                        transition: 0.5s ease-out;
+                                                        transition: 1s ease-out;
                                                         font-weight: bold;
-                                                    }
+                                                    } 
                                         }
                             }
 
@@ -823,11 +855,11 @@ footer {
                                                         }
     
                                                         .fa-heart:hover {
-                                                            background: ($color-primary, $color-secondary);
+                                                            background: linear-gradient($color-primary, $color-secondary);
                                                             -webkit-background-clip: text;
                                                             background-clip: text;
                                                             -webkit-text-fill-color: transparent;
-                                                            transition: 0.5s ease-out;
+                                                            transition: 1s ease-out;
                                                             font-weight: bold;
                                                         } 
                                             }
@@ -861,11 +893,11 @@ footer {
                                                             }
         
                                                             .fa-heart:hover {
-                                                                background: ($color-primary, $color-secondary);
+                                                                background: linear-gradient($color-primary, $color-secondary);
                                                                 -webkit-background-clip: text;
                                                                 background-clip: text;
                                                                 -webkit-text-fill-color: transparent;
-                                                                transition: 0.5s ease-out;
+                                                                transition: 1s ease-out;
                                                                 font-weight: bold;
                                                             }
                                                 }
@@ -897,13 +929,12 @@ footer {
                                                                     color: black;
                                                                     font-size: 25px;
                                                                 }
-            
                                                                 .fa-heart:hover {
                                                                     background: linear-gradient($color-primary, $color-secondary);
                                                                     -webkit-background-clip: text;
                                                                     background-clip: text;
                                                                     -webkit-text-fill-color: transparent;
-                                                                    transition: 0.5s ease-out;
+                                                                    transition: 1s ease-out;
                                                                     font-weight: bold;
                                                                 }  
                                                     }
