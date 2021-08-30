@@ -304,15 +304,24 @@ header {
                                         }
 
                                             .fa-heart:hover {
-                                                background: linear-gradient($color-primary, $color-secondary);
-                                                -webkit-background-clip: text;
-                                                background-clip: text;
-                                                -webkit-text-fill-color: transparent;
-                                                transition: 1s ease-out;
-                                                font-weight: bold;
-                                            }  
+                                                font-weight: bold; 
+                                                background: -webkit-linear-gradient($color-primary, $color-secondary);
+                                                background-clip: text; 
+                                                -webkit-background-clip: text; 
+                                                -webkit-text-fill-color: transparent; 
+                                                animation: test 3s forwards;
+                                            } 
                                 }
                     }
+
+                    @keyframes test { 
+                        from {
+                        background-position-y: 2.8rem; 
+                        } 
+                        to { 
+                        background-position-y: -2.8rem;
+                        }
+                    } 
 
                         .titre-lieu-resto2 {
                             position: absolute;
