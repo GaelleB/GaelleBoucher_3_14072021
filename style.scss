@@ -183,6 +183,7 @@ header {
         $font-family-primary: 'Shrikhand', cursive;
     }
             .fonction {
+                $font-family-secondary: 'Roboto', sans-serif;
                 width: auto;
                 display: flex;
                 flex-direction: row;
@@ -305,21 +306,21 @@ header {
 
                                             .fa-heart:hover {
                                                 font-weight: bold; 
-                                                background: -webkit-linear-gradient($color-primary, $color-secondary);
-                                                background-clip: text; 
+                                                background: -webkit-linear-gradient($color-primary, $color-secondary); 
                                                 -webkit-background-clip: text; 
+                                                background-clip: text;
                                                 -webkit-text-fill-color: transparent; 
-                                                animation: test 3s forwards;
+                                                animation: coeur 2s forwards;
                                             } 
                                 }
                     }
 
-                    @keyframes test { 
+                    @keyframes coeur { 
                         from {
-                        background-position-y: 2.8rem; 
+                        background-position-y: 3rem; 
                         } 
                         to { 
-                        background-position-y: -2.8rem;
+                        background-position-y: -3rem;
                         }
                     } 
 
