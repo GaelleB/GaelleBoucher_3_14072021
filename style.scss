@@ -149,9 +149,11 @@ header {
             $font-family-primary: 'Shrikhand', cursive;
         }
             p {
+                $font-family-secondary: 'Roboto', sans-serif;
                 font-size: 20px;
             }
                 button {
+                    $font-family-secondary: 'Roboto', sans-serif;
                     border: transparent 1px solid;  
                     border-radius: 25px;
                     padding: 16px;
@@ -193,6 +195,7 @@ header {
                     border-radius: 25px;
                 }
                 .inside-fonction {
+                    $font-family-secondary: 'Roboto', sans-serif;
                     background-color: #f2f2f2;
                     display: flex;
                     flex-direction: row;
@@ -200,6 +203,7 @@ header {
                     margin: 0 40px 20px 5px;
                     border-radius: 25px;
                     .number {
+                        $font-family-secondary: 'Roboto', sans-serif;
                         position: absolute;
                         color: #f2f2f2;
                         background-color: #9356DC;
@@ -245,6 +249,7 @@ header {
             $font-family-primary: 'Shrikhand', cursive;
         }
             .resto {
+                $font-family-secondary: 'Roboto', sans-serif;
                 width: 100%;
                 display: flex;
                 flex-direction: row;
@@ -252,6 +257,7 @@ header {
                 justify-content: center;
                 align-items: center;
                 .carte-resto {
+                    $font-family-secondary: 'Roboto', sans-serif;
                     height: 220px;
                     width: 40%;
                     border: 5px white solid;
@@ -262,6 +268,7 @@ header {
                     position: relative;
                     margin: 10px 50px 20px 0;
                         .new {
+                            $font-family-secondary: 'Roboto', sans-serif;
                             display: flex;
                             background: #99E2D0;
                             color: #2c9c81;
@@ -292,6 +299,7 @@ header {
                                     display: flex;
                                     flex-direction: row;
                                     p {
+                                        $font-family-secondary: 'Roboto', sans-serif;
                                         margin-top: 5px;
                                         padding-left: 9px;
                                         font-size: 20px;
@@ -338,6 +346,7 @@ header {
                                         display: flex;
                                         flex-direction: row;
                                             p {
+                                                $font-family-secondary: 'Roboto', sans-serif;
                                                 margin-top: 5px;
                                                 padding-left: 9px;
                                                 font-size: 20px;
@@ -375,6 +384,7 @@ header {
                                             display: flex;
                                             flex-direction: row;
                                                 p {
+                                                    $font-family-secondary: 'Roboto', sans-serif;
                                                     margin-top: 5px;
                                                     padding-left: 9px;
                                                     font-size: 20px;
@@ -412,6 +422,7 @@ header {
                                                 display: flex;
                                                 flex-direction: row;
                                                     p {
+                                                        $font-family-secondary: 'Roboto', sans-serif;
                                                         margin-top: 5px;
                                                         padding-left: 9px;
                                                         font-size: 20px;
@@ -421,7 +432,7 @@ header {
                                                         .fa-heart {
                                                             padding-left: 588px;
                                                             color: black;
-                                                            font-size: 25px;
+                                                            font-size: 25px; 
                                                         }
 
                                                             .fa-heart:hover {
@@ -462,6 +473,7 @@ footer {
                     color: white;
                 }
             li {
+                $font-family-secondary: 'Roboto', sans-serif;
                 color: white;
                 list-style: none;
                 text-decoration: none;
@@ -769,13 +781,13 @@ footer {
             h2 {
                 font-size: 25px;
                 padding-top: 15px;
-                margin-right: 210px;
+                margin-right: 190px;
                 $font-family-primary: 'Shrikhand', cursive;
             }
                 .resto {
                     display: block;
                         .carte-resto {
-                            width: 99%;
+                            width: 90%;
                             height: 200px;
                             border: 1px white solid;
                             border-radius: 30px;
@@ -784,6 +796,7 @@ footer {
                             overflow: hidden;
                             position: relative;
                             align-items: center;
+                            margin: 20px 20px;
                                 .new {
                                     display: flex;
                                     background: #99E2D0;
@@ -791,7 +804,7 @@ footer {
                                     position: absolute;
                                     border-radius: 3px;
                                     padding: 10px;
-                                    margin-left: 280px;
+                                    margin-left: 240px;
                                     font-weight: bold;
                                 }
                                     img {
@@ -823,7 +836,7 @@ footer {
                                                     
                                                 }
                                                     .fa-heart {
-                                                        padding-left: 210px;
+                                                        padding-left: 160px;
                                                         color: black;
                                                         font-size: 25px;
                                                     }
@@ -861,7 +874,7 @@ footer {
                                                         
                                                     }
                                                         .fa-heart {
-                                                            padding-left: 245px;
+                                                            padding-left: 190px;
                                                             color: black;
                                                             font-size: 25px;
                                                         }
@@ -899,7 +912,7 @@ footer {
                                                             
                                                         }
                                                             .fa-heart {
-                                                                padding-left: 235px;
+                                                                padding-left: 180px;
                                                                 color: black;
                                                                 font-size: 25px;
                                                             }
@@ -937,7 +950,7 @@ footer {
                                                                 
                                                             }
                                                                 .fa-heart {
-                                                                    padding-left: 190px;
+                                                                    padding-left: 130px;
                                                                     color: black;
                                                                     font-size: 25px;
                                                                 }
