@@ -32,37 +32,16 @@ main img {
     height: 400px;
 }
 
-.titre-coeur {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-        h1 {
-            $font-family-primary: 'Shrikhand', cursive;
-            font-size: 45px;
-        }
-            .fa-heart {
-                font-size: 30px;
-                padding: 10px 0 0 20px;
-                font-weight: normal;
-            }
-            .fa-heart:hover {
-                background: linear-gradient($color-primary, $color-secondary);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                transition: 1s ease-out;
-                font-weight: bold;
-            }
-}
+
 
 @keyframes apparition-menu {
+
     from {
         opacity: 0;
     }
 
     to {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
@@ -71,188 +50,57 @@ main img {
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     background-color: #f2f2f2;
     padding-bottom: 30px;
-        .entrees {
-            width: 25%;
-            height: auto;
-            opacity: 1;
-            animation: apparition-menu 1s ease-in-out;
-            
-                h2 {
-                    $font-family-primary: 'Shrikhand', cursive;
-                    font-size: 25px;
-                    text-align: center;
+    .titre-coeur {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        bottom: 30px;
+            h1 {
+                $font-family-primary: 'Shrikhand', cursive;
+                font-size: 45px;
+            }
+                .fa-heart {
+                    font-size: 30px;
+                    padding: 10px 0 0 20px;
+                    font-weight: normal;
                 }
-                    .assiete-entree1, .assiete-entree2, .assiete-entree3 {
-                        width: 100%;
-                        height: 110px;
-                        background-color: white;
-                        border: white 2px solid;
-                        border-radius: 15px;
-                        margin-bottom: 20px;
-                        display: flex;
-                        flex-shrink: 1;
-                        flex-grow: 1;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        align-items: center;
-                        cursor: pointer;
-                        box-shadow: 4px 5px 4px #c6c5c5;
-                        margin-bottom: 20px;
-                        position: relative;
-
-                        &:hover {
-                            .titre-txt {
-                                width: 50%;
-                            }
-                    
-                            .check{
-                                transform: translateX(0);
-                                flex-shrink: 1;
-                                &::after {
-                                    transform: rotate(-720deg);
-                                }
-                            }
-                        }
-                    }
-                        .titre-txt {
-                            width: 80%;
-                            margin: 15px 10px 15px;
-                            transition: width 800ms;
-                        
-                            h3 {
-                                font-size: 20px;
-                                margin-bottom: 6px;
-                            }
-                        
-                            p {
-                                width: 100%;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                                display: block;
-                            }
-                        }
-                        
-                        .check{
-                            position: absolute;
-                            display: flex;
-                            top: 0;
-                            right:0;
-                            align-items: center;
-                            justify-content: center;
-                            height: 100%;
-                            width: 20%;
-                            transform: translateX(110px);
-                            transition: transform 800ms;
-                            background-color: #99E2D0;
-                            &:after {
-                                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
-                                font-size: 20px;
-                                color: white;
-                                transform: rotate(0deg);
-                                transition: transform 600ms 100ms;
-                            }
-                        }
+                .fa-heart:hover {
+                    background: linear-gradient($color-primary, $color-secondary);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: 1s ease-out;
+                    font-weight: bold;
+                }
+    }
+        .entree-plat-dessert {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
-            .plats {
+            .entrees {
                 width: 25%;
                 height: auto;
                 opacity: 1;
-                animation: apparition-menu 2s ease-in-out;
+                animation: apparition-menu 1s ease-in-out;
+                
                     h2 {
                         $font-family-primary: 'Shrikhand', cursive;
                         font-size: 25px;
                         text-align: center;
-                    }
-                    .assiete-plat1, .assiete-plat2, .assiete-plat3 {
-                        width: 100%;
-                        height: 110px;
-                        background-color: white;
-                        border: white 2px solid;
-                        border-radius: 15px;
-                        margin-bottom: 20px;
-                        display: flex;
-                        flex-shrink: 1;
-                        flex-grow: 1;
-                        white-space: nowrap;
-                        overflow: hidden;
                         align-items: center;
-                        cursor: pointer;
-                        box-shadow: 4px 5px 4px #c6c5c5;
-                        margin-bottom: 20px;
-                        position: relative;
-
-                        &:hover {
-                            .titre-txt {
-                                width: 50%;
-                            }
-                    
-                            .check{
-                                transform: translateX(0);
-                                flex-shrink: 1;
-                                &::after {
-                                    transform: rotate(-720deg);
-                                }
-                            }
-                        }
+                        padding-right: 40px;
                     }
-                        .titre-txt {
-                            width: 80%;
-                            margin: 15px 10px;
-                            transition: width 800ms;
-                        
-                            h3 {
-                                font-size: 20px;
-                                margin-bottom: 6px;
-                            }
-                        
-                            p {
-                                width: 100%;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                                display: block;
-                            }
-                        }
-                        
-                        .check{
-                            position: absolute;
-                            display: flex;
-                            top: 0;
-                            right:0;
-                            align-items: center;
-                            justify-content: center;
-                            height: 100%;
-                            width: 20%;
-                            transform: translateX(110px);
-                            transition: transform 800ms;
-                            background-color: #99E2D0;
-                            &:after {
-                                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
-                                font-size: 20px;
-                                color: white;
-                                transform: rotate(0deg);
-                                transition: transform 600ms 100ms;
-                            }
-                        }
-            }
-                .desserts {
-                    width: 25%;
-                    height: auto;
-                    opacity: 1;
-                    animation: apparition-menu 3s ease-in-out;
-                        h2 {
-                            $font-family-primary: 'Shrikhand', cursive;
-                            font-size: 25px;
-                            text-align: center;
-                        }
-                        .assiete-dessert1, .assiete-dessert2, .assiete-dessert3 {
-                            width: 100%;
-                            height: 110px;
+                        .assiete-entree1, .assiete-entree2, .assiete-entree3 {
+                            width: 90%;
+                            height: 100px;
                             background-color: white;
-                            border: white 2px solid;
                             border-radius: 15px;
                             margin-bottom: 20px;
                             display: flex;
@@ -265,7 +113,7 @@ main img {
                             box-shadow: 4px 5px 4px #c6c5c5;
                             margin-bottom: 20px;
                             position: relative;
-    
+
                             &:hover {
                                 .titre-txt {
                                     width: 50%;
@@ -282,7 +130,7 @@ main img {
                         }
                             .titre-txt {
                                 width: 80%;
-                                margin: 3.5% 3% 3.8%;
+                                margin: 15px 10px;
                                 transition: width 800ms;
                             
                                 h3 {
@@ -297,28 +145,205 @@ main img {
                                     display: block;
                                 }
                             }
+
+                                span {
+                                    padding-top: 40px;
+                                    font-weight: bold;
+                                }
                             
-                            .check{
-                                position: absolute;
-                                display: flex;
-                                top: 0;
-                                right:0;
-                                align-items: center;
-                                justify-content: center;
-                                height: 100%;
-                                width: 20%;
-                                transform: translateX(110px);
-                                transition: transform 800ms;
-                                background-color: #99E2D0;
-                                &:after {
-                                    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
-                                    font-size: 20px;
-                                    color: white;
-                                    transform: rotate(0deg);
-                                    transition: transform 600ms 100ms;
+                                    .check{
+                                        position: absolute;
+                                        display: flex;
+                                        top: 0;
+                                        right:0;
+                                        align-items: center;
+                                        justify-content: center;
+                                        height: 100%;
+                                        width: 20%;
+                                        transform: translateX(110px);
+                                        transition: transform 800ms;
+                                        background-color: #99E2D0;
+                                        &:after {
+                                            font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
+                                            font-size: 20px;
+                                            color: white;
+                                            transform: rotate(0deg);
+                                            transition: transform 600ms 100ms;
+                                        }
+                                    }
+            }
+                .plats {
+                    width: 25%;
+                    height: auto;
+                    opacity: 1;
+                    animation: apparition-menu 2s ease-in-out;
+                        h2 {
+                            $font-family-primary: 'Shrikhand', cursive;
+                            font-size: 25px;
+                            text-align: center;
+                            padding-right: 40px;
+                        }
+                        .assiete-plat1, .assiete-plat2, .assiete-plat3 {
+                            width: 90%;
+                            height: 100px;
+                            background-color: white;
+                            border-radius: 15px;
+                            margin-bottom: 20px;
+                            display: flex;
+                            flex-shrink: 1;
+                            flex-grow: 1;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            align-items: center;
+                            cursor: pointer;
+                            box-shadow: 4px 5px 4px #c6c5c5;
+                            margin-bottom: 20px;
+                            position: relative;
+
+                            &:hover {
+                                .titre-txt {
+                                    width: 50%;
+                                }
+                        
+                                .check{
+                                    transform: translateX(0);
+                                    flex-shrink: 1;
+                                    &::after {
+                                        transform: rotate(-720deg);
+                                    }
                                 }
                             }
+                        }
+                            .titre-txt {
+                                width: 80%;
+                                margin: 15px 10px;
+                                transition: width 800ms;
+                            
+                                h3 {
+                                    font-size: 20px;
+                                    margin-bottom: 6px;
+                                }
+                            
+                                p {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: block;
+                                }
+                            }
+
+                                span {
+                                    padding-top: 40px;
+                                    font-weight: bold;
+                                }
+                            
+                                    .check{
+                                        position: absolute;
+                                        display: flex;
+                                        top: 0;
+                                        right:0;
+                                        align-items: center;
+                                        justify-content: center;
+                                        height: 100%;
+                                        width: 20%;
+                                        transform: translateX(110px);
+                                        transition: transform 800ms;
+                                        background-color: #99E2D0;
+                                        &:after {
+                                            font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
+                                            font-size: 20px;
+                                            color: white;
+                                            transform: rotate(0deg);
+                                            transition: transform 600ms 100ms;
+                                        }
+                                    }
                 }
+                    .desserts {
+                        width: 25%;
+                        height: auto;
+                        opacity: 1;
+                        animation: apparition-menu 3s ease-in-out;
+                            h2 {
+                                $font-family-primary: 'Shrikhand', cursive;
+                                font-size: 25px;
+                                text-align: center;
+                                padding-right: 40px;
+                            }
+                            .assiete-dessert1, .assiete-dessert2, .assiete-dessert3 {
+                                width: 90%;
+                                height: 100px;
+                                background-color: white;
+                                border-radius: 15px;
+                                margin-bottom: 20px;
+                                display: flex;
+                                flex-shrink: 1;
+                                flex-grow: 1;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                align-items: center;
+                                cursor: pointer;
+                                box-shadow: 4px 5px 4px #c6c5c5;
+                                margin-bottom: 20px;
+                                position: relative;
+
+                                &:hover {
+                                    .titre-txt {
+                                        width: 50%;
+                                    }
+                            
+                                    .check{
+                                        transform: translateX(0);
+                                        flex-shrink: 1;
+                                        &::after {
+                                            transform: rotate(-720deg);
+                                        }
+                                    }
+                                }
+                            }
+                            .titre-txt {
+                                width: 80%;
+                                margin: 15px 10px;
+                                transition: width 800ms;
+                            
+                                h3 {
+                                    font-size: 20px;
+                                    margin-bottom: 6px;
+                                }
+                            
+                                p {
+                                    width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: block;
+                                }
+                            }
+
+                                span {
+                                    padding-top: 40px;
+                                    font-weight: bold;
+                                }
+                            
+                                    .check{
+                                        position: absolute;
+                                        display: flex;
+                                        top: 0;
+                                        right:0;
+                                        align-items: center;
+                                        justify-content: center;
+                                        height: 100%;
+                                        width: 20%;
+                                        transform: translateX(110px);
+                                        transition: transform 800ms;
+                                        background-color: #99E2D0;
+                                        &:after {
+                                            font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
+                                            font-size: 20px;
+                                            color: white;
+                                            transform: rotate(0deg);
+                                            transition: transform 600ms 100ms;
+                                        }
+                                    }
+                    }
 }
 
 .button-command {
@@ -547,35 +572,38 @@ footer {
         object-fit: cover;
     }
 
-    .titre-coeur {
-        background-color: #f2f2f2;
-        border-radius: 30px 30px 0 0;
-            h1 {
-                font-family: $font-family-primary;
-                font-size: 30px;
-            }
-            .fa-heart {
-                font-size: 25px;
-            }
-            .fa-heart:hover {
-                background: linear-gradient($color-primary, $color-secondary);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                transition: 0.5s ease-out;
-                font-weight: bold; 
-            }
-    }
-
     .menu {
         width: auto;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        background-color: #f2f2f2;
-        margin-bottom: 20px;
+        display: block;
+        position: relative;
+        bottom: 110px;
+        border-radius: 30px 30px 0 0;
+        .titre-coeur {
+                h1 {
+                    font-family: $font-family-primary;
+                    font-size: 30px;
+                }
+                .fa-heart {
+                    font-size: 25px;
+                }
+                .fa-heart:hover {
+                    background: linear-gradient($color-primary, $color-secondary);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: 0.5s ease-out;
+                    font-weight: bold; 
+                }
+        }
+        .entree-plat-dessert {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
             .entrees, .plats, .desserts {
-                width: 99%;
+                width: 100%;
+                height: auto;
                     h2 {
                         width: 50px;
                         display: flex;
@@ -588,7 +616,23 @@ footer {
                         font-weight: normal;
                     }
                 .assiete-entree, .assiete-plat, .assiete-dessert {
-                    margin-left: 3px;
+                    width: 90%;
+                    height: 100px;
+                    background-color: white;
+                    border: white 2px solid;
+                    border-radius: 15px;
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-shrink: 1;
+                    flex-grow: 1;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    align-items: center;
+                    cursor: pointer;
+                    box-shadow: 4px 5px 4px #c6c5c5;
+                    margin-bottom: 20px;
+                    position: relative;
                         h3 {
                             font-size: 18px;
                         }
