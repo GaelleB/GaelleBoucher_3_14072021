@@ -799,6 +799,22 @@ footer .fa-hands-helping {
     -webkit-animation: coeur 3s forwards;
             animation: coeur 3s forwards;
   }
+  @-webkit-keyframes coeur {
+    from {
+      background-position-y: 3rem;
+    }
+    to {
+      background-position-y: -3rem;
+    }
+  }
+  @keyframes coeur {
+    from {
+      background-position-y: 3rem;
+    }
+    to {
+      background-position-y: -3rem;
+    }
+  }
   #restaurants .resto .carte-resto .titre-lieu-resto2 {
     position: absolute;
   }
@@ -933,6 +949,9 @@ footer .fa-hands-helping {
   /*Description*/
   .descrip {
     padding-bottom: 40px;
+  }
+  .descrip h2 {
+    font-size: 35px;
   }
   /*Fonctionnement*/
   .fonctionnement {

@@ -607,6 +607,15 @@ footer {
                                 }
                     }
 
+                                    @keyframes coeur { 
+                                        from {
+                                            background-position-y: 3rem; 
+                                        } 
+                                        to { 
+                                            background-position-y: -3rem;
+                                        }
+                                    }
+
                         .titre-lieu-resto2 {
                             position: absolute;
                                 h3 {
@@ -733,6 +742,10 @@ footer {
 
     .descrip {
         padding-bottom: 40px;
+            h2 {
+                font-size: 35px;
+                $font-family-primary: 'Shrikhand', cursive
+            }
     }
 
     /*Fonctionnement*/
@@ -753,6 +766,7 @@ footer {
                     border-radius: 25px;
                 }
                     .inside-fonction {
+                        $font-family-secondary: 'Roboto', sans-serif;
                         margin-left: 20px;
                         align-items: center;
                         text-align: center;
@@ -784,6 +798,7 @@ footer {
                 .resto {
                     display: block;
                         .carte-resto {
+                            $font-family-secondary: 'Roboto', sans-serif;
                             width: 90%;
                             height: 200px;
                             border: 1px white solid;
@@ -823,6 +838,7 @@ footer {
                                         $font-family-primary: 'Shrikhand', cursive;
                                     }
                                         .p-coeur {
+                                            $font-family-secondary: 'Roboto', sans-serif;
                                             display: flex;
                                             flex-direction: row;
                                                 p {
@@ -861,6 +877,7 @@ footer {
                                             $font-family-primary: 'Shrikhand', cursive;
                                         }
                                             .p-coeur {
+                                                $font-family-secondary: 'Roboto', sans-serif;
                                                 display: flex;
                                                 flex-direction: row;
                                                     p {
@@ -899,6 +916,7 @@ footer {
                                                 $font-family-primary: 'Shrikhand', cursive;
                                             }
                                                 .p-coeur {
+                                                    $font-family-secondary: 'Roboto', sans-serif;
                                                     display: flex;
                                                     flex-direction: row;
                                                         p {
@@ -937,6 +955,7 @@ footer {
                                                     $font-family-primary: 'Shrikhand', cursive;
                                                 }
                                                     .p-coeur {
+                                                        $font-family-secondary: 'Roboto', sans-serif;
                                                         display: flex;
                                                         flex-direction: row;
                                                             p {
@@ -953,11 +972,11 @@ footer {
                                                                 }
                                                                 .fa-heart:hover {
                                                                     font-weight: bold; 
-                                                                    background: linear-gradient($color-primary, $color-secondary); 
-                                                                    -webkit-background-clip: text; 
-                                                                    background-clip: text;
-                                                                    -webkit-text-fill-color: transparent; 
-                                                                    animation: coeur 3s forwards;
+                                                                background: linear-gradient($color-primary, $color-secondary); 
+                                                                -webkit-background-clip: text; 
+                                                                background-clip: text;
+                                                                -webkit-text-fill-color: transparent; 
+                                                                animation: coeur 3s forwards;
                                                                 }  
                                                     }
                                         }
@@ -968,6 +987,7 @@ footer {
     /*Footer*/
     
     footer {
+        $font-family-secondary: 'Roboto', sans-serif;
         width: auto;
         height: auto;
         padding-left: 0;
