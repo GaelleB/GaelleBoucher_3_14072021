@@ -36,11 +36,12 @@ main img {
 
 @keyframes apparition-menu {
 
-    from {
+    0% {
         opacity: 0;
+        margin-top: 20px;
     }
 
-    to {
+    100% {
         opacity: 1;
     }
 }
@@ -51,16 +52,13 @@ main img {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     background-color: #f2f2f2;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     .titre-coeur {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        z-index: 1;
-        bottom: 30px;
             h1 {
                 $font-family-primary: 'Shrikhand', cursive;
                 font-size: 45px;
@@ -71,25 +69,35 @@ main img {
                     font-weight: normal;
                 }
                 .fa-heart:hover {
-                    background: linear-gradient($color-primary, $color-secondary);
-                    -webkit-background-clip: text;
+                    font-weight: bold; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
                     background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    transition: 1s ease-out;
-                    font-weight: bold;
+                    -webkit-text-fill-color: transparent; 
+                    animation: coeur 3s forwards;
                 }
     }
+
+    @keyframes coeur { 
+        from {
+            background-position-y: 2rem; 
+        } 
+        to { 
+            background-position-y: -2rem;
+        }
+    }
+
         .entree-plat-dessert {
+            width: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
         }
             .entrees {
                 width: 25%;
                 height: auto;
                 opacity: 1;
                 animation: apparition-menu 1s ease-in-out;
-                
+                margin: 0 50px 0 100px;    
                     h2 {
                         $font-family-primary: 'Shrikhand', cursive;
                         font-size: 25px;
@@ -98,7 +106,8 @@ main img {
                         padding-right: 40px;
                     }
                         .assiete-entree1, .assiete-entree2, .assiete-entree3 {
-                            width: 90%;
+                            $font-family-secondary: 'Roboto', sans-serif;
+                            width: 100%;
                             height: 100px;
                             background-color: white;
                             border-radius: 15px;
@@ -132,6 +141,7 @@ main img {
                                 width: 80%;
                                 margin: 15px 10px;
                                 transition: width 800ms;
+                                $font-family-secondary: 'Roboto', sans-serif;
                             
                                 h3 {
                                     font-size: 20px;
@@ -177,6 +187,7 @@ main img {
                     height: auto;
                     opacity: 1;
                     animation: apparition-menu 2s ease-in-out;
+                    margin: 0 50px 0 50px; 
                         h2 {
                             $font-family-primary: 'Shrikhand', cursive;
                             font-size: 25px;
@@ -184,7 +195,8 @@ main img {
                             padding-right: 40px;
                         }
                         .assiete-plat1, .assiete-plat2, .assiete-plat3 {
-                            width: 90%;
+                            $font-family-secondary: 'Roboto', sans-serif;
+                            width: 100%;
                             height: 100px;
                             background-color: white;
                             border-radius: 15px;
@@ -218,6 +230,7 @@ main img {
                                 width: 80%;
                                 margin: 15px 10px;
                                 transition: width 800ms;
+                                $font-family-secondary: 'Roboto', sans-serif;
                             
                                 h3 {
                                     font-size: 20px;
@@ -263,6 +276,7 @@ main img {
                         height: auto;
                         opacity: 1;
                         animation: apparition-menu 3s ease-in-out;
+                        margin: 0 50px 0 50px;
                             h2 {
                                 $font-family-primary: 'Shrikhand', cursive;
                                 font-size: 25px;
@@ -270,7 +284,8 @@ main img {
                                 padding-right: 40px;
                             }
                             .assiete-dessert1, .assiete-dessert2, .assiete-dessert3 {
-                                width: 90%;
+                                $font-family-secondary: 'Roboto', sans-serif;
+                                width: 100%;
                                 height: 100px;
                                 background-color: white;
                                 border-radius: 15px;
@@ -304,6 +319,7 @@ main img {
                                 width: 80%;
                                 margin: 15px 10px;
                                 transition: width 800ms;
+                                $font-family-secondary: 'Roboto', sans-serif;
                             
                                 h3 {
                                     font-size: 20px;
@@ -347,6 +363,7 @@ main img {
 }
 
 .button-command {
+    $font-family-secondary: 'Roboto', sans-serif;
     border: transparent 1px solid;  
     border-radius: 25px;
     padding: 15px 30px;
@@ -386,6 +403,7 @@ footer {
                         color: white;
                     }
             li {
+                $font-family-secondary: 'Roboto', sans-serif;
                 color: white;
                 list-style: none;
                 text-decoration: none;
@@ -437,10 +455,29 @@ footer {
         align-items: center;
         background-color: #f2f2f2;
         margin-bottom: 20px;
+        .titre-coeur {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+                    .fa-heart {
+                        font-size: 30px;
+                        padding: 10px 0 0 20px;
+                        font-weight: normal;
+                    }
+        }
+    
+        .entree-plat-dessert {
+            display: block;
+            width: 80%;
+            height: auto;
+            padding: 0 0 30px 0;
+        }
             .entrees, .plats, .desserts {
-                width: 80%;
+                width: 100%;
                 height: auto;
-                margin: 20px;
+                margin: 0 10px;
+                padding-bottom: 15px;
                     h2 {
                         font-size: 20px;
                     }
@@ -460,7 +497,6 @@ footer {
                     align-items: center;
                     cursor: pointer;
                     box-shadow: 4px 5px 4px #c6c5c5;
-                    margin-bottom: 20px;
                     position: relative;
                         &:hover {
                         .titre-txt {
@@ -573,27 +609,16 @@ footer {
     }
 
     .menu {
-        width: auto;
+        width: 100%;
         height: auto;
         display: block;
         position: relative;
-        bottom: 110px;
+        bottom: 30px;
         border-radius: 30px 30px 0 0;
         .titre-coeur {
                 h1 {
                     font-family: $font-family-primary;
                     font-size: 30px;
-                }
-                .fa-heart {
-                    font-size: 25px;
-                }
-                .fa-heart:hover {
-                    background: linear-gradient($color-primary, $color-secondary);
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    transition: 0.5s ease-out;
-                    font-weight: bold; 
                 }
         }
         .entree-plat-dessert {
@@ -602,49 +627,21 @@ footer {
             justify-content: center;
         }
             .entrees, .plats, .desserts {
-                width: 100%;
+                width: 90%;
                 height: auto;
+                margin: 10px 20px;
                     h2 {
-                        width: 50px;
+                        width: 5px;
                         display: flex;
                         font-size: 20px;
                         border-bottom: 4px $color-tertiary solid;
                         padding-left: 0px;
-                        padding-bottom: 10px;
-                        margin-left: 15px;
+                        padding-bottom: 5px;
+                        margin-left: 5px;
                         left: 0;
                         font-weight: normal;
                     }
-                .assiete-entree, .assiete-plat, .assiete-dessert {
-                    width: 90%;
-                    height: 100px;
-                    background-color: white;
-                    border: white 2px solid;
-                    border-radius: 15px;
-                    margin-bottom: 20px;
-                    display: flex;
-                    flex-shrink: 1;
-                    flex-grow: 1;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    align-items: center;
-                    cursor: pointer;
-                    box-shadow: 4px 5px 4px #c6c5c5;
-                    margin-bottom: 20px;
-                    position: relative;
-                        h3 {
-                            font-size: 18px;
-                        }
-                            .p-prix {
-                                p {
-                                    font-size: 16px;
-                                }
-                                    span {
-                                        font-size: 15px;
-                                    }
-                            }
-                }
+                
             }
     }
     .button-command {

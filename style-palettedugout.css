@@ -39,19 +39,21 @@ main img {
 }
 
 @-webkit-keyframes apparition-menu {
-  from {
+  0% {
     opacity: 0;
+    margin-top: 20px;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
 
 @keyframes apparition-menu {
-  from {
+  0% {
     opacity: 0;
+    margin-top: 20px;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
@@ -66,11 +68,8 @@ main img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   background-color: #f2f2f2;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .menu .titre-coeur {
@@ -87,8 +86,6 @@ main img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
-  bottom: 30px;
 }
 
 .menu .titre-coeur h1 {
@@ -102,17 +99,36 @@ main img {
 }
 
 .menu .titre-coeur .fa-heart:hover {
+  font-weight: bold;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
-  font-weight: bold;
+  -webkit-animation: coeur 3s forwards;
+          animation: coeur 3s forwards;
+}
+
+@-webkit-keyframes coeur {
+  from {
+    background-position-y: 2rem;
+  }
+  to {
+    background-position-y: -2rem;
+  }
+}
+
+@keyframes coeur {
+  from {
+    background-position-y: 2rem;
+  }
+  to {
+    background-position-y: -2rem;
+  }
 }
 
 .menu .entree-plat-dessert {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,8 +136,6 @@ main img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .menu .entrees {
@@ -130,6 +144,7 @@ main img {
   opacity: 1;
   -webkit-animation: apparition-menu 1s ease-in-out;
           animation: apparition-menu 1s ease-in-out;
+  margin: 0 50px 0 100px;
 }
 
 .menu .entrees h2 {
@@ -142,7 +157,7 @@ main img {
 }
 
 .menu .entrees .assiete-entree1, .menu .entrees .assiete-entree2, .menu .entrees .assiete-entree3 {
-  width: 90%;
+  width: 100%;
   height: 100px;
   background-color: white;
   border-radius: 15px;
@@ -251,6 +266,7 @@ main img {
   opacity: 1;
   -webkit-animation: apparition-menu 2s ease-in-out;
           animation: apparition-menu 2s ease-in-out;
+  margin: 0 50px 0 50px;
 }
 
 .menu .plats h2 {
@@ -260,7 +276,7 @@ main img {
 }
 
 .menu .plats .assiete-plat1, .menu .plats .assiete-plat2, .menu .plats .assiete-plat3 {
-  width: 90%;
+  width: 100%;
   height: 100px;
   background-color: white;
   border-radius: 15px;
@@ -369,6 +385,7 @@ main img {
   opacity: 1;
   -webkit-animation: apparition-menu 3s ease-in-out;
           animation: apparition-menu 3s ease-in-out;
+  margin: 0 50px 0 50px;
 }
 
 .menu .desserts h2 {
@@ -378,7 +395,7 @@ main img {
 }
 
 .menu .desserts .assiete-dessert1, .menu .desserts .assiete-dessert2, .menu .desserts .assiete-dessert3 {
-  width: 90%;
+  width: 100%;
   height: 100px;
   background-color: white;
   border-radius: 15px;
@@ -604,10 +621,37 @@ footer .fa-hands-helping {
     background-color: #f2f2f2;
     margin-bottom: 20px;
   }
-  .menu .entrees, .menu .plats, .menu .desserts {
+  .menu .titre-coeur {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .titre-coeur .fa-heart {
+    font-size: 30px;
+    padding: 10px 0 0 20px;
+    font-weight: normal;
+  }
+  .menu .entree-plat-dessert {
+    display: block;
     width: 80%;
     height: auto;
-    margin: 20px;
+    padding: 0 0 30px 0;
+  }
+  .menu .entrees, .menu .plats, .menu .desserts {
+    width: 100%;
+    height: auto;
+    margin: 0 10px;
+    padding-bottom: 15px;
   }
   .menu .entrees h2, .menu .plats h2, .menu .desserts h2 {
     font-size: 20px;
@@ -636,7 +680,6 @@ footer .fa-hands-helping {
     cursor: pointer;
     -webkit-box-shadow: 4px 5px 4px #c6c5c5;
             box-shadow: 4px 5px 4px #c6c5c5;
-    margin-bottom: 20px;
     position: relative;
   }
   .menu .entrees .assiete-entree:hover .titre-txt, .menu .entrees .assiete-plat:hover .titre-txt, .menu .entrees .assiete-dessert:hover .titre-txt, .menu .plats .assiete-entree:hover .titre-txt, .menu .plats .assiete-plat:hover .titre-txt, .menu .plats .assiete-dessert:hover .titre-txt, .menu .desserts .assiete-entree:hover .titre-txt, .menu .desserts .assiete-plat:hover .titre-txt, .menu .desserts .assiete-dessert:hover .titre-txt {
@@ -767,29 +810,16 @@ footer .fa-hands-helping {
        object-fit: cover;
   }
   .menu {
-    width: auto;
+    width: 100%;
     height: auto;
     display: block;
     position: relative;
-    bottom: 110px;
+    bottom: 30px;
     border-radius: 30px 30px 0 0;
   }
   .menu .titre-coeur h1 {
     font-family: "Shrikhand", cursive;
     font-size: 30px;
-  }
-  .menu .titre-coeur .fa-heart {
-    font-size: 25px;
-  }
-  .menu .titre-coeur .fa-heart:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    background: linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-transition: 0.5s ease-out;
-    transition: 0.5s ease-out;
-    font-weight: bold;
   }
   .menu .entree-plat-dessert {
     display: -webkit-box;
@@ -804,57 +834,22 @@ footer .fa-hands-helping {
             justify-content: center;
   }
   .menu .entrees, .menu .plats, .menu .desserts {
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin: 10px 20px;
   }
   .menu .entrees h2, .menu .plats h2, .menu .desserts h2 {
-    width: 50px;
+    width: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 20px;
     border-bottom: 4px #99E2D0 solid;
     padding-left: 0px;
-    padding-bottom: 10px;
-    margin-left: 15px;
+    padding-bottom: 5px;
+    margin-left: 5px;
     left: 0;
     font-weight: normal;
-  }
-  .menu .entrees .assiete-entree, .menu .entrees .assiete-plat, .menu .entrees .assiete-dessert, .menu .plats .assiete-entree, .menu .plats .assiete-plat, .menu .plats .assiete-dessert, .menu .desserts .assiete-entree, .menu .desserts .assiete-plat, .menu .desserts .assiete-dessert {
-    width: 90%;
-    height: 100px;
-    background-color: white;
-    border: white 2px solid;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    cursor: pointer;
-    -webkit-box-shadow: 4px 5px 4px #c6c5c5;
-            box-shadow: 4px 5px 4px #c6c5c5;
-    margin-bottom: 20px;
-    position: relative;
-  }
-  .menu .entrees .assiete-entree h3, .menu .entrees .assiete-plat h3, .menu .entrees .assiete-dessert h3, .menu .plats .assiete-entree h3, .menu .plats .assiete-plat h3, .menu .plats .assiete-dessert h3, .menu .desserts .assiete-entree h3, .menu .desserts .assiete-plat h3, .menu .desserts .assiete-dessert h3 {
-    font-size: 18px;
-  }
-  .menu .entrees .assiete-entree .p-prix p, .menu .entrees .assiete-plat .p-prix p, .menu .entrees .assiete-dessert .p-prix p, .menu .plats .assiete-entree .p-prix p, .menu .plats .assiete-plat .p-prix p, .menu .plats .assiete-dessert .p-prix p, .menu .desserts .assiete-entree .p-prix p, .menu .desserts .assiete-plat .p-prix p, .menu .desserts .assiete-dessert .p-prix p {
-    font-size: 16px;
-  }
-  .menu .entrees .assiete-entree .p-prix span, .menu .entrees .assiete-plat .p-prix span, .menu .entrees .assiete-dessert .p-prix span, .menu .plats .assiete-entree .p-prix span, .menu .plats .assiete-plat .p-prix span, .menu .plats .assiete-dessert .p-prix span, .menu .desserts .assiete-entree .p-prix span, .menu .desserts .assiete-plat .p-prix span, .menu .desserts .assiete-dessert .p-prix span {
-    font-size: 15px;
   }
   .button-command {
     border: transparent 1px solid;
