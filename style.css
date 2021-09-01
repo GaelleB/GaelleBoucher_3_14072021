@@ -749,7 +749,7 @@ footer .fa-hands-helping {
     border-radius: 3px;
     position: absolute;
     padding: 10px;
-    margin-left: 400px;
+    margin-left: 320px;
     font-weight: bold;
   }
   #restaurants .resto .carte-resto img {
@@ -785,7 +785,7 @@ footer .fa-hands-helping {
     color: black;
   }
   #restaurants .resto .carte-resto .titre-lieu-resto1 .p-coeur .fa-heart {
-    padding-left: 350px;
+    padding-left: 250px;
     color: black;
     font-size: 25px;
   }
@@ -825,7 +825,7 @@ footer .fa-hands-helping {
     color: black;
   }
   #restaurants .resto .carte-resto .titre-lieu-resto2 .p-coeur .fa-heart {
-    padding-left: 380px;
+    padding-left: 280px;
     color: black;
     font-size: 25px;
   }
@@ -865,7 +865,7 @@ footer .fa-hands-helping {
     color: black;
   }
   #restaurants .resto .carte-resto .titre-lieu-resto3 .p-coeur .fa-heart {
-    padding-left: 368px;
+    padding-left: 268px;
     color: black;
     font-size: 25px;
   }
@@ -905,7 +905,7 @@ footer .fa-hands-helping {
     color: black;
   }
   #restaurants .resto .carte-resto .titre-lieu-resto4 .p-coeur .fa-heart {
-    padding-left: 335px;
+    padding-left: 235px;
     color: black;
     font-size: 25px;
   }
