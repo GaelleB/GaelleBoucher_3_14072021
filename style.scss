@@ -8,6 +8,7 @@ body {
     flex: 1;
     padding: 0;
     margin: 0;
+    font-family: $font-family-secondary;
 }
 
 /*Loading spinner*/
@@ -139,21 +140,18 @@ header {
 
 .descrip {
     width: 100%;
-    $font-family-secondary: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: #f2f2f2;
         h2 {
             font-size: 30px;
-            $font-family-primary: 'Shrikhand', cursive;
+            font-weight: bold;
         }
             p {
-                $font-family-secondary: 'Roboto', sans-serif;
                 font-size: 20px;
             }
                 button {
-                    $font-family-secondary: 'Roboto', sans-serif;
                     border: transparent 1px solid;  
                     border-radius: 25px;
                     padding: 16px;
@@ -174,7 +172,6 @@ header {
 /*Fonctionnement*/
 
 .fonctionnement {
-    $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
     height: auto;
     display: block;
@@ -182,10 +179,9 @@ header {
         text-align: center;
         align-items: center;
         font-size: 25px;
-        $font-family-primary: 'Shrikhand', cursive;
+        font-weight: bold;
     }
             .fonction {
-                $font-family-secondary: 'Roboto', sans-serif;
                 width: auto;
                 display: flex;
                 flex-direction: row;
@@ -195,7 +191,6 @@ header {
                     border-radius: 25px;
                 }
                 .inside-fonction {
-                    $font-family-secondary: 'Roboto', sans-serif;
                     background-color: #f2f2f2;
                     display: flex;
                     flex-direction: row;
@@ -203,7 +198,6 @@ header {
                     margin: 0 40px 20px 5px;
                     border-radius: 25px;
                     .number {
-                        $font-family-secondary: 'Roboto', sans-serif;
                         position: absolute;
                         color: #f2f2f2;
                         background-color: #9356DC;
@@ -236,7 +230,6 @@ header {
 /*Restaurants*/
 
 #restaurants {
-    $font-family-secondary: 'Roboto', sans-serif;
     width: 100%;
     height: auto;
     display: block;
@@ -246,10 +239,9 @@ header {
             text-align: center;
             align-items: center;
             font-size: 25px;
-            $font-family-primary: 'Shrikhand', cursive;
+            font-weight: bold;
         }
             .resto {
-                $font-family-secondary: 'Roboto', sans-serif;
                 width: 100%;
                 display: flex;
                 flex-direction: row;
@@ -257,7 +249,6 @@ header {
                 justify-content: center;
                 align-items: center;
                 .carte-resto {
-                    $font-family-secondary: 'Roboto', sans-serif;
                     height: 220px;
                     width: 40%;
                     border: 5px white solid;
@@ -268,7 +259,6 @@ header {
                     position: relative;
                     margin: 10px 50px 20px 0;
                         .new {
-                            $font-family-secondary: 'Roboto', sans-serif;
                             display: flex;
                             background: #99E2D0;
                             color: #2c9c81;
@@ -293,13 +283,12 @@ header {
                                 padding-left: 10px;
                                 font-size: 20px;
                                 color: black;
-                                $font-family-primary: 'Shrikhand', cursive;
+                                font-weight: bold;
                             }
                                 .p-coeur {
                                     display: flex;
                                     flex-direction: row;
                                     p {
-                                        $font-family-secondary: 'Roboto', sans-serif;
                                         margin-top: 5px;
                                         padding-left: 9px;
                                         font-size: 20px;
@@ -340,13 +329,12 @@ header {
                                     padding-left: 10px;
                                     font-size: 20px;
                                     color: black;
-                                    $font-family-primary: 'Shrikhand', cursive;
+                                    font-weight: bold;
                                 }
                                     .p-coeur {
                                         display: flex;
                                         flex-direction: row;
                                             p {
-                                                $font-family-secondary: 'Roboto', sans-serif;
                                                 margin-top: 5px;
                                                 padding-left: 9px;
                                                 font-size: 20px;
@@ -378,13 +366,12 @@ header {
                                         padding-left: 10px;
                                         font-size: 20px;
                                         color: black;
-                                        $font-family-primary: 'Shrikhand', cursive;
+                                        font-weight: bold;
                                     }
                                         .p-coeur {
                                             display: flex;
                                             flex-direction: row;
                                                 p {
-                                                    $font-family-secondary: 'Roboto', sans-serif;
                                                     margin-top: 5px;
                                                     padding-left: 9px;
                                                     font-size: 20px;
@@ -416,13 +403,12 @@ header {
                                             padding-left: 10px;
                                             font-size: 20px;
                                             color: black;
-                                            $font-family-primary: 'Shrikhand', cursive;
+                                            font-weight: bold;
                                         }
                                             .p-coeur {
                                                 display: flex;
                                                 flex-direction: row;
                                                     p {
-                                                        $font-family-secondary: 'Roboto', sans-serif;
                                                         margin-top: 5px;
                                                         padding-left: 9px;
                                                         font-size: 20px;
@@ -451,7 +437,6 @@ header {
 
 /*Footer*/
 footer {
-    $font-family-secondary: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -464,7 +449,8 @@ footer {
             padding-left: 40px;
             color: white;
             text-decoration: none;
-            $font-family-primary: 'Shrikhand', cursive;
+            font-family: $font-family-primary;
+
         }
             a:link {
                 text-decoration: none;
@@ -473,7 +459,6 @@ footer {
                     color: white;
                 }
             li {
-                $font-family-secondary: 'Roboto', sans-serif;
                 color: white;
                 list-style: none;
                 text-decoration: none;
@@ -527,7 +512,6 @@ footer {
     }
 
     #restaurants {
-        $font-family-secondary: 'Roboto', sans-serif;
         width: 100%;
         height: auto;
         display: block;
@@ -538,7 +522,6 @@ footer {
                 align-items: center;
                 text-align: center;
                 font-size: 25px;
-                $font-family-primary: 'Shrikhand', cursive;
             }
             .resto {
                 width: 100%;
@@ -579,7 +562,6 @@ footer {
                                 padding-left: 10px;
                                 font-size: 20px;
                                 color: black;
-                                $font-family-primary: 'Shrikhand', cursive;
                             }
                                 .p-coeur {
                                     display: flex;
@@ -624,7 +606,6 @@ footer {
                                     padding-left: 10px;
                                     font-size: 20px;
                                     color: black;
-                                    $font-family-primary: 'Shrikhand', cursive;
                                 }
                                     .p-coeur {
                                         display: flex;
@@ -660,7 +641,6 @@ footer {
                                         padding-left: 10px;
                                         font-size: 20px;
                                         color: black;
-                                        $font-family-primary: 'Shrikhand', cursive;
                                     }
                                         .p-coeur {
                                             display: flex;
@@ -696,7 +676,6 @@ footer {
                                             padding-left: 10px;
                                             font-size: 20px;
                                             color: black;
-                                            $font-family-primary: 'Shrikhand', cursive;
                                         }
                                             .p-coeur {
                                                 display: flex;
@@ -744,7 +723,6 @@ footer {
         padding-bottom: 40px;
             h2 {
                 font-size: 35px;
-                $font-family-primary: 'Shrikhand', cursive
             }
     }
 
@@ -756,8 +734,8 @@ footer {
         padding-top: 25px;
         h2 {
             font-size: 25px;
-            margin-right: 160px;
-            $font-family-primary: 'Shrikhand', cursive;
+            margin-right: 150px;
+            
         }
             .fonction {
                 display: block;
@@ -766,7 +744,6 @@ footer {
                     border-radius: 25px;
                 }
                     .inside-fonction {
-                        $font-family-secondary: 'Roboto', sans-serif;
                         margin-left: 20px;
                         align-items: center;
                         text-align: center;
@@ -784,7 +761,6 @@ footer {
     /*Restaurants*/
 
     #restaurants {
-        $font-family-secondary: 'Roboto', sans-serif;
         width: 100%;
         display: block;
         margin-top: 25px;
@@ -793,12 +769,10 @@ footer {
                 font-size: 25px;
                 padding-top: 15px;
                 margin-right: 190px;
-                $font-family-primary: 'Shrikhand', cursive;
             }
                 .resto {
                     display: block;
                         .carte-resto {
-                            $font-family-secondary: 'Roboto', sans-serif;
                             width: 90%;
                             height: 200px;
                             border: 1px white solid;
@@ -835,10 +809,8 @@ footer {
                                         padding-left: 10px;
                                         font-size: 20px;
                                         color: black;
-                                        $font-family-primary: 'Shrikhand', cursive;
                                     }
                                         .p-coeur {
-                                            $font-family-secondary: 'Roboto', sans-serif;
                                             display: flex;
                                             flex-direction: row;
                                                 p {
@@ -874,10 +846,8 @@ footer {
                                             padding-left: 10px;
                                             font-size: 20px;
                                             color: black;
-                                            $font-family-primary: 'Shrikhand', cursive;
                                         }
                                             .p-coeur {
-                                                $font-family-secondary: 'Roboto', sans-serif;
                                                 display: flex;
                                                 flex-direction: row;
                                                     p {
@@ -913,10 +883,8 @@ footer {
                                                 padding-left: 10px;
                                                 font-size: 20px;
                                                 color: black;
-                                                $font-family-primary: 'Shrikhand', cursive;
                                             }
                                                 .p-coeur {
-                                                    $font-family-secondary: 'Roboto', sans-serif;
                                                     display: flex;
                                                     flex-direction: row;
                                                         p {
@@ -952,10 +920,8 @@ footer {
                                                     padding-left: 10px;
                                                     font-size: 20px;
                                                     color: black;
-                                                    $font-family-primary: 'Shrikhand', cursive;
                                                 }
                                                     .p-coeur {
-                                                        $font-family-secondary: 'Roboto', sans-serif;
                                                         display: flex;
                                                         flex-direction: row;
                                                             p {
@@ -987,7 +953,6 @@ footer {
     /*Footer*/
     
     footer {
-        $font-family-secondary: 'Roboto', sans-serif;
         width: auto;
         height: auto;
         padding-left: 0;

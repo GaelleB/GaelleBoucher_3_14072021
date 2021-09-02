@@ -6,6 +6,7 @@ body {
           flex: 1;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 /*Loading spinner*/
@@ -228,6 +229,7 @@ header {
 
 .descrip h2 {
   font-size: 30px;
+  font-weight: bold;
 }
 
 .descrip p {
@@ -268,6 +270,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .fonctionnement .fonction {
@@ -355,6 +358,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-size: 25px;
+  font-weight: bold;
 }
 
 #restaurants .resto {
@@ -420,6 +424,7 @@ header {
   padding-left: 10px;
   font-size: 20px;
   color: black;
+  font-weight: bold;
 }
 
 #restaurants .resto .carte-resto .titre-lieu-resto1 .p-coeur {
@@ -483,6 +488,7 @@ header {
   padding-left: 10px;
   font-size: 20px;
   color: black;
+  font-weight: bold;
 }
 
 #restaurants .resto .carte-resto .titre-lieu-resto2 .p-coeur {
@@ -528,6 +534,7 @@ header {
   padding-left: 10px;
   font-size: 20px;
   color: black;
+  font-weight: bold;
 }
 
 #restaurants .resto .carte-resto .titre-lieu-resto3 .p-coeur {
@@ -573,6 +580,7 @@ header {
   padding-left: 10px;
   font-size: 20px;
   color: black;
+  font-weight: bold;
 }
 
 #restaurants .resto .carte-resto .titre-lieu-resto4 .p-coeur {
@@ -631,6 +639,7 @@ footer h2 {
   padding-left: 40px;
   color: white;
   text-decoration: none;
+  font-family: "Shrikhand", cursive;
 }
 
 footer a:link {
@@ -953,7 +962,7 @@ footer .fa-hands-helping {
   }
   .fonctionnement h2 {
     font-size: 25px;
-    margin-right: 160px;
+    margin-right: 150px;
   }
   .fonctionnement .fonction {
     display: block;
